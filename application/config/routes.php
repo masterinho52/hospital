@@ -38,11 +38,7 @@
 |
 */
 
-<<<<<<< HEAD
 $route['default_controller'] = "cargo";
-=======
-$route['default_controller'] = "cargo_controller";
->>>>>>> f969eee14c479926c39a8964b5d37276d5cfe82b
 $route['404_override'] = '';
 
 
