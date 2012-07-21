@@ -22,6 +22,7 @@
 			<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
 			<p>
 				<h3 class="centrado">Registro de Cargos</h3>
+				<div height="20"></div>
 				<div>
 					<?php echo $output; ?>
 			    </div>
