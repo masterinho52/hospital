@@ -23,13 +23,14 @@ class Cargos extends CI_Controller {
 			/* This is only for the autocompletion */
 			$crud = new grocery_CRUD();
 
+			$crud->set_theme('datatables');
 			$crud->set_table('tbl_cargo');
-			$crud->set_relation('id_usuario','tbl_usuario','nombre_usuario');
-			$crud->display_as('id_usuario','Usuario');
-			/*$crud->set_subject('Cargo');
+			$crud->set_subject('Cargo');
+			$crud->display_as('id_cargo','Cargo');
+			$crud->set_relation('id_cargo','tbl_cargo','nombre_cargo');
 			$crud->required_fields('nombre_cargo');
 			$crud->set_rules('nombre_cargo', 'Nombre del Cargo', 'alpha_space');
-			$crud->columns('nombre_cargo', 'nombre_usuario', 'fregistro_cargo');*/
+			/*$crud->columns('nombre_cargo', 'nombre_usuario', 'fregistro_cargo');*/
 			
 			$output = $crud->render();
 			
