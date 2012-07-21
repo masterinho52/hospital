@@ -16,17 +16,29 @@
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
 				<p>
 					<h3 class="centrado">Departamento de Trabajo Social</h3>
-					<form action="" method="post" accept-charset="utf-8" class="entrar">
+					<form action="<?=base_url()?>login" method="post" accept-charset="utf-8" class="entrar">
 						<h4>Usuarios Registrados</h4>
 						<label for="login">Usuario: </label>
 						<input type="text" name="login" id="login" placeholder="Nombre de Usuario">
 						<label for="password">Clave: </label>
 						<input type="password" name="password" id="password" placeholder="Clave del Usuario">	
 						<input type="submit" value="Ingresar">
+						<?php 
+				          	if (validation_errors()) {
+								echo "<div class='error'>";
+				          		echo validation_errors();
+				          		echo "</div>";
+				          	} 
+				          	if ($this->session->flashdata("loged_in_fail")) {
+								echo "<div class='error'>";
+				          		echo "<p>ERROR:<br>Usted a proporcionado datos inválidos<br>Intente nuevamente</p>";
+				          		echo "</div>";
+				          	} 
+				        ?>
 					</form>
 				</p>
 			</div>
-			<p class="footer">Diseñado y Desarrollado por: <strong>Marcos Orozco</strong></p>
+			<?php include_once("footer.php");?>
 		</div>
 	</body>
 </html>
