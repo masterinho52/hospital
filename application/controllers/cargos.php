@@ -24,10 +24,12 @@ class Cargos extends CI_Controller {
 			$crud = new grocery_CRUD();
 
 			$crud->set_table('tbl_cargo');
-			$crud->set_subject('Cargo');
+			$crud->set_relation('id_usuario','tbl_usuario','nombre_usuario');
+			$crud->display_as('id_usuario','Usuario');
+			/*$crud->set_subject('Cargo');
 			$crud->required_fields('nombre_cargo');
 			$crud->set_rules('nombre_cargo', 'Nombre del Cargo', 'alpha_space');
-			$crud->columns('nombre_cargo', 'nombre_usuario', 'fregistro_cargo');
+			$crud->columns('nombre_cargo', 'nombre_usuario', 'fregistro_cargo');*/
 			
 			$output = $crud->render();
 			

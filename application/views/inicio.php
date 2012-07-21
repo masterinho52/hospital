@@ -16,7 +16,7 @@
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
 				<p>
 					<h3 class="centrado">Departamento de Trabajo Social</h3>
-					<form action="" method="post" accept-charset="utf-8">
+					<form action="" method="post" accept-charset="utf-8" class="entrar">
 						<h4>Usuarios Registrados</h4>
 						<label for="login">Usuario: </label>
 						<input type="text" name="login" id="login" placeholder="Nombre de Usuario">

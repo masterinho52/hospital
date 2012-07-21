@@ -23,9 +23,7 @@
 			<p>
 				<h3 class="centrado">Registro de Cargos</h3>
 				<div height="20"></div>
-				<div>
-					<?php echo $output; ?>
-			    </div>
+				<?php echo $output; ?>
 			</p>
 		</div>
 		<p class="footer">Diseñado y Desarrollado por: <strong>Marcos Orozco</strong></p>
