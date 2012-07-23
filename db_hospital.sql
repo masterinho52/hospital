@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 21-07-2012 a las 14:03:09
+-- Tiempo de generación: 23-07-2012 a las 15:22:50
 -- Versión del servidor: 5.5.24
 -- Versión de PHP: 5.3.10-1ubuntu3.2
 
@@ -32,15 +32,22 @@ CREATE TABLE IF NOT EXISTS `tbl_adulto` (
   `nombre_adulto` varchar(50) NOT NULL,
   `apellido_adulto` varchar(50) NOT NULL,
   `fechan_adulto` date NOT NULL,
-  `lugarn_adulto` varchar(50) NOT NULL,
+  `lugarn_adulto` varchar(50) DEFAULT NULL,
   `direccion_adulto` text NOT NULL,
-  `telefono_adulto` varchar(12) NOT NULL,
-  `sexo_adulto` varchar(10) NOT NULL,
+  `telefono_adulto` varchar(12) DEFAULT NULL,
+  `sexo_adulto` enum('Masculino','Femenino') NOT NULL,
   `fechai_adulto` date NOT NULL,
   `id_usuario` int(11) DEFAULT NULL,
-  `fregistro_adulto` datetime NOT NULL,
+  `fregistro_adulto` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_adulto`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Volcado de datos para la tabla `tbl_adulto`
+--
+
+INSERT INTO `tbl_adulto` (`id_adulto`, `cedula_adulto`, `nombre_adulto`, `apellido_adulto`, `fechan_adulto`, `lugarn_adulto`, `direccion_adulto`, `telefono_adulto`, `sexo_adulto`, `fechai_adulto`, `id_usuario`, `fregistro_adulto`) VALUES
+(1, '1456486', 'PEDRO', 'PEREZ', '1944-06-06', 'VALERA', '', '04247241570', 'Masculino', '2007-07-11', 1, '2012-07-23 19:50:10');
 
 -- --------------------------------------------------------
 
@@ -52,16 +59,16 @@ CREATE TABLE IF NOT EXISTS `tbl_cargo` (
   `id_cargo` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_cargo` varchar(50) NOT NULL,
   `id_usuario` int(11) DEFAULT NULL,
-  `fregistro_cargo` datetime NOT NULL,
+  `fregistro_cargo` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_cargo`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
 
 --
 -- Volcado de datos para la tabla `tbl_cargo`
 --
 
 INSERT INTO `tbl_cargo` (`id_cargo`, `nombre_cargo`, `id_usuario`, `fregistro_cargo`) VALUES
-(1, 'CONTADOR', 1, '2012-07-20 16:32:23');
+(9, 'CONTADOR', 1, '2012-07-23 19:50:26');
 
 -- --------------------------------------------------------
 
@@ -73,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `tbl_departamento` (
   `id_departamento` int(11) NOT NULL AUTO_INCREMENT,
   `nombre_departamento` varchar(50) NOT NULL,
   `id_usuario` int(11) DEFAULT NULL,
-  `fregistro_departamento` datetime NOT NULL,
+  `fregistro_departamento` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_departamento`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
@@ -94,7 +101,7 @@ CREATE TABLE IF NOT EXISTS `tbl_grupo_familiar` (
   `parentesco_grupo` varchar(50) NOT NULL,
   `id_adulto` int(11) NOT NULL,
   `id_usuario` int(11) DEFAULT NULL,
-  `fregistro_grupo` datetime NOT NULL,
+  `fregistro_grupo` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id_grupo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
@@ -111,15 +118,10 @@ CREATE TABLE IF NOT EXISTS `tbl_personal` (
   `apellido_personal` varchar(50) NOT NULL,
   `id_cargo` int(11) NOT NULL,
   `id_departamento` int(11) NOT NULL,
+  `id_usuario` int(11) DEFAULT NULL,
+  `fregistro_personal` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_personal`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
-
---
--- Volcado de datos para la tabla `tbl_personal`
---
-
-INSERT INTO `tbl_personal` (`id_personal`, `cedula_personal`, `nombre_personal`, `apellido_personal`, `id_cargo`, `id_departamento`) VALUES
-(1, 'V-10226656', 'JONHMER', 'BENCOMO', 1, 1);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -134,15 +136,17 @@ CREATE TABLE IF NOT EXISTS `tbl_usuario` (
   `tipo_usuario` enum('Admin','Supervisor','Usuario') NOT NULL,
   `login` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
+  `fregistro_usuario` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Volcado de datos para la tabla `tbl_usuario`
 --
 
-INSERT INTO `tbl_usuario` (`id_usuario`, `cedula_usuario`, `nombre_usuario`, `tipo_usuario`, `login`, `password`) VALUES
-(1, 'V-1688039', 'LEONARDO SUAREZ', 'Supervisor', '16882039', '45226bae7da31547fbdca1c62d24a8dd');
+INSERT INTO `tbl_usuario` (`id_usuario`, `cedula_usuario`, `nombre_usuario`, `tipo_usuario`, `login`, `password`, `fregistro_usuario`) VALUES
+(1, 'V-1688039', 'LEONARDO SUAREZ', 'Admin', '16882039', '45226bae7da31547fbdca1c62d24a8dd', '0000-00-00 00:00:00'),
+(2, 'V-14460452', 'JOHNMER BENCOMO', 'Admin', 'bjohnmer', '81dc9bdb52d04dc20036dbd8313ed055', '2012-07-23 19:52:25');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
