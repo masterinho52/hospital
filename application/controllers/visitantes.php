@@ -39,6 +39,8 @@ class Visitantes extends CI_Controller {
 
 			$crud->set_relation('id_usuario', 'tbl_usuario', 'nombre_usuario');
 
+			$crud->unset_add()->unset_edit()->unset_delete();
+
 			$output = $crud->render();
 			
 			$this->_example_output($output);
