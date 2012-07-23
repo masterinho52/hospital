@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 23-07-2012 a las 15:22:50
+-- Tiempo de generación: 23-07-2012 a las 17:13:29
 -- Versión del servidor: 5.5.24
 -- Versión de PHP: 5.3.10-1ubuntu3.2
 
@@ -40,14 +40,14 @@ CREATE TABLE IF NOT EXISTS `tbl_adulto` (
   `id_usuario` int(11) DEFAULT NULL,
   `fregistro_adulto` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_adulto`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Volcado de datos para la tabla `tbl_adulto`
 --
 
 INSERT INTO `tbl_adulto` (`id_adulto`, `cedula_adulto`, `nombre_adulto`, `apellido_adulto`, `fechan_adulto`, `lugarn_adulto`, `direccion_adulto`, `telefono_adulto`, `sexo_adulto`, `fechai_adulto`, `id_usuario`, `fregistro_adulto`) VALUES
-(1, '1456486', 'PEDRO', 'PEREZ', '1944-06-06', 'VALERA', '', '04247241570', 'Masculino', '2007-07-11', 1, '2012-07-23 19:50:10');
+(2, '2122223', 'PEDRO ', 'PEREZ', '1946-07-03', 'VALERA', '', '04245565565', 'Masculino', '2008-07-08', 1, '2012-07-23 20:06:27');
 
 -- --------------------------------------------------------
 
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS `tbl_grupo_familiar` (
   `parentesco_grupo` varchar(50) NOT NULL,
   `id_adulto` int(11) NOT NULL,
   `id_usuario` int(11) DEFAULT NULL,
-  `fregistro_grupo` timestamp NULL DEFAULT NULL,
+  `fregistro_grupo` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_grupo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
