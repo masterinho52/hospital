@@ -10,7 +10,7 @@
 		<div id="container">
 			
 			<?php include_once("inc/header_admin.php");?>
-
+			
 			<div id="body">
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
 				<h3 class="centrado">Departamento de Trabajo Social</h3>
@@ -27,7 +27,6 @@
 			<?php include_once("inc/footer.php");?>
 		</div>
 	</body>
-  	<script type="text/javascript" src="<?=base_url()?>js/jquery-1.7.2.min.js"></script>
   	<script type="text/javascript" src="<?=base_url()?>js/application.js"></script>
 </html>
 

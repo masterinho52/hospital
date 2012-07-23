@@ -9,7 +9,7 @@
 	<body>
 		<div id="container">
 			<header>
-				<img src="<?=base_url()?>img/logo-gob.jpg" alt="">
+				<img border="0" src="<?=base_url()?>img/logo-gob.jpg" />
 			</header>
 
 			<div id="body">
@@ -17,12 +17,21 @@
 				<p>
 					<h3 class="centrado">Departamento de Trabajo Social</h3>
 					<form action="<?=base_url()?>login" method="post" accept-charset="utf-8" class="entrar">
-						<h4>Usuarios Registrados</h4>
+						<h4 align="center">Bienvenidos al Sistema</h4>
 						<label for="login">Usuario: </label>
 						<input type="text" name="login" id="login" placeholder="Nombre de Usuario">
 						<label for="password">Clave: </label>
 						<input type="password" name="password" id="password" placeholder="Clave del Usuario">	
 						<input type="submit" value="Ingresar">
+				        <a href="<?=base_url()?>visitantes" class="enlace_visitor">
+					        <div align="right" style="margin-top:-10px; margin-right:3px;">
+								<img border="0" wight="48" height="48" src="<?=base_url()?>img/visitante.png" />
+							<div>
+					        <div align="right" style="margin-top:-8px;">
+								Visitante
+							</div>
+						</a>
+						<?php include_once("inc/footer.php");?>
 						<?php 
 				          	if (validation_errors()) {
 								echo "<div class='error'>";
@@ -38,7 +47,6 @@
 					</form>
 				</p>
 			</div>
-			<?php include_once("inc/footer.php");?>
 		</div>
 	</body>
 </html>
