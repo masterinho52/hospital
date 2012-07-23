@@ -22,4 +22,4 @@ $lang['ut_notes']			= 'Notes';
 
 
 /* End of file unit_test_lang.php */
-/* Location: ./application/language/spanish/unit_test_lang.php */
+/* Location: ./system/language/spanish/unit_test_lang.php */

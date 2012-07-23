@@ -27,7 +27,6 @@
 			<?php include_once("inc/footer.php");?>
 		</div>
 	</body>
-  	<script type="text/javascript" src="<?=base_url()?>js/jquery-1.7.2.min.js"></script>
   	<script type="text/javascript" src="<?=base_url()?>js/application.js"></script>
 </html>
 
