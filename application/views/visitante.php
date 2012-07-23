@@ -24,7 +24,10 @@
 				<p>
 					<h3 class="centrado">Lista de Pacientes</h3>
 					<p>
-					<?php echo $output; ?>
+						<a href="<?=base_url()?>inicio" class="enlace_visitor">Ir al Inicio</a>
+					</p>
+					<p>
+						<?php echo $output; ?>
 					</p>
 				</p>
 			</div>

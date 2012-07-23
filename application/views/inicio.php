@@ -23,7 +23,7 @@
 						<label for="password">Clave: </label>
 						<input type="password" name="password" id="password" placeholder="Clave del Usuario">	
 						<input type="submit" value="Ingresar">
-				        <a href="<?=base_url()?>visitantes" class="enlace_visitor" target="_blank">
+				        <a href="<?=base_url()?>visitantes" class="enlace_visitor">
 					        <div align="right" style="margin-top:-10px; margin-right:3px;">
 								<img border="0" wight="48" height="48" src="<?=base_url()?>img/visitante.png" />
 							<div>
