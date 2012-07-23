@@ -1,12 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Cargos extends CI_Controller {
+class Departamentos extends CI_Controller {
 
 	function __construct()
 	{
 		parent::__construct();
-		
-		//inicio sesion
+
 		$this->load->library('session');
 		//$this->load->library('Form_validation');
 		//$this->load->library('grocery_CRUD');
@@ -14,8 +13,7 @@ class Cargos extends CI_Controller {
 		if (!$this->session->userdata("logged_in")){
 			redirect('/');
 		}
-		//fin sesion
-
+		
 		$this->load->database();
 		$this->load->helper('url');
 		
@@ -24,7 +22,7 @@ class Cargos extends CI_Controller {
 	
 	function _example_output($output = null)
 	{
-		$this->load->view('cargo.php',$output);	
+		$this->load->view('departamento.php',$output);	
 	}
 
 	function index()
@@ -33,19 +31,19 @@ class Cargos extends CI_Controller {
 			/* This is only for the autocompletion */
 			$crud = new grocery_CRUD();
 
-			$crud->set_table('tbl_cargo');
+			$crud->set_table('tbl_departamento');
 			
-			$crud->set_subject('Cargo');
+			$crud->set_subject('Departamento');
 			
-			$crud->columns('nombre_cargo', 'id_usuario', 'fregistro_cargo');
+			$crud->columns('nombre_departamento', 'id_usuario', 'fregistro_departamento');
 			
-			$crud->display_as('nombre_cargo', 'Cargo');
+			$crud->display_as('nombre_departamento', 'Departamento');
 			$crud->display_as('id_usuario', 'Usuario');
-			$crud->display_as('fregistro_cargo', 'Fecha de Registro');
+			$crud->display_as('fregistro_departamento', 'Fecha de Registro');
 			
-			$crud->fields('nombre_cargo', 'id_usuario');
+			$crud->fields('nombre_departamento', 'id_usuario');
 			
-			$crud->set_rules('nombre_cargo', 'Nombre del Cargo', 'required|alpha_space');
+			$crud->set_rules('nombre_departamento', 'Nombre del Departamento', 'required|alpha_space');
 			$crud->set_rules('id_usuario', 'Nombre del Usuario', 'required');
 			
 			$crud->set_relation('id_usuario', 'tbl_usuario', 'nombre_usuario');

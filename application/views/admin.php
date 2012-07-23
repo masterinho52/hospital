@@ -9,7 +9,7 @@
 	<body>
 		<div id="container">
 			
-			<?php include_once("header_admin.php");?>
+			<?php include_once("inc/header_admin.php");?>
 
 			<div id="body">
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
@@ -24,7 +24,7 @@
 			<div id="box">
 				<img src="<?=base_url()?>img/medicos.jpg" alt="">
 			</div>
-			<?php include_once("footer.php");?>
+			<?php include_once("inc/footer.php");?>
 		</div>
 	</body>
   	<script type="text/javascript" src="<?=base_url()?>js/jquery-1.7.2.min.js"></script>
