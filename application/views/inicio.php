@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<title>Hospital de Ancianos</title>
+		<title>Hospital Especial Dr. Alejandro Próspero Reverend</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="<?=base_url()?>css/default.css" rel="stylesheet" type="text/css">
 	</head>
@@ -38,7 +38,7 @@
 					</form>
 				</p>
 			</div>
-			<?php include_once("footer.php");?>
+			<?php include_once("inc/footer.php");?>
 		</div>
 	</body>
 </html>

@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="<?=base_url()?>css/default.css" rel="stylesheet" type="text/css">
   		<link href="<?=base_url()?>css/admin.css" rel="stylesheet" type="text/css">
-  	<body>
+	<body>
 		<div id="container">
 			
 			<?php include_once("inc/header_admin.php");?>
@@ -20,7 +20,7 @@
 			<div id="body">
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
 				<p>
-					<h3 class="centrado">Registro de Cargos</h3>
+					<h3 class="centrado">Registro de Departamentos</h3>
 					<p>
 					<?php echo $output; ?>
 					</p>
