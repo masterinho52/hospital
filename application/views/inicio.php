@@ -37,7 +37,7 @@
 				</p>
 				<p>
 					<a href="<?=base_url()?>view/visitor.php" class="enlace_visitor" target="_blank">Visitor</a>
-				s</p>
+				</p>
 			</div>
 			<?php include_once("inc/footer.php");?>
 		</div>
