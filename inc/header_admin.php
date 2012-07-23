@@ -11,6 +11,8 @@
 		                    <li><a href="<?=base_url()?>departamentos">Departamento</a></li> 
 		                    <li><a href="<?=base_url()?>cargos">Cargo</a></li> 
 		                    <li><a href="<?=base_url()?>personales">Personal</a></li> 
+		                    <li><hr></li> 
+		                    <li><a href="<?=base_url()?>usuarios">Usuarios</a></li> 
 		                </ul> 
 		            </li> 
 		            <li><a href="<?=base_url()?>login/logout">Salir</a></li> 

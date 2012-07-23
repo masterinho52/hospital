@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Cargos extends CI_Controller {
+class Usuarios extends CI_Controller {
 
 	function __construct()
 	{
@@ -24,9 +24,13 @@ class Cargos extends CI_Controller {
 	
 	function _example_output($output = null)
 	{
-		$this->load->view('cargo.php',$output);
+		$this->load->view('usuarios.php',$output);
 	}
 
+	function add_field_callback_1()
+	{
+	    return '+30 <input type="text" maxlength="50" value="" name="phone" style="width:462px">';
+	}
 
 	function index()
 	{
@@ -34,19 +38,20 @@ class Cargos extends CI_Controller {
 			/* This is only for the autocompletion */
 			$crud = new grocery_CRUD();
 
-			$crud->set_table('tbl_cargo');
+			$crud->set_table('tbl_usuario');
 			
-			$crud->set_subject('Cargo');
+			$crud->set_subject('Usuario');
+						
+			$crud->columns('cedula_usuario', 'nombre_usuario', 'tipo_usuario', 'login');
 			
-			$crud->columns('nombre_cargo', 'id_usuario', 'fregistro_cargo');
+			$crud->display_as('cedula_usuario', 'Cédula');
+			$crud->display_as('nombre_usuario', 'Nombre Completo');
+			$crud->display_as('tipo_usuario', 'Nivel de Usuario');
 			
-			$crud->display_as('nombre_cargo', 'Cargo');
-			$crud->display_as('id_usuario', 'Usuario');
+			$crud->set_rules('cedula_usuario', 'Cédula del Usuario', 'required');
+			$crud->set_rules('nombre_usuario', 'Nombre del Usuario', 'required|alpha_space');
 			
-			$crud->set_rules('nombre_cargo', 'Nombre del Cargo', 'required|alpha_space');
-			$crud->set_rules('id_usuario', 'Nombre del Usuario', 'required');
-			
-			$crud->set_relation('id_usuario', 'tbl_usuario', 'nombre_usuario');
+			$crud->callback_add_field('phone',array($this,'add_field_callback_1'));
 
 			$output = $crud->render();
 			
