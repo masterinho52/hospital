@@ -14,7 +14,7 @@ class Cargos extends CI_Controller {
 	
 	function _example_output($output = null)
 	{
-		$this->load->view('cargo.php',$output);	
+		$this->load->view('cargo.php',$output);
 	}
 
 	function index()
