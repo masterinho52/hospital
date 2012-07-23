@@ -34,10 +34,10 @@
 				          	} 
 				        ?>
 					</form>
-					<p>
-						<a href="<?=base_url()?>view/visitor.php" class="enlace_visitor" target="_blank">Visitor</a>
-					</p>
 				</p>
+				<p>
+					<a href="<?=base_url()?>view/visitor.php" class="enlace_visitor" target="_blank">Visitor</a>
+				s</p>
 			</div>
 			<?php include_once("inc/footer.php");?>
 		</div>
