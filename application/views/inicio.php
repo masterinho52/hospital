@@ -8,7 +8,9 @@
 	</head>
 	<body>
 		<div id="container">
-			<?php include_once("inc/header_admin.php");?>
+			<header>
+				<img border="0" src="<?=base_url()?>img/logo-gob.jpg" />
+			</header>
 
 			<div id="body">
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
