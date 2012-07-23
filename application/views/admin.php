@@ -12,8 +12,8 @@
 			<?php include_once("inc/header_admin.php");?>
 			
 			<div id="body">
-				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
-				<h3 class="centrado">Departamento de Trabajo Social</h3>
+				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1><br>
+				<h3 class="centrado">Departamento de Trabajo Social</h3><br>
 				<p class="centrado">
 					Bienvenidos, <strong>Área Administrativa</strong>
 				</p>
