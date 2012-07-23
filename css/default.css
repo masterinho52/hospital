@@ -126,3 +126,23 @@
 	background-color: #FFBABA;
 	background-image: url('error.png');
 	}
+
+	.enlace_visitor {
+		color: #FF0000;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 12px;
+		font-weight: normal;
+	}
+	.enlace_visitor:hover {
+		color: #FF0000;
+		text-decoration: underline;	
+	}
+
+	h4 {
+		color: #FF0000;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 22px;
+		font-weight: bold;
+	}
