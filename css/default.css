@@ -147,6 +147,18 @@
 		text-decoration: underline;	
 	}
 
+	.usuario {
+		color: #0000CC;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.usuario:hover {
+		color: #0000CC;
+		text-decoration: underline;	
+	}
+
 	h4 {
 		color: #FF0000;
 		text-decoration: none;

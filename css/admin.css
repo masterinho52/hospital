@@ -41,7 +41,7 @@ ul.menu li ul.submenu {
 	margin: 0; padding: 0;
 	display: none;
 	float: left;
-	width: 210px;
+	width: 218px;
 	-moz-border-radius-bottomleft: 5px;
 	-moz-border-radius-bottomright: 5px;
 	-webkit-border-bottom-left-radius: 5px;
@@ -53,11 +53,11 @@ ul.menu li ul.submenu li{
 	border-top: 1px solid #252525; 
 	border-bottom: 1px solid #444; 
 	clear: both;
-	width: 210px;
+	width: 218px;
 }
 html ul.menu li ul.submenu li a {
 	float: left;
-	width: 185px;
+	width: 193px;
 	background: #333 url(../img/dropdown_linkbg.gif) no-repeat 10px center;
 	padding-left: 20px;
 }
