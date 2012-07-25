@@ -35,7 +35,7 @@ class Personales extends CI_Controller {
 			
 			$crud->set_subject('Personal');
 			
-			$crud->columns('cedula_personal', 'nombre_personal', 'apellido_personal', 'id_cargo', 'id_departamento', 'id_usuario', 'fregistro_personal');
+			$crud->columns('apellido_personal', 'nombre_personal', 'cedula_personal', 'id_cargo', 'id_departamento', 'id_usuario', 'fregistro_personal');
 			
 			$crud->display_as('cedula_personal', 'Cedula');
 			$crud->display_as('nombre_personal', 'Nombres');
@@ -57,6 +57,8 @@ class Personales extends CI_Controller {
 			$crud->set_relation('id_cargo', 'tbl_cargo', 'nombre_cargo');
 			$crud->set_relation('id_departamento', 'tbl_departamento', 'nombre_departamento');
 			$crud->set_relation('id_usuario', 'tbl_usuario', 'nombre_usuario');
+
+			$crud->order_by('apellido_personal','ASC');
 
 			$output = $crud->render();
 			

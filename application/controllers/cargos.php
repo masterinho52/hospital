@@ -24,8 +24,9 @@ class Cargos extends CI_Controller {
 	
 	function _example_output($output = null)
 	{
-		$this->load->view('cargo.php',$output);	
+		$this->load->view('cargo.php',$output);
 	}
+
 
 	function index()
 	{
@@ -41,14 +42,15 @@ class Cargos extends CI_Controller {
 			
 			$crud->display_as('nombre_cargo', 'Cargo');
 			$crud->display_as('id_usuario', 'Usuario');
-			$crud->display_as('fregistro_cargo', 'Fecha de Registro');
 			
 			$crud->fields('nombre_cargo', 'id_usuario');
-			
+
 			$crud->set_rules('nombre_cargo', 'Nombre del Cargo', 'required|alpha_space');
 			$crud->set_rules('id_usuario', 'Nombre del Usuario', 'required');
 			
 			$crud->set_relation('id_usuario', 'tbl_usuario', 'nombre_usuario');
+
+			$crud->order_by('nombre_cargo','ASC');
 
 			$output = $crud->render();
 			

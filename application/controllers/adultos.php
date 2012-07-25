@@ -35,7 +35,7 @@ class Adultos extends CI_Controller {
 			
 			$crud->set_subject('Adulto');
 			
-			$crud->columns('cedula_adulto', 'nombre_adulto', 'apellido_adulto', 'sexo_adulto', 'fechan_adulto', 'fechai_adulto', 'telefono_adulto', 'id_usuario', 'fregistro_adulto');
+			$crud->columns('apellido_adulto', 'nombre_adulto', 'cedula_adulto', 'sexo_adulto', 'fechan_adulto', 'fechai_adulto', 'telefono_adulto', 'id_usuario', 'fregistro_adulto');
 			
 			$crud->display_as('cedula_adulto', 'Cedula');
 			$crud->display_as('nombre_adulto', 'Nombres');
@@ -60,6 +60,8 @@ class Adultos extends CI_Controller {
 			$crud->set_rules('telefono_adulto', 'Telefono del Adulto', 'required|numeric');
 			
 			$crud->set_relation('id_usuario', 'tbl_usuario', 'nombre_usuario');
+
+			$crud->order_by('apellido_adulto','ASC');
 
 			$output = $crud->render();
 			

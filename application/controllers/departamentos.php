@@ -48,6 +48,8 @@ class Departamentos extends CI_Controller {
 			
 			$crud->set_relation('id_usuario', 'tbl_usuario', 'nombre_usuario');
 
+			$crud->order_by('nombre_departamento','ASC');
+
 			$output = $crud->render();
 			
 			$this->_example_output($output);
