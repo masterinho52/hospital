@@ -10,8 +10,9 @@
 			<script src="<?php echo $file; ?>"></script>
 		<?php endforeach; ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="<?=base_url()?>img/logo.ico" rel="shortcut icon">
 		<link href="<?=base_url()?>css/default.css" rel="stylesheet" type="text/css">
-  		<link rel="stylesheet" type="text/css" href="<?=base_url()?>css/admin.css">
+  		<link href="<?=base_url()?>css/admin.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div id="container">
