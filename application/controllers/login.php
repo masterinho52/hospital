@@ -20,10 +20,10 @@ class Login extends CI_Controller {
 			$data = $this->login_model->check_login(set_value("login"), set_value("password"));
 			if ($data){
 				$this->session->set_userdata("logged_in" , TRUE);
-				$this->session->set_userdata("cedula_usuario" , $data->nombre);
-				$this->session->set_userdata("nombre_usuario", $data->apellido);
-				$this->session->set_userdata("tipo_usuario"	, $data->cargo);
-				$this->session->set_userdata("login" , $data->nivel);
+				$this->session->set_userdata("cedula_usuario" , $data->cedula_usuario);
+				$this->session->set_userdata("nombre_usuario", $data->nombre_usuario);
+				$this->session->set_userdata("tipo_usuario"	, $data->tipo_usuario);
+				$this->session->set_userdata("login" , $data->login);
 
 				redirect('admin/');
 			} else {
