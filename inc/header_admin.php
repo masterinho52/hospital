@@ -4,19 +4,22 @@
 	<ul class="menu"> 
 		<li><a href="<?=base_url()?>admin">Inicio</a></li> 
 		<li> 
-			<a href="#">Configuraciones</a> 
+			<a href="#">Archivo</a> 
 		    <ul class="submenu"> 
-			    <li><a href="<?=base_url()?>adultos">Adulto Mayor</a></li> 
-			    <li><a href="<?=base_url()?>gruposf">Grupo Familiar</a></li> 
-			    <li><a href="<?=base_url()?>departamentos">Departamento</a></li> 
-		        <li><a href="<?=base_url()?>cargos">Cargo</a></li> 
-		        <li><a href="<?=base_url()?>personales">Personal</a></li> 
-		                    
-		        <li><hr></li> 
-		        <li><a href="<?=base_url()?>usuarios">Usuarios</a></li> 
+			    <li><a href="<?=base_url()?>adultos">Registro Adulto Mayor</a></li> 
+			    <li><a href="<?=base_url()?>gruposf">Registro Grupo Familiar</a></li> 
+			    <li><a href="<?=base_url()?>departamentos">Registro Departamento</a></li> 
+		        <li><a href="<?=base_url()?>cargos">Registro Cargo</a></li> 
+		        <li><a href="<?=base_url()?>personales">Registro Personal</a></li> 
+		        <?php if (!$this->$session->userdata("tipo_usuario")=='Admin') { ?>           
+		        	<li><hr></li> 
+		        	<li><a href="<?=base_url()?>usuarios">Usuarios</a></li> 
+		        <?php } ?>
 		   	</ul> 
 		</li> 
-		<li><a href="<?=base_url()?>login/logout">Salir</a></li> 
+		<li><a href="<?=base_url()?>login/logout">Salir</a></li>
+		<li></li>
+		<li><?php if (!$this->session->userdata("tipo_usuario")=='Admin') { echo "Bienvenido Administrador del Sistema"; } if (!$this->session->userdata("tipo_usuario")=='Supervisor') { echo "Bienvenido Supervisor del Sistema"; } if (!$this->session->userdata("tipo_usuario")=='Usuario') { echo "Bienvenido Usuario del Sistema"; } ?></li> 
 		<!-- <li> 
 		    <a href="#">Códigos</a> 
 			<ul class="submenu"> 

@@ -1,1 +1,1 @@
-<p class="footer">Diseñado y Desarrollado por: <strong>Marcos Orozco</strong></p>
+<p class="footer">Diseñado y Desarrollado por: <span class="footer_2">Marcos Orozco</span></p>
