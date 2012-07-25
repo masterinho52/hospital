@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="<?=base_url()?>css/default.css" rel="stylesheet" type="text/css">
   		<link rel="stylesheet" type="text/css" href="<?=base_url()?>css/admin.css">
+  	</head>
 	<body>
 		<div id="container">
 			
@@ -27,6 +28,7 @@
 			<?php include_once("inc/footer.php");?>
 		</div>
 	</body>
+  	<script type="text/javascript" src="<?=base_url()?>js/jquery-1.7.2.min.js"></script>
   	<script type="text/javascript" src="<?=base_url()?>js/application.js"></script>
 </html>
 
