@@ -108,6 +108,8 @@ class Usuarios extends CI_Controller {
       
     	$this->load->helper('security');
     	$post_array['password'] = do_hash($post_array['password'], 'md5');
+    	$post_array['nombre_usuario'] = strtoupper($post_array['nombre_usuario']);
+    	// Devuelve el arreglo para Guardar
     	return $post_array;
        
     }

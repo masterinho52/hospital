@@ -16,5 +16,12 @@ $(document).ready(function(){
 			$(this).addClass("subhover"); //Agregamos la clase subhover
 		}, function(){	//Cunado sale el cursor, sacamos la clase
 			$(this).removeClass("subhover"); 
-	}); 
+	});
+
+	$('input[type="text"]').not('#field-login').keyup(
+		function(){
+			valor = $(this).val();
+			$(this).val(valor.toUpperCase());
+	});
+ 
 });
