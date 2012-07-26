@@ -42,7 +42,7 @@ class Personales extends CI_Controller {
 			$crud->display_as('apellido_personal', 'Apellidos');
 			$crud->display_as('id_cargo', 'Cargo');
 			$crud->display_as('id_departamento', 'Departamento');
-			$crud->display_as('id_usuario', 'Usuario');
+			$crud->display_as('id_usuario', 'Registrado por');
 			$crud->display_as('fregistro_personal', 'Fecha de Registro');
 			
 			$crud->fields('cedula_personal', 'nombre_personal', 'apellido_personal', 'id_cargo', 'id_departamento', 'id_usuario');
@@ -68,6 +68,10 @@ class Personales extends CI_Controller {
 				$crud->unset_delete();
 			}
 
+			// Función a ejecutarse antes de Guardar y Modificar modificac el texto en mayuscula 
+			$crud->callback_before_insert(array($this,'valid_uppercase'));
+    		$crud->callback_before_update(array($this,'valid_uppercase'));
+
 			$output = $crud->render();
 			
 			$this->_example_output($output);
@@ -77,4 +81,12 @@ class Personales extends CI_Controller {
 		}
 	}
 	
+	// Función que Guardarla en mayuscula
+	function valid_uppercase($post_array, $primary_key = null) {
+    	$post_array['cedula_personal'] = strtoupper($post_array['cedula_personal']);
+    	$post_array['nombre_personal'] = strtoupper($post_array['nombre_personal']);
+    	$post_array['apellido_personal'] = strtoupper($post_array['apellido_personal']);
+    	// Devuelve el arreglo para Guardar
+    	return $post_array;
+    }	
 }

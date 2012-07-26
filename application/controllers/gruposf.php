@@ -45,7 +45,7 @@ class Gruposf extends CI_Controller {
 			$crud->display_as('representante_grupo', 'Representante');
 			$crud->display_as('parentesco_grupo', 'Parentesco');
 			$crud->display_as('id_adulto', 'Adulto');
-			$crud->display_as('id_usuario', 'Usuario');
+			$crud->display_as('id_usuario', 'Registrado por');
 			$crud->display_as('fregistro_adulto', 'Fecha de Registro');
 			
 			$crud->fields('cedula_grupo', 'nombre_grupo', 'apellido_grupo', 'direccion_grupo', 'telefono_grupo', 'representante_grupo', 'parentesco_grupo', 'id_adulto', 'id_usuario');
@@ -71,6 +71,10 @@ class Gruposf extends CI_Controller {
 				$crud->unset_delete();
 			}
 
+			// Función a ejecutarse antes de Guardar y Modificar modificac el texto en mayuscula 
+			$crud->callback_before_insert(array($this,'valid_uppercase'));
+    		$crud->callback_before_update(array($this,'valid_uppercase'));
+
 			$output = $crud->render();
 			
 			$this->_example_output($output);
@@ -80,4 +84,15 @@ class Gruposf extends CI_Controller {
 		}
 	}
 	
+	// Función que Guardarla en mayuscula
+	function valid_uppercase($post_array, $primary_key = null) {
+    	$post_array['cedula_grupo'] = strtoupper($post_array['cedula_grupo']);
+    	$post_array['nombre_grupo'] = strtoupper($post_array['nombre_grupo']);
+    	$post_array['apellido_grupo'] = strtoupper($post_array['apellido_grupo']);
+    	$post_array['direccion_grupo'] = strtoupper($post_array['direccion_grupo']);
+    	$post_array['representante_grupo'] = strtoupper($post_array['representante_grupo']);
+    	$post_array['parentesco_grupo'] = strtoupper($post_array['parentesco_grupo']);
+    	// Devuelve el arreglo para Guardar
+    	return $post_array;
+    }	
 }

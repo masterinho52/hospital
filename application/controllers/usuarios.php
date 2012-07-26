@@ -69,10 +69,8 @@ class Usuarios extends CI_Controller {
 			$crud->set_rules('password_confirmacion', 'Campo de Confirmación', 'required|alpha_dash|matches[password]');
 			
 			// Permisos de usuario
-			if ($this->session->userdata("tipo_usuario")=='Supervisor') {
-				$crud->unset_delete();
-			}
-			if ($this->session->userdata("tipo_usuario")=='Usuario') {
+			if (($this->session->userdata("tipo_usuario")=='Supervisor') or ($this->session->userdata("tipo_usuario")=='Usuario')) {
+				$crud->unset_add();
 				$crud->unset_edit();
 				$crud->unset_delete();
 			}
@@ -105,16 +103,16 @@ class Usuarios extends CI_Controller {
 	// Función que Encripta la Clave antes de Guardarla
 	function encrypt_password($post_array, $primary_key = null)
     {
-      
     	$this->load->helper('security');
     	$post_array['password'] = do_hash($post_array['password'], 'md5');
+    	$post_array['password_confirmacion'] = do_hash($post_array['password_confirmacion'], 'md5');
     	$post_array['nombre_usuario'] = strtoupper($post_array['nombre_usuario']);
     	// Devuelve el arreglo para Guardar
     	return $post_array;
        
     }
 
-	// Función a ejecutarse para que al momento de Agregar y Modificar el campo de Clave esté Vacío
+    // Función a ejecutarse para que al momento de Agregar y Modificar el campo de Clave esté Vacío
     function set_password_input_to_empty() {
 	    return "<input type='password' name='password' value='' />";
 	}
