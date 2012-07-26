@@ -99,7 +99,7 @@ class Usuarios extends CI_Controller {
 	// Función que muestra la Vista
 	function _example_output($output = null)
 	{
-		$this->load->view('usuarios.php',$output);
+		$this->load->view('usuario.php',$output);
 	}
 
 	// Función que Encripta la Clave antes de Guardarla
