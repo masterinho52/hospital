@@ -48,7 +48,7 @@ class Adultos extends CI_Controller {
 			$crud->display_as('telefono_adulto', 'Telefono');
 			$crud->display_as('id_usuario', 'Usuario');
 			$crud->display_as('fregistro_adulto', 'Fecha de Registro');
-			
+
 			$crud->fields('cedula_adulto', 'nombre_adulto', 'apellido_adulto', 'sexo_adulto', 'lugarn_adulto', 'fechan_adulto', 'fechai_adulto', 'direccion_adulto', 'telefono_adulto', 'id_usuario');
 			
 			$crud->set_rules('cedula_personal', 'Cedula del Adulto', 'required|numeric');
