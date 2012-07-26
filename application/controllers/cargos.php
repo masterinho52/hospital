@@ -41,7 +41,7 @@ class Cargos extends CI_Controller {
 			$crud->columns('nombre_cargo', 'id_usuario', 'fregistro_cargo');
 			
 			$crud->display_as('nombre_cargo', 'Cargo');
-			$crud->display_as('id_usuario', 'Usuario');
+			$crud->display_as('id_usuario', 'Resgitrado por');
 			
 			$crud->fields('nombre_cargo', 'id_usuario');
 
