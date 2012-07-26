@@ -31,5 +31,5 @@
 			<?php include_once("inc/footer.php");?>
 		</div>
 	</body>
-  	<script type="text/javascript" src="<?=base_url()?>js/valid_usuario.js"></script>
+  	<script type="text/javascript" src="<?=base_url()?>js/application.js"></script>
 </html>
