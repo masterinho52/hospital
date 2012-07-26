@@ -62,6 +62,14 @@ class Adultos extends CI_Controller {
 			$crud->set_relation('id_usuario', 'tbl_usuario', 'nombre_usuario');
 
 			$crud->order_by('apellido_adulto','ASC');
+			
+			if ($this->session->userdata("tipo_usuario")=='Supervisor') {
+				$crud->unset_delete();
+			}
+			if ($this->session->userdata("tipo_usuario")=='Usuario') {
+				$crud->unset_edit();
+				$crud->unset_delete();
+			}
 
 			$output = $crud->render();
 			

@@ -63,6 +63,14 @@ class Gruposf extends CI_Controller {
 
 			$crud->order_by('apellido_grupo','ASC');
 
+			if ($this->session->userdata("tipo_usuario")=='Supervisor') {
+				$crud->unset_delete();
+			}
+			if ($this->session->userdata("tipo_usuario")=='Usuario') {
+				$crud->unset_edit();
+				$crud->unset_delete();
+			}
+
 			$output = $crud->render();
 			
 			$this->_example_output($output);

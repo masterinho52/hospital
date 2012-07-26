@@ -61,6 +61,14 @@ class Usuarios extends CI_Controller {
 			
 			$crud->callback_add_field('phone',array($this,'add_field_callback_1'));
 
+			if ($this->session->userdata("tipo_usuario")=='Supervisor') {
+				$crud->unset_delete();
+			}
+			if ($this->session->userdata("tipo_usuario")=='Usuario') {
+				$crud->unset_edit();
+				$crud->unset_delete();
+			}
+			
 			$output = $crud->render();
 			
 			$this->_example_output($output);
