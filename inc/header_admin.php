@@ -1,6 +1,5 @@
 <header>
 	<img src="<?=base_url()?>img/logo-gob.jpg" alt="">
-				
 	<ul class="menu"> 
 		<li><a href="<?=base_url()?>admin">Inicio</a></li> 
 		<li> 
@@ -17,7 +16,12 @@
 			    <li><a href="<?=base_url()?>gruposf">Registro del Grupo Familiar</a></li>
 		   	</ul> 
 		</li> 
-		<li><a href="<?=base_url()?>login/logout">Salir</a></li>
+		<li class="pull-right">
+			<a href="#">Cuenta: <?php echo $this->session->userdata("nombre_usuario"); ?></a>
+			<ul class="submenu">
+				<li><a href="<?=base_url()?>login/logout">Cerrar Sesion</a></li>
+			</ul>
+		</li>
 	</ul> 
-	<div align="right" style="margin-right:10px;" class="usuario"><?php if ($this->session->userdata("tipo_usuario")=='Administrador') { echo "Bienvenido, ".$this->session->userdata("tipo_usuario")." del Sistema" ; } if ($this->session->userdata("tipo_usuario")=='Supervisor') { echo "Bienvenido, ".$this->session->userdata("tipo_usuario")." del Sistema"; } if ($this->session->userdata("tipo_usuario")=='Usuario') { echo "Bienvenido, ".$this->session->userdata("tipo_usuario")." del Sistema"; } ?></div>
+	<div align="right" style="margin-right:40px;" class="usuario"><?php if ($this->session->userdata("tipo_usuario")=='Administrador') { echo "Bienvenido, ".$this->session->userdata("tipo_usuario")." del Sistema" ; } if ($this->session->userdata("tipo_usuario")=='Supervisor') { echo "Bienvenido, ".$this->session->userdata("tipo_usuario")." del Sistema"; } if ($this->session->userdata("tipo_usuario")=='Usuario') { echo "Bienvenido, ".$this->session->userdata("tipo_usuario")." del Sistema"; } ?></div>
 </header>
