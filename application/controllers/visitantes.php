@@ -41,7 +41,9 @@ class Visitantes extends CI_Controller {
 
 			$crud->order_by('fechai_adulto','DESC');
 
-			$crud->unset_add()->unset_edit()->unset_delete();
+			$crud->unset_add();
+			$crud->unset_edit();
+			$crud->unset_delete();
 
 			$output = $crud->render();
 			
