@@ -16,5 +16,17 @@ $(document).ready(function(){
 			$(this).addClass("subhover"); //Agregamos la clase subhover
 		}, function(){	//Cunado sale el cursor, sacamos la clase
 			$(this).removeClass("subhover"); 
-	}); 
+	});
+
+	$("#field-cedula_usuario").keyup(
+		function() {
+			valor = $("#field-cedula_usuario").val();
+			$("#field-cedula_usuario").val(valor.toUpperCase());
+	});
+
+	$("#field-nombre_usuario").keyup(
+		function() {
+			valor = $("#field-nombre_usuario").val();
+			$("#field-nombre_usuario").val(valor.toUpperCase());
+	});
 });
