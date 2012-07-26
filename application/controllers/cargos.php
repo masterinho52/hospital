@@ -60,6 +60,10 @@ class Cargos extends CI_Controller {
 				$crud->unset_delete();
 			}
 
+			// Función a ejecutarse antes de Guardar y Modificar modificac el texto en mayuscula 
+			$crud->callback_before_insert(array($this,'valid_uppercase'));
+    		$crud->callback_before_update(array($this,'valid_uppercase'));
+
 			$output = $crud->render();
 			
 			$this->_example_output($output);
@@ -68,5 +72,11 @@ class Cargos extends CI_Controller {
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
 		}
 	}
-	
+
+	// Función que Guardarla en mayuscula
+	function valid_uppercase($post_array, $primary_key = null) {
+    	$post_array['nombre_cargo'] = strtoupper($post_array['nombre_cargo']);
+    	// Devuelve el arreglo para Guardar
+    	return $post_array;
+    }	
 }

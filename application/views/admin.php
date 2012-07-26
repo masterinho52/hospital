@@ -29,11 +29,7 @@
 			<?php include_once("inc/footer.php");?>
 		</div>
 	</body>
-<<<<<<< HEAD
 	<script type="text/javascript" src="<?=base_url()?>js/jquery-1.7.2.min.js"></script>
-=======
-  	<script type="text/javascript" src="<?=base_url()?>js/jquery-1.7.2.min.js"></script>
->>>>>>> 297b0fce3d37701aeeba9592e5fb7e057668796c
   	<script type="text/javascript" src="<?=base_url()?>js/application.js"></script>
 </html>
 

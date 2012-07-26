@@ -34,7 +34,7 @@ class Visitantes extends CI_Controller {
 			$crud->display_as('fechan_adulto', 'Fecha de Nacimiento');
 			$crud->display_as('fechai_adulto', 'Fecha de Ingreso');
 			$crud->display_as('telefono_adulto', 'Telefono');
-			$crud->display_as('id_usuario', 'Usuario');
+			$crud->display_as('id_usuario', 'Registrado por');
 			$crud->display_as('fregistro_adulto', 'Fecha de Registro');
 
 			$crud->set_relation('id_usuario', 'tbl_usuario', 'nombre_usuario');

@@ -38,7 +38,7 @@ class Departamentos extends CI_Controller {
 			$crud->columns('nombre_departamento', 'id_usuario', 'fregistro_departamento');
 			
 			$crud->display_as('nombre_departamento', 'Departamento');
-			$crud->display_as('id_usuario', 'Usuario');
+			$crud->display_as('id_usuario', 'Registrado por');
 			$crud->display_as('fregistro_departamento', 'Fecha de Registro');
 			
 			$crud->fields('nombre_departamento', 'id_usuario');
@@ -58,6 +58,10 @@ class Departamentos extends CI_Controller {
 				$crud->unset_delete();
 			}
 
+			// Función a ejecutarse antes de Guardar y Modificar modificac el texto en mayuscula 
+			$crud->callback_before_insert(array($this,'valid_uppercase'));
+    		$crud->callback_before_update(array($this,'valid_uppercase'));
+    		
 			$output = $crud->render();
 			
 			$this->_example_output($output);
@@ -66,5 +70,12 @@ class Departamentos extends CI_Controller {
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
 		}
 	}
+
+	// Función que Guardarla en mayuscula
+	function valid_uppercase($post_array, $primary_key = null) {
+    	$post_array['nombre_departamento'] = strtoupper($post_array['nombre_departamento']);
+    	// Devuelve el arreglo para Guardar
+    	return $post_array;
+    }
 	
 }

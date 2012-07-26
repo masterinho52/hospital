@@ -46,7 +46,7 @@ class Adultos extends CI_Controller {
 			$crud->display_as('fechai_adulto', 'Fecha de Ingreso');
 			$crud->display_as('direccion_adulto', 'Direccion');
 			$crud->display_as('telefono_adulto', 'Telefono');
-			$crud->display_as('id_usuario', 'Usuario');
+			$crud->display_as('id_usuario', 'Registrado por');
 			$crud->display_as('fregistro_adulto', 'Fecha de Registro');
 
 			$crud->fields('cedula_adulto', 'nombre_adulto', 'apellido_adulto', 'sexo_adulto', 'lugarn_adulto', 'fechan_adulto', 'fechai_adulto', 'direccion_adulto', 'telefono_adulto', 'id_usuario');
@@ -71,6 +71,10 @@ class Adultos extends CI_Controller {
 				$crud->unset_delete();
 			}
 
+			// Función a ejecutarse antes de Guardar y Modificar modificac el texto en mayuscula 
+			$crud->callback_before_insert(array($this,'valid_uppercase'));
+    		$crud->callback_before_update(array($this,'valid_uppercase'));
+
 			$output = $crud->render();
 			
 			$this->_example_output($output);
@@ -79,5 +83,15 @@ class Adultos extends CI_Controller {
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
 		}
 	}
-	
+
+	// Función que Guardarla en mayuscula
+	function valid_uppercase($post_array, $primary_key = null) {
+    	$post_array['cedula_adulto'] = strtoupper($post_array['cedula_adulto']);
+    	$post_array['nombre_adulto'] = strtoupper($post_array['nombre_adulto']);
+    	$post_array['apellido_adulto'] = strtoupper($post_array['apellido_adulto']);
+    	$post_array['lugarn_adulto'] = strtoupper($post_array['lugarn_adulto']);
+    	$post_array['direccion_adulto'] = strtoupper($post_array['direccion_adulto']);
+    	// Devuelve el arreglo para Guardar
+    	return $post_array;
+    }	
 }
