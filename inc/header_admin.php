@@ -1,5 +1,5 @@
 <header>
-	<img src="<?=base_url()?>img/logo-gob.jpg" alt="">
+	<img border="0" src="<?=base_url()?>img/etiqueta_mpps.jpg" width="900" />
 	<ul class="menu"> 
 		<li><a href="<?=base_url()?>admin">Inicio</a></li> 
 		<li> 

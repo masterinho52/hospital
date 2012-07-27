@@ -2,7 +2,7 @@ $(document).ready(function(){
 		 
 	$("ul.submenu").parent().append("<span></span>"); 
 	
-	$("ul.menu li span").click(function() { //Al hacer click se ejecuta...
+	$("ul.menu li span").hover(function() { //Al hacer click se ejecuta...
 		
 		//Con este codigo aplicamos el movimiento de arriva y abajo para el submenu
 		$(this).parent().find("ul.submenu").slideDown('fast').show(); //Menu desplegable al hacer click
