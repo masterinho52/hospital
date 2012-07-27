@@ -1,4 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+// <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Adultos extends CI_Controller {
 
@@ -37,7 +37,7 @@ class Adultos extends CI_Controller {
 			
 			$crud->columns('apellido_adulto', 'nombre_adulto', 'cedula_adulto', 'sexo_adulto', 'fechan_adulto', 'fechai_adulto', 'telefono_adulto', 'id_usuario', 'fregistro_adulto');
 			
-			$crud->display_as('cedula_adulto', 'Cedula');
+			$crud->display_as('cedula_adulto', 'Cédula');
 			$crud->display_as('nombre_adulto', 'Nombres');
 			$crud->display_as('apellido_adulto', 'Apellidos');
 			$crud->display_as('sexo_adulto', 'Sexo');
