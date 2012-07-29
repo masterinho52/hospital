@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<title>Hospital Especial Dr. Alejandro Próspero Reverend</title>
+		<title>..:: Hospital Especial Dr. Alejandro Próspero Reverend ::..</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="<?=base_url()?>img/logo.png" rel="shortcut icon" >
 		<link href="<?=base_url()?>css/default.css" rel="stylesheet" type="text/css">
@@ -11,7 +11,8 @@
 	<body>
 		<div id="container">
 			<header>
-				<img border="0" src="<?=base_url()?>img/etiqueta_mpps.jpg" width="900" />
+				<img border="0" src="<?=base_url()?>img/etiqueta_mpps.jpg" />
+				<hr>
 			</header>
 
 			<div id="body">

@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<title>Hospital Especial Dr. Alejandro Próspero Reverend</title>
+		<title>..:: Hospital Especial Dr. Alejandro Próspero Reverend ::..</title>
 		<?php foreach($css_files as $file): ?>
 			<link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
 		<?php endforeach; ?>

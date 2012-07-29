@@ -1,5 +1,6 @@
 <header>
-	<img border="0" src="<?=base_url()?>img/etiqueta_mpps.jpg" width="900" />
+	<img border="0" src="<?=base_url()?>img/etiqueta_mpps.jpg" />
+	<hr>
 	<ul class="menu"> 
 		<li><a href="<?=base_url()?>admin">Inicio</a></li> 
 		<li> 
@@ -7,13 +8,39 @@
 		    <ul class="submenu">
 		    	<?php if ($this->session->userdata("tipo_usuario")=='Administrador') { ?>           
 		        	<li><a href="<?=base_url()?>usuarios">Registro de Usuarios</a></li>
-		        	<li><hr></li> 
 		        <?php } ?>
 		        <li><a href="<?=base_url()?>departamentos">Registro del Departamento</a></li>
 				<li><a href="<?=base_url()?>cargos">Registro del Cargo</a></li>
 		        <li><a href="<?=base_url()?>personales">Registro del Personal</a></li> 
 		        <li><a href="<?=base_url()?>adultos">Registro del Adulto Mayor</a></li>
 			    <li><a href="<?=base_url()?>gruposf">Registro del Grupo Familiar</a></li>
+		   	</ul> 
+		</li>
+		<li> 
+			<a href="#">Informes</a> 
+		    <ul class="submenu">
+		    	<?php if ($this->session->userdata("tipo_usuario")=='Administrador') { ?>           
+		        	<li><a href="<?=base_url()?>usuarios">Registro de Usuarios</a></li>
+		        <?php } ?>
+		        <li><a href="<?=base_url()?>departamentos">Registro del Departamento</a></li>
+				<li><a href="<?=base_url()?>cargos">Registro del Cargo</a></li>
+		        <li><a href="<?=base_url()?>personales">Registro del Personal</a></li> 
+		        <li><a href="<?=base_url()?>adultos">Registro del Adulto Mayor</a></li>
+			    <li><a href="<?=base_url()?>gruposf">Registro del Grupo Familiar</a></li>
+		   	</ul> 
+		</li> 
+		<li> 
+			<a href="#">Impresiones</a> 
+		    <ul class="submenu">
+		        <li><a href="<?=base_url()?>departamentos">Registro del Departamento</a></li>
+				<li><a href="<?=base_url()?>cargos">Registro del Cargo</a></li>
+		   	</ul> 
+		</li> 
+		<li> 
+			<a href="#">Reportes</a> 
+		    <ul class="submenu">
+		        <li><a href="<?=base_url()?>departamentos">Registro del Departamento</a></li>
+				<li><a href="<?=base_url()?>cargos">Registro del Cargo</a></li>
 		   	</ul> 
 		</li> 
 		<li class="pull-right">
