@@ -18,7 +18,8 @@
 		<div id="container">
 			
 			<header>
-				<img border="0" src="<?=base_url()?>img/etiqueta_mpps.jpg" width="900"  />
+				<img border="0" src="<?=base_url()?>img/etiqueta_mpps.jpg"  />
+				<hr>
 			</header>
 			
 			<div id="body">
