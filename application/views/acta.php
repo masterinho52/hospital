@@ -22,23 +22,23 @@
 						<tr height="20"><td colspan="4"></td></tr>
 
 						<tr>
-							<td width="10%"></td>
+							<td width="20%"></td>
 							<td width="13%">Representante:</td>
-							<td width="67%"></td>
-							<td width="10%"></td>
+							<td width="47%"></td>
+							<td width="20%"></td>
 						</tr>
 
 						<tr>
-							<td width="10%"></td>
+							<td width="20%"></td>
 							<td width="13%">Adulto:</td>
-							<td width="67%"></td>
-							<td width="10%"></td>
+							<td width="47%"></td>
+							<td width="20%"></td>
 						</tr>
 
 						<tr>
-							<td width="10%"></td>
+							<td width="20%"></td>
 							<td width="13%">Fecha:</td>
-							<td width="67%">
+							<td width="47%">
 								<select name="dia" id="dia" class="fecha">
                                 	<option value="">DIA</option>
 									<script language="JavaScript" type="text/javascript">
@@ -71,7 +71,21 @@
                                    	</script>
                                	</select>
 							</td>
-							<td width="10%"></td>
+							<td width="20%"></td>
+						</tr>
+
+						<tr>
+							<td width="20%"></td>
+							<td width="13%">Trabajador:</td>
+							<td width="47%"></td>
+							<td width="20%"></td>
+						</tr>
+
+						<tr>
+							<td width="20%"></td>
+							<td width="13%">Director(a):</td>
+							<td width="47%"></td>
+							<td width="20%"></td>
 						</tr>
 
 						<tr height="20"><td colspan="4"></td></tr>
