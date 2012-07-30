@@ -24,7 +24,7 @@
 						<label for="login">Usuario: </label>
 						<input type="text" name="login" id="login" placeholder="Nombre de Usuario">
 						<label for="password">Contraseña: </label>
-						<input type="password" name="password" id="password" placeholder="Clave del Usuario">	
+						<input type="password" name="password" id="password" placeholder="Contraseña del Usuario">	
 						<input type="submit" value="Ingresar">
 				        <a href="<?=base_url()?>visitantes" class="enlace_visitor">
 					        <div align="right" style="margin-top:-10px; margin-right:3px;">

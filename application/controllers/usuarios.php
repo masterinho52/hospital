@@ -49,9 +49,9 @@ class Usuarios extends CI_Controller {
 			$crud->display_as('cedula_usuario', 'Cédula');
 			$crud->display_as('nombre_usuario', 'Nombre Completo');
 			$crud->display_as('tipo_usuario', 'Nivel de Usuario');
-			$crud->display_as('login', 'Login');
-			$crud->display_as('password', 'Password');
-			$crud->display_as('password_confirmacion', 'Corfirme su Clave');
+			$crud->display_as('login', 'Usuario');
+			$crud->display_as('password', 'Contraseña');
+			$crud->display_as('password_confirmacion', 'Corfirme su Contraseña');
 			
 
 			// Cambiar tipo de objeto para la Clave
