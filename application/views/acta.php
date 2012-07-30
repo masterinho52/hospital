@@ -18,18 +18,75 @@
 				<p>
 					<h3 class="centrado">ACTA CONVENIO</h3>
 					<form action="<?=base_url()?>impresiones/acta_print" id="formulario" method="get" name="formulario" target="_blank">
-					<table align="center" border="1" cellpadding="0" cellspacing="3" class="texto" width="100%">
-						<tr height="10"><td colspan="3"></td></tr>
+					<table align="center" border="0" cellpadding="0" cellspacing="3" class="texto" width="100%">
+						<tr height="20"><td colspan="4"></td></tr>
 
 						<tr>
-							<td></td>
-							<td>Representante:</td>
-							<td></td>
+							<td width="10%"></td>
+							<td width="13%">Representante:</td>
+							<td width="67%"></td>
+							<td width="10%"></td>
 						</tr>
 
-						<tr height="10"><td colspan="3"></td></tr>
+						<tr>
+							<td width="10%"></td>
+							<td width="13%">Adulto:</td>
+							<td width="67%"></td>
+							<td width="10%"></td>
+						</tr>
+
+						<tr>
+							<td width="10%"></td>
+							<td width="13%">Fecha:</td>
+							<td width="67%">
+								<select name="dia" id="dia" class="fecha">
+                                	<option value="">DIA</option>
+									<script language="JavaScript" type="text/javascript">
+                                       	for(i=1;i<=31;i++){
+                                        	document.write('<option value="'+i+'">'+i+'</option>');
+                                    	}
+                                   	</script>
+                               	</select>
+                               	<select name="mes" id="mes" class="fecha">
+                                	<option value="">MES</option>
+									<option value="ENERO">ENERO</option>
+									<option value="FEBRERO">FEBRERO</option>
+									<option value="MARZO">MARZO</option>
+									<option value="ABRIL">ABRIL</option>
+									<option value="MAYO">MAYO</option>
+									<option value="JUNIO">JUNIO</option>
+									<option value="JULIO">JULIO</option>
+									<option value="AGOSTO">AGOSTO</option>
+									<option value="SEPTIEMBRE">SEPTIEMBRE</option>
+									<option value="OCTUBRE">OCTUBRE</option>
+									<option value="NOVIEMBRE">NOVIEMBRE</option>
+									<option value="DICIEMBRE">DICIEMBRE</option>
+                               	</select>
+                               	<select name="ano" id="ano" class="fecha">
+                                	<option value="">AÑO</option>
+									<script language="JavaScript" type="text/javascript">
+                                       	for(i=1912;i<=2012;i++){
+                                        	document.write('<option value="'+i+'">'+i+'</option>');
+                                    	}
+                                   	</script>
+                               	</select>
+							</td>
+							<td width="10%"></td>
+						</tr>
+
+						<tr height="20"><td colspan="4"></td></tr>
+
+						<tr>
+							<td align="center" colspan="4">
+								<div id="noprint" style="margin-left:13px;">
+									<a id="impri" href="#" onclick="return imprimir();" class="enlace_imprimir">
+										<input type="image" border="0" name="imprimir" id="imprimir" value="Imprimir" src="<?=base_url()?>img/print.png" height="64" width="64" />
+										<div style="margin-left:4px;">Imprimir</div>
+									</a>
+								</div>
+							</td>
+						</tr>
 					</table>
-					<input type="submit" value="Imprimir">
 					</form>
 				</p>
 			</div>

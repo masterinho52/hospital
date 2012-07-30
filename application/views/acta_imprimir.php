@@ -6,6 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="<?=base_url()?>img/logo_bandera.png" rel="shortcut icon" >
 		<link href="<?=base_url()?>css/default.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#impri").click(function imprimir(){
+					$("#noprint").hide();
+					window.print();
+					$("#noprint").show();
+				});
+			});
+    	</script>
 	</head>
   	<body>
 		<table align="center" border="0" cellpadding="0" cellspacing="0" class="informe" width="955">
@@ -32,6 +41,17 @@
 			</tr>
 
 			<tr height="50"><td colspan="3"></td></tr>
+
+			<tr>
+				<td align="left" colspan="3">
+					<div id="noprint" style="margin-left:13px;">
+						<a id="impri" href="#" onclick="return imprimir();" class="enlace_imprimir">
+							<img border="0" src="<?=base_url()?>img/print.png" height="64" width="64" />
+							<div style="margin-left:4px;">Imprimir</div>
+						</a>
+					</div>
+				</td>
+			</tr>
 
 			<tr>
 				<td colspan="3">
@@ -105,7 +125,7 @@
 						<tr>
 							<td width="100"></td>
 							<td align="justify" class="informe_body" width="755">
-								acta que se expide en la ciudad de trujillo a: <span class="informe_body2">,</span>
+								acta que se expide en la ciudad de trujillo a: <span class="informe_body2"><?php if ($_GET['dia']==1) { echo "día uno (01)"; } if ($_GET['dia']==2) { echo "los dos (02) días"; }?> del mes <?php echo $_GET['mes'];?> del <?php echo $_GET['ano'];?>,</span>
 							</td>
 							<td width="100"></td>
 						</tr>
@@ -144,7 +164,18 @@
 									</tr>
 
 									<tr>
-										<td align="center" class="informe_body3" colspan="3">directora</td>
+										<td align="center" colspan="3" class="informe_body3">directora</td>
+									</tr>
+
+									<tr>
+										<td align="left" colspan="3">
+											<div id="noprint">
+												<a id="impri" href="#" onclick="return imprimir();" class="enlace_imprimir">
+													<img border="0" src="<?=base_url()?>img/print.png" height="64" width="64" />
+													<div style="margin-left:4px;">Imprimir</div>
+												</a>
+											</div>
+										</td>
 									</tr>
 								</table>
 							</td>
