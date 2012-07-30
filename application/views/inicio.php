@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>..:: Hospital Especial Dr. Alejandro Próspero Reverend ::..</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="<?=base_url()?>img/logo2.png" rel="shortcut icon" >
+		<link href="<?=base_url()?>img/logo_bandera.png" rel="shortcut icon">
 		<link href="<?=base_url()?>css/default.css" rel="stylesheet" type="text/css">
   		<link href="<?=base_url()?>css/admin.css" rel="stylesheet" type="text/css">
 	</head>
@@ -23,7 +23,7 @@
 						<h4 align="center">Bienvenidos al Sistema</h4>
 						<label for="login">Usuario: </label>
 						<input type="text" name="login" id="login" placeholder="Nombre de Usuario">
-						<label for="password">Clave: </label>
+						<label for="password">Contraseña: </label>
 						<input type="password" name="password" id="password" placeholder="Clave del Usuario">	
 						<input type="submit" value="Ingresar">
 				        <a href="<?=base_url()?>visitantes" class="enlace_visitor">

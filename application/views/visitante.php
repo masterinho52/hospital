@@ -2,7 +2,7 @@
 <html lang="es">
 	<head>
 		<meta charset="utf-8">
-		<title>Hospital Especial Dr. Alejandro Próspero Reverend</title>
+		<title>..:: Hospital Especial Dr. Alejandro Próspero Reverend ::..</title>
 		<?php foreach($css_files as $file): ?>
 			<link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
 		<?php endforeach; ?>
@@ -10,7 +10,7 @@
 			<script src="<?php echo $file; ?>"></script>
 		<?php endforeach; ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="<?=base_url()?>img/logo.png" rel="shortcut icon" >
+		<link href="<?=base_url()?>img/logo_bandera.png" rel="shortcut icon" >
 		<link href="<?=base_url()?>css/default.css" rel="stylesheet" type="text/css">
   		<link href="<?=base_url()?>css/admin.css" rel="stylesheet" type="text/css">
   	</head>
@@ -27,7 +27,7 @@
 				<p>
 					<h3 class="centrado">Lista de Pacientes</h3>
 					<p>
-						<a href="<?=base_url()?>inicio" class="enlace_visitor">Ir al Inicio</a>
+						<a href="<?=base_url()?>inicio" class="enlace_visitor"><-- Regresar</a>
 					</p>
 					<p>
 						<?php echo $output; ?>

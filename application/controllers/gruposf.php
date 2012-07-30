@@ -58,7 +58,7 @@ class Gruposf extends CI_Controller {
 			$crud->set_rules('id_adulto', 'Nombre del Adulto', 'required');
 			$crud->set_rules('id_usuario', 'Nombre del Uusuario', 'required');
 			
-			$crud->set_relation('id_adulto', 'tbl_adulto', '{cedula_adulto} - {nombre_adulto} {apellido_adulto}');
+			$crud->set_relation('id_adulto', 'tbl_adulto', '{apellido_adulto} {nombre_adulto} - {cedula_adulto}');
 			$crud->set_relation('id_usuario', 'tbl_usuario', 'nombre_usuario');
 
 			$crud->order_by('apellido_grupo','ASC');

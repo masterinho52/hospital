@@ -59,7 +59,7 @@ class Usuarios extends CI_Controller {
 			$crud->change_field_type('password_confirmacion','password');
 
 			// Definición de campos que se van a mostrar en Guardar y Modificar
-			$crud->fields('cedula_usuario', 'nombre_usuario', 'tipo_usuario', 'login', 'password', 'password_confirmacion');
+			$crud->fields('cedula_usuario', 'nombre_usuario', 'tipo_usuario');
 
 			// Reglas de Validación
 			$crud->set_rules('cedula_usuario', 'Cédula del Usuario', 'required');
