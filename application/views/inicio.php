@@ -11,8 +11,7 @@
 	<body>
 		<div id="container">
 			<header>
-				<img border="0" src="<?=base_url()?>img/etiqueta_mpps.jpg" />
-				<hr>
+				<img border="0" src="<?=base_url()?>img/etiqueta_mpps.jpg" id="membrete" />
 			</header>
 
 			<div id="body">

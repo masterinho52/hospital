@@ -1,6 +1,5 @@
 <header>
-	<img border="0" src="<?=base_url()?>img/etiqueta_mpps.jpg" />
-	<hr>
+	<img border="0" src="<?=base_url()?>img/etiqueta_mpps.jpg" id="membrete" />
 	<ul class="menu"> 
 		<li><a href="<?=base_url()?>admin">Inicio</a></li> 
 		<li> 
@@ -19,24 +18,24 @@
 		<li> 
 			<a href="#">Impresiones</a> 
 		    <ul class="submenu">
-		    	<li><a href="<?=base_url()?>actas">Acta de Convenio</a></li>
-		    	<li><a href="<?=base_url()?>constancias">Constancia de Visita a Instituciones</a></li>
-		    	<li><a href="<?=base_url()?>controles">Control de Asistencia</a></li>
-		    	<li><a href="<?=base_url()?>cronologias">Cronología de Caso</a></li>
-		    	<li><a href="<?=base_url()?>hojas">Hoja de Vida</a></li>
-		        <li><a href="<?=base_url()?>cierres">Informe de Cierre</a></li>
-		        <li><a href="<?=base_url()?>receptorias">Informe de Receptoria</a></li>
-				<li><a href="<?=base_url()?>sociales">Informe Social</a></li>
+		    	<li><a href="<?=base_url()?>impresiones/acta">Acta de Convenio</a></li>
+		    	<li><a href="<?=base_url()?>impresiones/constancia">Constancia de Visita a Instituciones</a></li>
+		    	<li><a href="<?=base_url()?>impresiones/controle">Control de Asistencia</a></li>
+		    	<li><a href="<?=base_url()?>impresiones/cronologia">Cronología de Caso</a></li>
+		    	<li><a href="<?=base_url()?>impresiones/hoja">Hoja de Vida</a></li>
+		        <li><a href="<?=base_url()?>impresiones/cierre">Informe de Cierre</a></li>
+		        <li><a href="<?=base_url()?>impresiones/receptoria">Informe de Receptoria</a></li>
+				<li><a href="<?=base_url()?>impresiones/social">Informe Social</a></li>
 		   	</ul> 
 		</li> 
 		<li> 
 			<a href="#">Reportes</a> 
 		    <ul class="submenu">
-		        <li><a href="<?=base_url()?>reporte_dptos">Reporte de Departamentos</a></li>
-				<li><a href="<?=base_url()?>reporte_cargos">Reporte de Cargos</a></li>
-		        <li><a href="<?=base_url()?>reporte_personales">Reporte de Personal</a></li> 
-		        <li><a href="<?=base_url()?>reporte_adultos">Reporte de Adultos Mayores</a></li>
-			    <li><a href="<?=base_url()?>reporte_gruposf">Reporte de Grupos Familiares</a></li>
+		        <li><a href="<?=base_url()?>reportes/dptos">Reporte de Departamentos</a></li>
+				<li><a href="<?=base_url()?>reportes/cargos">Reporte de Cargos</a></li>
+		        <li><a href="<?=base_url()?>reportes/personales">Reporte de Personal</a></li> 
+		        <li><a href="<?=base_url()?>reportes/adultos">Reporte de Adultos Mayores</a></li>
+			    <li><a href="<?=base_url()?>reportes/gruposf">Reporte de Grupos Familiares</a></li>
 		   	</ul> 
 		</li>
 		<li> 

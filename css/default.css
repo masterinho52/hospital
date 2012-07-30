@@ -36,13 +36,23 @@
 		padding: 12px 10px 12px 10px;
 	}
 
+	#membrete {
+		border-bottom: 3px solid #FF0000;
+	}
+
 	hr {
 		border: none;
-		height: 2px;
+		height: 3px;
 		margin-top: -3px;
 		width: 955px;
 		color: #FF0000;
 		background-color: #FF0000;
+	}
+
+	.hr {
+		border: none;
+		height: 5px;
+		color: #000;
 	}
 
 	#body{
@@ -89,6 +99,7 @@
 		color: #666;
 		font-weight: bold;
 	}
+
 	h1.centrado {
 		margin-top: 50px;
 	}
@@ -124,21 +135,25 @@
 		background-repeat: no-repeat;
 		background-position: 10px center;
 	}
+
 	.info {
 		color: #00529B;
 		background-color: #BDE5F8;
 		background-image: url('info.png');
 	}
+
 	.success {
 		color: #4F8A10;
 		background-color: #DFF2BF;
 		background-image:url('success.png');
 	}
+
 	.warning {
 		color: #9F6000;
 		background-color: #FEEFB3;
 		background-image: url('warning.png');
 	}
+
 	.error {
 		color: #D8000C;
 		background-color: #FFBABA;
@@ -152,6 +167,7 @@
 		font-size: 12px;
 		font-weight: normal;
 	}
+
 	.enlace_visitor:hover {
 		color: #FF0000;
 		text-decoration: underline;	
@@ -164,9 +180,65 @@
 		font-size: 14px;
 		font-weight: bold;
 	}
+
 	.usuario:hover {
 		color: #0000CC;
 		text-decoration: underline;	
+	}
+
+	.texto {
+		color: #666;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.informe_top {
+		color: #000;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.informe_title {
+		color: #000;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: underline;
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.informe_body {
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 12px;
+		font-weight: normal;
+	}
+
+	.informe_body2 {
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: underline;
+		font-family: Arial;
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+	.informe_body3 {
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 12px;
+		font-weight: bold;
 	}
 
 	h4 {
