@@ -17,7 +17,7 @@
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
 				<p>
 					<h3 class="centrado">ACTA CONVENIO</h3>
-					<form action="<?=base_url()?>impresiones/acta_print" id="formulario" method="get" name="formulario" target="_blank">
+					<form action="<?=base_url()?>impresiones/acta_print" id="formulario" method="post" name="formulario" target="_blank">
 					<table align="center" border="0" cellpadding="0" cellspacing="3" class="texto" width="100%">
 						<tr height="20"><td colspan="4"></td></tr>
 
@@ -42,11 +42,11 @@
 								<select name="dia" id="dia" class="fecha">
                                 	<option value="">DIA</option>
 									<script language="JavaScript" type="text/javascript">
-                                       	for(i=1;i<=31;i++){
+                                       	/*for(i=1;i<=31;i++){
                                         	document.write('<option value="'+i+'">'+i+'</option>');
-                                    	}
+                                    	}*/
                                    	</script>
-                               	</select>
+                               	</select> /
                                	<select name="mes" id="mes" class="fecha">
                                 	<option value="">MES</option>
 									<option value="ENERO">ENERO</option>
@@ -61,13 +61,13 @@
 									<option value="OCTUBRE">OCTUBRE</option>
 									<option value="NOVIEMBRE">NOVIEMBRE</option>
 									<option value="DICIEMBRE">DICIEMBRE</option>
-                               	</select>
+                               	</select> /
                                	<select name="ano" id="ano" class="fecha">
                                 	<option value="">AÑO</option>
 									<script language="JavaScript" type="text/javascript">
-                                       	for(i=1912;i<=2012;i++){
+                                       	/*for(i=<?php echo date("Y");?>;i>=1912;i--){
                                         	document.write('<option value="'+i+'">'+i+'</option>');
-                                    	}
+                                    	}*/
                                    	</script>
                                	</select>
 							</td>
@@ -107,5 +107,6 @@
 			<?php include_once("inc/footer.php");?>
 		</div>
 	</body>
+  	<script type="text/javascript" src="<?=base_url()?>js/jquery-1.7.2.min.js"></script>
   	<script type="text/javascript" src="<?=base_url()?>js/application.js"></script>
 </html>

@@ -125,7 +125,8 @@
 						<tr>
 							<td width="100"></td>
 							<td align="justify" class="informe_body" width="755">
-								acta que se expide en la ciudad de trujillo a: <span class="informe_body2"><?php if ($_GET['dia']==1) { echo "día uno (01)"; } if ($_GET['dia']==2) { echo "los dos (02) días"; }?> del mes <?php echo $_GET['mes'];?> del <?php echo $_GET['ano'];?>,</span>
+								acta que se expide en la ciudad de trujillo a: 
+								<span class="informe_body2"><?=$dia;?> del mes <?=$mes;?> del <?=$ano;?>,</span>
 							</td>
 							<td width="100"></td>
 						</tr>

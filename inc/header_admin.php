@@ -20,7 +20,7 @@
 		    <ul class="submenu">
 		    	<li><a href="<?=base_url()?>impresiones/acta">Acta de Convenio</a></li>
 		    	<li><a href="<?=base_url()?>impresiones/constancia">Constancia de Visita a Instituciones</a></li>
-		    	<li><a href="<?=base_url()?>impresiones/controle">Control de Asistencia</a></li>
+		    	<li><a href="<?=base_url()?>impresiones/control">Control de Asistencia</a></li>
 		    	<li><a href="<?=base_url()?>impresiones/cronologia">Cronología de Caso</a></li>
 		    	<li><a href="<?=base_url()?>impresiones/hoja">Hoja de Vida</a></li>
 		        <li><a href="<?=base_url()?>impresiones/cierre">Informe de Cierre</a></li>
@@ -31,10 +31,10 @@
 		<li> 
 			<a href="#">Reportes</a> 
 		    <ul class="submenu">
-		        <li><a href="<?=base_url()?>reportes/dptos">Reporte de Departamentos</a></li>
-				<li><a href="<?=base_url()?>reportes/cargos">Reporte de Cargos</a></li>
-		        <li><a href="<?=base_url()?>reportes/personales">Reporte de Personal</a></li> 
-		        <li><a href="<?=base_url()?>reportes/adultos">Reporte de Adultos Mayores</a></li>
+		        <li><a href="<?=base_url()?>reportes/departamento">Reporte de Departamentos</a></li>
+				<li><a href="<?=base_url()?>reportes/cargo">Reporte de Cargos</a></li>
+		        <li><a href="<?=base_url()?>reportes/personal">Reporte de Personal</a></li> 
+		        <li><a href="<?=base_url()?>reportes/adulto">Reporte de Adultos Mayores</a></li>
 			    <li><a href="<?=base_url()?>reportes/gruposf">Reporte de Grupos Familiares</a></li>
 		   	</ul> 
 		</li>
