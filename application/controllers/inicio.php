@@ -2,12 +2,10 @@
 
 class Inicio extends CI_Controller {
 
-	function __construct()
-	{
+	function __construct() {
 		parent::__construct();
 	}
-	public function index()
-	{
+	public function index() {
 		$this->load->view('inicio');
 	}
 }

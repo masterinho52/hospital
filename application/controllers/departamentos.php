@@ -2,15 +2,14 @@
 
 class Departamentos extends CI_Controller {
 
-	function __construct()
-	{
+	function __construct() {
 		parent::__construct();
 
 		$this->load->library('session');
 		//$this->load->library('Form_validation');
 		//$this->load->library('grocery_CRUD');
 
-		if (!$this->session->userdata("logged_in")){
+		if (!$this->session->userdata("logged_in")) {
 			redirect('/');
 		}
 		
@@ -20,14 +19,12 @@ class Departamentos extends CI_Controller {
 		$this->load->library('grocery_CRUD');	
 	}
 	
-	function _example_output($output = null)
-	{
+	function _example_output($output = null) {
 		$this->load->view('departamento.php',$output);	
 	}
 
-	function index()
-	{
-		try{
+	function index() {
+		try {
 			/* This is only for the autocompletion */
 			$crud = new grocery_CRUD();
 
@@ -66,7 +63,7 @@ class Departamentos extends CI_Controller {
 			
 			$this->_example_output($output);
 			
-		}catch(Exception $e){
+		} catch(Exception $e) {
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
 		}
 	}

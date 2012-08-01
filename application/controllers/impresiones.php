@@ -1,28 +1,39 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Impresiones extends CI_Controller {
-	function __construct()
-	{
+	function __construct() {
 		parent::__construct();
 		
 		$this->load->library('session');
 
-		if (!$this->session->userdata("logged_in")){
+		if (!$this->session->userdata("logged_in")) {
 			redirect('/');
+		} else {
+			$this->load->model("gruposf_model");
+			$this->load->model("adultos_model");
+			$this->load->model("personales_model");
 		}
 
 		$this->load->database();
 		$this->load->helper('url');
 	}
 
-	public function acta() {
-		$this->load->view('acta.php');	
+	public function acta($data = array()) {
+		$data['gruposf'] = $this->gruposf_model->get_all();
+		$data['adulto'] = $this->adultos_model->get_all();
+		$data['personal'] = $this->personales_model->get_all_bycargo();
+		$data['director'] = $this->personales_model->get_all_bycargo_director();
+		$this->load->view('acta.php', $data);	
 	}
 
 	public function acta_print() {
 		$data['dia'] = $this->conversion_dia($_POST['dia']);
 		$data['mes'] = $_POST['mes'];
 		$data['ano'] = $_POST['ano'];
+		$data['id_grupo'] = $_POST['id_grupo'];
+		$data['id_adulto'] = $_POST['id_adulto'];
+		$data['id_personal'] = $_POST['id_personal'];
+		$data['personal_id'] = $_POST['personal_id'];
 		$this->load->view('acta_imprimir.php', $data);	
 	}
 
@@ -82,7 +93,7 @@ class Impresiones extends CI_Controller {
 		$this->load->view('social_imprimir.php');	
 	}
 
-	public function conversion_dia($dia){
+	public function conversion_dia($dia) {
 		if ($dia==1) { return "día uno (01)"; } 
 		if ($dia==2) { return "los dos (02) días"; }
 		if ($dia==3) { return "los tres (03) días"; } 

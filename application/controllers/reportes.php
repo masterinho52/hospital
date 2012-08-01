@@ -1,13 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Reportes extends CI_Controller {
-	function __construct()
-	{
+	function __construct() {
 		parent::__construct();
 		
 		$this->load->library('session');
 
-		if (!$this->session->userdata("logged_in")){
+		if (!$this->session->userdata("logged_in")) {
 			redirect('/');
 		}
 

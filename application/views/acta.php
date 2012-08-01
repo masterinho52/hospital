@@ -23,31 +23,49 @@
 
 						<tr>
 							<td width="20%"></td>
-							<td width="13%">Representante:</td>
-							<td width="47%"></td>
+							<td width="15%">Representante:</td>
+							<td width="45%">
+								<select name="id_grupo" class="combo">
+			                      	<option value=""></option>
+			                      	<?php if($gruposf) : ?>
+			                    		<?php foreach($gruposf as $row) : ?>
+			                      			<option value="<?=$row->id_grupo;?>"><?=$row->apellido_grupo; ?> <?=$row->nombre_grupo; ?> - <?=$row->cedula_grupo; ?></option>
+			                        	<?php endforeach; ?>
+			                      	<?php endif; ?>
+			                    </select>
+							</td>
 							<td width="20%"></td>
 						</tr>
 
 						<tr>
 							<td width="20%"></td>
-							<td width="13%">Adulto:</td>
-							<td width="47%"></td>
+							<td width="15%">Adulto:</td>
+							<td width="45%">
+								<select name="id_adulto" id="id_adulto" class="combo">
+			                      	<option value=""></option>
+			                      	<?php if($adulto) : ?>
+			                    		<?php foreach($adulto as $row) : ?>
+			                      			<option value="<?=$row->id_adulto;?>"><?=$row->apellido_adulto; ?> <?=$row->nombre_adulto; ?> - <?=$row->cedula_adulto; ?></option>
+			                        	<?php endforeach; ?>
+			                      	<?php endif; ?>
+			                    </select>
+							</td>
 							<td width="20%"></td>
 						</tr>
 
 						<tr>
 							<td width="20%"></td>
-							<td width="13%">Fecha:</td>
-							<td width="47%">
-								<select name="dia" id="dia" class="fecha">
+							<td width="15%">Fecha:</td>
+							<td width="45%">
+								<select name="dia" id="dia" class="combo">
                                 	<option value="">DIA</option>
 									<script language="JavaScript" type="text/javascript">
-                                       	/*for(i=1;i<=31;i++){
+                                       	for(i=1;i<=31;i++){
                                         	document.write('<option value="'+i+'">'+i+'</option>');
-                                    	}*/
+                                    	}
                                    	</script>
                                	</select> /
-                               	<select name="mes" id="mes" class="fecha">
+                               	<select name="mes" id="mes" class="combo">
                                 	<option value="">MES</option>
 									<option value="ENERO">ENERO</option>
 									<option value="FEBRERO">FEBRERO</option>
@@ -62,12 +80,12 @@
 									<option value="NOVIEMBRE">NOVIEMBRE</option>
 									<option value="DICIEMBRE">DICIEMBRE</option>
                                	</select> /
-                               	<select name="ano" id="ano" class="fecha">
+                               	<select name="ano" id="ano" class="combo">
                                 	<option value="">AÑO</option>
 									<script language="JavaScript" type="text/javascript">
-                                       	/*for(i=<?php echo date("Y");?>;i>=1912;i--){
+                                       	for(i=<?php echo date("Y");?>;i>=1912;i--){
                                         	document.write('<option value="'+i+'">'+i+'</option>');
-                                    	}*/
+                                    	}
                                    	</script>
                                	</select>
 							</td>
@@ -76,15 +94,33 @@
 
 						<tr>
 							<td width="20%"></td>
-							<td width="13%">Trabajador:</td>
-							<td width="47%"></td>
+							<td width="15%">Trabajador Social:</td>
+							<td width="45%">
+								<select name="id_personal" id="id_personal"  class="combo">
+			                      	<option value=""></option>
+			                      	<?php if($personal) : ?>
+			                    		<?php foreach($personal as $row) : ?>
+			                      			<option value="<?=$row->id_personal;?>"><?=$row->apellido_personal; ?> <?=$row->nombre_personal; ?> - <?=$row->cedula_personal; ?></option>
+			                        	<?php endforeach; ?>
+			                      	<?php endif; ?>
+			                    </select>
+							</td>
 							<td width="20%"></td>
 						</tr>
 
 						<tr>
 							<td width="20%"></td>
-							<td width="13%">Director(a):</td>
-							<td width="47%"></td>
+							<td width="15%">Director(a):</td>
+							<td width="45%">
+								<select name="personal_id" id="personal_id" class="combo">
+			                      	<option value=""></option>
+			                      	<?php if($director) : ?>
+			                    		<?php foreach($director as $row) : ?>
+			                      			<option value="<?=$row->id_personal;?>"><?=$row->apellido_personal; ?> <?=$row->nombre_personal; ?> - <?=$row->cedula_personal; ?></option>
+			                        	<?php endforeach; ?>
+			                      	<?php endif; ?>
+			                    </select>
+							</td>
 							<td width="20%"></td>
 						</tr>
 
@@ -107,6 +143,18 @@
 			<?php include_once("inc/footer.php");?>
 		</div>
 	</body>
+	<script type="text/javascript" src="<?=base_url()?>js/gen_validatorv4.js"></script>
   	<script type="text/javascript" src="<?=base_url()?>js/jquery-1.7.2.min.js"></script>
   	<script type="text/javascript" src="<?=base_url()?>js/application.js"></script>
+  	<script type="text/javascript">
+		var frmvalidator = new Validator("formulario");
+		frmvalidator.EnableMsgsTogether();
+		frmvalidator.addValidation("id_grupo","req","El campo del Representante esta vacio, ¡Debe seleccionar los Datos!");
+		frmvalidator.addValidation("id_adulto","req","El campo del Adulto esta vacio, ¡Debe seleccionar los Datos!");
+    	frmvalidator.addValidation("ano","req","El campo del Año esta vacio, ¡Debe seleccionar los Datos!");
+		frmvalidator.addValidation("dia","req","El campo del Día esta vacio, ¡Debe seleccionar los Datos!");
+		frmvalidator.addValidation("mes","req","El campo del Mes esta vacio, ¡Debe seleccionar los Datos!");
+    	frmvalidator.addValidation("id_personal","req","El campo del Trabajador Social esta vacio, ¡Debe seleccionar los Datos!");
+    	frmvalidator.addValidation("personal_id","req","El campo del Director(a) esta vacio, ¡Debe seleccionar los Datos!");
+    </script>
 </html>

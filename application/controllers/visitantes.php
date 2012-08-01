@@ -2,8 +2,7 @@
 
 class Visitantes extends CI_Controller {
 
-	function __construct()
-	{
+	function __construct() {
 		parent::__construct();
 		
 		$this->load->database();
@@ -12,14 +11,12 @@ class Visitantes extends CI_Controller {
 		$this->load->library('grocery_CRUD');	
 	}
 	
-	function _example_output($output = null)
-	{
+	function _example_output($output = null) {
 		$this->load->view('visitante.php',$output);	
 	}
 
-	function index()
-	{
-		try{
+	function index() {
+		try {
 			/* This is only for the autocompletion */
 			$crud = new grocery_CRUD();
 
@@ -49,7 +46,7 @@ class Visitantes extends CI_Controller {
 			
 			$this->_example_output($output);
 			
-		}catch(Exception $e){
+		} catch(Exception $e) {
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
 		}
 	}

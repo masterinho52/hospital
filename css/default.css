@@ -160,13 +160,12 @@
 		background-image: url('error.png');
 	}
 
-	.fecha {
-		border: transparent;
+	.combo {
 		background-color: transparent;
 		color: #000;
 		text-decoration: none;
 		font-family: Arial;
-		font-size: 12px;
+		font-size: 14px;
 		font-weight: normal;
 	}
 
@@ -175,15 +174,7 @@
 		text-decoration: none;
 		font-family: Arial;
 		font-size: 14px;
-		.enlace_imprimir {
-		color: #FF0000;
-		text-decoration: none;
-		font-family: Arial;
-		font-size: 14px;
 		font-weight: bold;
-	}
-	f
-		ont-weight: bold;
 	}
 
 	.enlace_imprimir:hover {

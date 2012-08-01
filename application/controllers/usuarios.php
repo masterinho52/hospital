@@ -2,8 +2,7 @@
 
 class Usuarios extends CI_Controller {
 
-	function __construct()
-	{
+	function __construct() {
 		parent::__construct();
 		
 		// Carga de Librería para Manejar las Sesiones
@@ -12,7 +11,7 @@ class Usuarios extends CI_Controller {
 		//$this->load->library('grocery_CRUD');
 
 		// Verifica si hay un usuario Logueado, es decir, si hay una sesión abierta
-		if (!$this->session->userdata("logged_in")){
+		if (!$this->session->userdata("logged_in")) {
 			// Si no es correcto, redirige al usuario hasta la página principal
 			redirect('/');
 		}
@@ -25,9 +24,8 @@ class Usuarios extends CI_Controller {
 		$this->load->library('grocery_CRUD');	
 	}
 	
-	function index()
-	{
-		try{
+	function index() {
+		try {
 			// Función principal
 
 			// Configuración de objetos
@@ -89,27 +87,24 @@ class Usuarios extends CI_Controller {
 			// Llama a la función que va a mostrar la Vista
 			$this->_example_output($output);
 			
-		}catch(Exception $e){
+		} catch(Exception $e) {
 			show_error($e->getMessage().' --- '.$e->getTraceAsString());
 		}
 	}
 	
 	// Función que muestra la Vista
-	function _example_output($output = null)
-	{
+	function _example_output($output = null) {
 		$this->load->view('usuario.php',$output);
 	}
 
 	// Función que Encripta la Clave antes de Guardarla
-	function encrypt_password($post_array, $primary_key = null)
-    {
+	function encrypt_password($post_array, $primary_key = null) {
     	$this->load->helper('security');
     	$post_array['password'] = do_hash($post_array['password'], 'md5');
     	$post_array['password_confirmacion'] = do_hash($post_array['password_confirmacion'], 'md5');
     	$post_array['nombre_usuario'] = strtoupper($post_array['nombre_usuario']);
     	// Devuelve el arreglo para Guardar
     	return $post_array;
-       
     }
 
     // Función a ejecutarse para que al momento de Agregar y Modificar el campo de Clave esté Vacío
