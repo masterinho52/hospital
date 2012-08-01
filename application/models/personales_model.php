@@ -38,4 +38,15 @@ class Personales_model extends CI_Model {
 		$consulta->free_result();
 		return $data;
 	}
+
+	public function get_byid($id_personal)	{
+		$consulta = $this->db->where("id_personal", $id_personal)->get('tbl_personal');
+		if ($consulta->num_rows()) {
+			$data = $consulta->result();
+		} else {
+			$data = FALSE;
+		}
+		$consulta->free_result();
+		return $data;
+	}
 }

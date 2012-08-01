@@ -16,4 +16,15 @@ class Gruposf_model extends CI_Model {
 		$consulta->free_result();
 		return $data;
 	}
+
+	public function get_byid($id_grupo)	{
+		$consulta = $this->db->where("id_grupo", $id_grupo)->get('tbl_grupo_familiar');
+		if ($consulta->num_rows()) {
+			$data = $consulta->result();
+		} else {
+			$data = FALSE;
+		}
+		$consulta->free_result();
+		return $data;
+	}
 }

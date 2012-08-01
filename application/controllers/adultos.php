@@ -32,13 +32,14 @@ class Adultos extends CI_Controller {
 			
 			$crud->set_subject('Adulto');
 			
-			$crud->columns('apellido_adulto', 'nombre_adulto', 'cedula_adulto', 'sexo_adulto', 'fechan_adulto', 'fechai_adulto', 'telefono_adulto', 'id_usuario', 'fregistro_adulto');
+			$crud->columns('apellido_adulto', 'nombre_adulto', 'cedula_adulto', 'fechan_adulto', 'fechai_adulto', 'telefono_adulto', 'id_usuario', 'fregistro_adulto');
 			
 			$crud->display_as('cedula_adulto', 'Cédula');
 			$crud->display_as('nombre_adulto', 'Nombres');
 			$crud->display_as('apellido_adulto', 'Apellidos');
 			$crud->display_as('sexo_adulto', 'Sexo');
 			$crud->display_as('lugarn_adulto', 'Lugar de Nacimiento');
+			$crud->display_as('estadocivil_adulto', 'Estado Civil');
 			$crud->display_as('fechan_adulto', 'Fecha de Nacimiento');
 			$crud->display_as('fechai_adulto', 'Fecha de Ingreso');
 			$crud->display_as('direccion_adulto', 'Direccion');
@@ -51,9 +52,10 @@ class Adultos extends CI_Controller {
 			$crud->set_rules('cedula_personal', 'Cedula del Adulto', 'required|numeric');
 			$crud->set_rules('nombre_personal', 'Nombres del Adulto', 'required|alpha_space');
 			$crud->set_rules('apellido_personal', 'Apellidos del Adulto', 'required|alpha_space');
-			$crud->set_rules('sexo_adulto', 'Sexo del Adulto', 'required');
+			$crud->set_rules('estadocivil_adulto', 'Estado Civil del Adulto', 'required');
 			$crud->set_rules('fechan_adulto', 'Fecha de Nacimiento del Adulto', 'required');
 			$crud->set_rules('fechai_adulto', 'Fecha de Ingreso del Adulto', 'required');
+			$crud->set_rules('direccion_adulto', 'Dirección del Adulto', 'required');
 			$crud->set_rules('telefono_adulto', 'Telefono del Adulto', 'required|numeric');
 			
 			$crud->set_relation('id_usuario', 'tbl_usuario', 'nombre_usuario');

@@ -40,21 +40,6 @@
 		border-bottom: 3px solid #FF0000;
 	}
 
-	hr {
-		border: none;
-		height: 3px;
-		margin-top: -3px;
-		width: 955px;
-		color: #FF0000;
-		background-color: #FF0000;
-	}
-
-	.hr {
-		border: none;
-		height: 5px;
-		color: #000;
-	}
-
 	#body{
 		margin: 0 15px 0 15px;
 	}

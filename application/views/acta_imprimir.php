@@ -6,12 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="<?=base_url()?>img/logo_bandera.png" rel="shortcut icon" >
 		<link href="<?=base_url()?>css/default.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="<?=base_url()?>js/jquery-1.7.2.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$("#impri").click(function imprimir(){
 					$("#noprint").hide();
 					window.print();
-					$("#noprint").show();
+					$("3noprint").show();
 				});
 			});
     	</script>
@@ -23,9 +24,6 @@
 					<img border="0" src="<?=base_url()?>img/etiqueta_mpps.jpg" id="membrete" />
 				</td>
 			</tr>
-
-			<tr height="10"><td colspan="3"></td></tr>
-
 
 			<tr>
 				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/logo_mpps.jpg" /></td>
@@ -40,12 +38,12 @@
 				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/escudo_trujillo.jpg" /></td>
 			</tr>
 
-			<tr height="50"><td colspan="3"></td></tr>
+			<tr height="20"><td colspan="3"></td></tr>
 
 			<tr>
 				<td align="left" colspan="3">
-					<div id="noprint" style="margin-left:13px;">
-						<a id="impri" href="#" onclick="return imprimir();" class="enlace_imprimir">
+					<div id="noprint" style="margin-left:40px;">
+						<a id="impri" href="#" class="enlace_imprimir">
 							<img border="0" src="<?=base_url()?>img/print.png" height="64" width="64" />
 							<div style="margin-left:4px;">Imprimir</div>
 						</a>
@@ -53,32 +51,34 @@
 				</td>
 			</tr>
 
+			<tr height="50"><td colspan="3"></td></tr>
+
 			<tr>
 				<td colspan="3">
 					<table align="center" border="0" cellpadding="0" cellspacing="5" width="100%">
 						<tr><td colspan="3" class="informe_title">acta convenio</td></tr>
 
-						<tr height="30"><td colspan="3"></td></tr>
+						<tr height="40"><td colspan="3"></td></tr>
 
 						<tr>
 							<td width="100"></td>
 							<td align="justify" class="informe_body" width="755">
-								YO, <span class="informe_body2">,</span> venezolano (a), titular de la cédula de identidad nº: <span class="informe_body2">,</span> edad: <span class="informe_body2"></span> años, preofesión: <span class="informe_body2">,</span> dirección de habitación: <span class="informe_body2">,</span>teléfonos: <span class="informe_body2">.</span>
+								YO, <span class="informe_body2"><?=$gruposf[0]->nombre_grupo;?> <?=$gruposf[0]->apellido_grupo;?>,</span> venezolano (a), titular de la cédula de identidad nº: <span class="informe_body2"><?=$gruposf[0]->cedula_grupo;?>,</span> edad: <span class="informe_body2"><?=$gruposf[0]->fechan_grupo;?></span> años, preofesión: <span class="informe_body2"><?=$gruposf[0]->profesion_grupo;?>,</span> dirección de habitación: <span class="informe_body2"><?=$gruposf[0]->direccion_grupo;?>,</span>teléfonos: <span class="informe_body2"><?=$gruposf[0]->telefono_grupo;?>.</span>
 							</td>
 							<td width="100"></td>
 						</tr>
 
-						<tr height="30"><td colspan="3"></td></tr>
+						<tr height="40"><td colspan="3"></td></tr>
 
 						<tr>
 							<td width="100"></td>
 							<td align="justify" class="informe_body" width="755">
-								he ingresado al hospital especial "alejandro prospero reverend", el dia: <span class="informe_body2">,</span> por un lapso a convenir: <span class="informe_body2">,</span> venezolano (a), titular de la cédula de identidad nº: <span class="informe_body2">,</span> fecha de nacimiento: <span class="informe_body2">,</span> edad: <span class="informe_body2"></span> años, estado civil: <span class="informe_body2">,</span> dirección de habitación: <span class="informe_body2">.</span>
+								he ingresado al hospital especial "alejandro prospero reverend", el dia: <span class="informe_body2"><?=$adulto[0]->fechai_adulto;?>,</span> por un lapso a convenir: <span class="informe_body2"><?=$adulto[0]->nombre_adulto;?> <?=$adulto[0]->apellido_adulto;?>,</span> venezolano (a), titular de la cédula de identidad nº: <span class="informe_body2"><?=$adulto[0]->cedula_adulto;?>,</span> fecha de nacimiento: <span class="informe_body2"><?=$adulto[0]->fechan_adulto;?>,</span> edad: <span class="informe_body2"></span> años, estado civil: <span class="informe_body2"><?=$adulto[0]->estadocivil_adulto;?>,</span> dirección de habitación: <span class="informe_body2"><?=$adulto[0]->direccion_adulto;?>.</span>
 							</td>
 							<td width="100"></td>
 						</tr>
 
-						<tr height="20"><td colspan="3"></td></tr>
+						<tr height="40"><td colspan="3"></td></tr>
 
 						<tr>
 							<td width="100"></td>
@@ -120,7 +120,7 @@
 							<td width="100"></td>
 						</tr>
 
-						<tr height="30"><td colspan="3"></td></tr>
+						<tr height="40"><td colspan="3"></td></tr>
 
 						<tr>
 							<td width="100"></td>
@@ -131,11 +131,11 @@
 							<td width="100"></td>
 						</tr>
 
-						<tr height="30"><td colspan="3"></td></tr>
+						<tr height="50"><td colspan="3"></td></tr>
 
 						<tr><td align="center" class="informe_body3" colspan="3">firmas conformes</td></tr>
 
-						<tr height="30"><td colspan="3"></td></tr>
+						<tr height="50"><td colspan="3"></td></tr>
 
 						<tr>
 							<td align="center" colspan="3">
@@ -153,30 +153,19 @@
 									</tr>
 
 									<tr>
-										<td align="center" class="informe_body3" width="300">trabajador social</td>
+										<td align="center" class="informe_body3" width="300"><div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>trabajador social</div></td>
 										<td width="355"></td>
-										<td align="center" class="informe_body3" width="300">persona responsable</td>
+										<td align="center" class="informe_body3" width="300"><div><?=$gruposf[0]->nombre_grupo;?> <?=$gruposf[0]->apellido_grupo;?></div><div>persona responsable</div></td>
 									</tr>
 
-									<tr height="30"><td colspan="3"></td></tr>
+									<tr height="50"><td colspan="3"></td></tr>
 
 									<tr>
 										<td align="center" class="informe_body3" colspan="3"><span class="hr">____________________________________</span></td>
 									</tr>
 
 									<tr>
-										<td align="center" colspan="3" class="informe_body3">directora</td>
-									</tr>
-
-									<tr>
-										<td align="left" colspan="3">
-											<div id="noprint">
-												<a id="impri" href="#" onclick="return imprimir();" class="enlace_imprimir">
-													<img border="0" src="<?=base_url()?>img/print.png" height="64" width="64" />
-													<div style="margin-left:4px;">Imprimir</div>
-												</a>
-											</div>
-										</td>
+										<td align="center" colspan="3" class="informe_body3"><div><?=$director[0]->instruccion_personal;?> <?=$director[0]->nombre_personal;?> <?=$director[0]->apellido_personal;?></div><div>director(a)</div></td>
 									</tr>
 								</table>
 							</td>

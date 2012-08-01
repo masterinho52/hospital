@@ -30,10 +30,10 @@ class Impresiones extends CI_Controller {
 		$data['dia'] = $this->conversion_dia($_POST['dia']);
 		$data['mes'] = $_POST['mes'];
 		$data['ano'] = $_POST['ano'];
-		$data['id_grupo'] = $_POST['id_grupo'];
-		$data['id_adulto'] = $_POST['id_adulto'];
-		$data['id_personal'] = $_POST['id_personal'];
-		$data['personal_id'] = $_POST['personal_id'];
+		$data['gruposf'] = $this->gruposf_model->get_byid($_POST['id_grupo']);
+		$data['adulto'] = $this->adultos_model->get_byid($_POST['id_adulto']);
+		$data['personal'] = $this->personales_model->get_byid($_POST['id_personal']);
+		$data['director'] = $this->personales_model->get_byid($_POST['personal_id']);
 		$this->load->view('acta_imprimir.php', $data);	
 	}
 

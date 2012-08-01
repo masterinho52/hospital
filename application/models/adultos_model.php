@@ -16,4 +16,15 @@ class Adultos_model extends CI_Model {
 		$consulta->free_result();
 		return $data;
 	}
+
+	public function get_byid($id_adulto)	{
+		$consulta = $this->db->where("id_adulto", $id_adulto)->get('tbl_adulto');
+		if ($consulta->num_rows()) {
+			$data = $consulta->result();
+		} else {
+			$data = FALSE;
+		}
+		$consulta->free_result();
+		return $data;
+	}
 }

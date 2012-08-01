@@ -25,7 +25,7 @@
 							<td width="20%"></td>
 							<td width="15%">Representante:</td>
 							<td width="45%">
-								<select name="id_grupo" class="combo">
+								<select name="id_grupo" id="id_grupo" class="combo">
 			                      	<option value=""></option>
 			                      	<?php if($gruposf) : ?>
 			                    		<?php foreach($gruposf as $row) : ?>
@@ -143,9 +143,9 @@
 			<?php include_once("inc/footer.php");?>
 		</div>
 	</body>
-	<script type="text/javascript" src="<?=base_url()?>js/gen_validatorv4.js"></script>
   	<script type="text/javascript" src="<?=base_url()?>js/jquery-1.7.2.min.js"></script>
   	<script type="text/javascript" src="<?=base_url()?>js/application.js"></script>
+  	<script type="text/javascript" src="<?=base_url()?>js/gen_validatorv4.js"></script>
   	<script type="text/javascript">
 		var frmvalidator = new Validator("formulario");
 		frmvalidator.EnableMsgsTogether();
