@@ -149,8 +149,8 @@
   	<script type="text/javascript">
 		var frmvalidator = new Validator("formulario");
 		frmvalidator.EnableMsgsTogether();
-		frmvalidator.addValidation("id_grupo","req","El campo del Representante esta vacio, ¡Debe seleccionar los Datos!");
-		frmvalidator.addValidation("id_adulto","req","El campo del Adulto esta vacio, ¡Debe seleccionar los Datos!");
+		/*frmvalidator.addValidation("id_representante","req","El campo del Representante esta vacio, ¡Debe seleccionar los Datos!");
+		*/frmvalidator.addValidation("id_adulto","req","El campo del Adulto esta vacio, ¡Debe seleccionar los Datos!");
     	frmvalidator.addValidation("ano","req","El campo del Año esta vacio, ¡Debe seleccionar los Datos!");
 		frmvalidator.addValidation("dia","req","El campo del Día esta vacio, ¡Debe seleccionar los Datos!");
 		frmvalidator.addValidation("mes","req","El campo del Mes esta vacio, ¡Debe seleccionar los Datos!");

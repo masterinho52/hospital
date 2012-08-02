@@ -166,7 +166,7 @@
 									<tr>
 										<td align="center" class="informe_body3" width="300"><div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>trabajador social</div></td>
 										<td width="355"></td>
-										<td align="center" class="informe_body3" width="300"><div><?=$gruposf[0]->nombre_grupo;?> <?=$gruposf[0]->apellido_grupo;?></div><div>persona responsable</div></td>
+										<td align="center" class="informe_body3" width="300"><div><?=$representante[0]->nombre_representante;?> <?=$representante[0]->apellido_representante;?></div><div>persona responsable</div></td>
 									</tr>
 
 									<tr height="50"><td colspan="3"></td></tr>

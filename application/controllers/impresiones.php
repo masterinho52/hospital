@@ -9,7 +9,7 @@ class Impresiones extends CI_Controller {
 		if (!$this->session->userdata("logged_in")) {
 			redirect('/');
 		} else {
-			$this->load->model("gruposf_model");
+			$this->load->model("representantes_model");
 			$this->load->model("adultos_model");
 			$this->load->model("personales_model");
 		}
@@ -19,7 +19,7 @@ class Impresiones extends CI_Controller {
 	}
 
 	public function acta($data = array()) {
-		$data['gruposf'] = $this->gruposf_model->get_all();
+		$data['representante'] = $this->representantes_model->get_all();
 		$data['adulto'] = $this->adultos_model->get_all();
 		$data['personal'] = $this->personales_model->get_all_bycargo();
 		$data['director'] = $this->personales_model->get_all_bycargo_director();

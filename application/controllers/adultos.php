@@ -32,7 +32,7 @@ class Adultos extends CI_Controller {
 			
 			$crud->set_subject('Adulto');
 			
-			$crud->columns('apellido_adulto', 'nombre_adulto', 'cedula_adulto', 'fechan_adulto', 'fechai_adulto', 'telefono_adulto', 'id_usuario', 'fregistro_adulto');
+			$crud->columns('apellido_adulto', 'nombre_adulto', 'cedula_adulto', 'numero_expediente_adulto', 'fechan_adulto', 'fechai_adulto', 'telefono_adulto', 'id_usuario', 'fregistro_adulto');
 			
 			$crud->display_as('cedula_adulto', 'Cédula');
 			$crud->display_as('nombre_adulto', 'Nombres');
@@ -47,15 +47,18 @@ class Adultos extends CI_Controller {
 			$crud->display_as('ingreso_adulto', 'Ingreso');
 			$crud->display_as('direccion_adulto', 'Direccion');
 			$crud->display_as('telefono_adulto', 'Telefono');
+			$crud->display_as('numero_expediente_adulto', 'Nº Expediente');
 			$crud->display_as('id_usuario', 'Registrado por');
 			$crud->display_as('fregistro_adulto', 'Fecha de Registro');
 
-			$crud->fields('cedula_adulto', 'nombre_adulto', 'apellido_adulto', 'sexo_adulto', 'lugarn_adulto', 'fechan_adulto', 'fechai_adulto', 'direccion_adulto', 'telefono_adulto',  'instruccion_adulto', 'ocupacion_adulto', 'ingreso_adulto', 'id_usuario');
+			$crud->fields('cedula_adulto', 'nombre_adulto', 'apellido_adulto', 'numero_expediente_adulto', 'sexo_adulto', 'lugarn_adulto', 'fechan_adulto', 'fechai_adulto', 'direccion_adulto', 'telefono_adulto',  'instruccion_adulto', 'ocupacion_adulto', 'ingreso_adulto', 'id_usuario');
 			
 			$crud->set_rules('cedula_adulto', 'Cedula del Adulto', 'required|numeric');
 			$crud->set_rules('nombre_adulto', 'Nombres del Adulto', 'required|alpha_space');
 			$crud->set_rules('apellido_adulto', 'Apellidos del Adulto', 'required|alpha_space');
+			$crud->set_rules('numero_expediente_adulto', 'Número de Expediente del Adulto', 'required');
 			$crud->set_rules('estadocivil_adulto', 'Estado Civil del Adulto', 'required');
+			$crud->set_rules('lugarn_adulto', 'Lugar de Nacimiento del Adulto', 'required');
 			$crud->set_rules('fechan_adulto', 'Fecha de Nacimiento del Adulto', 'required');
 			$crud->set_rules('fechai_adulto', 'Fecha de Ingreso del Adulto', 'required');
 			$crud->set_rules('direccion_adulto', 'Dirección del Adulto', 'required');
@@ -96,6 +99,7 @@ class Adultos extends CI_Controller {
     	$post_array['apellido_adulto'] = strtoupper($post_array['apellido_adulto']);
     	$post_array['lugarn_adulto'] = strtoupper($post_array['lugarn_adulto']);
     	$post_array['direccion_adulto'] = strtoupper($post_array['direccion_adulto']);
+    	$post_array['numero_expediente_adulto'] = strtoupper($post_array['numero_expediente_adulto']);
     	// Devuelve el arreglo para Guardar
     	return $post_array;
     }	
