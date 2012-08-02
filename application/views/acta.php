@@ -25,11 +25,11 @@
 							<td width="20%"></td>
 							<td width="15%">Representante:</td>
 							<td width="45%">
-								<select name="id_grupo" id="id_grupo" class="combo">
+								<select name="id_representante" id="id_representante" class="combo">
 			                      	<option value=""></option>
-			                      	<?php if($gruposf) : ?>
-			                    		<?php foreach($gruposf as $row) : ?>
-			                      			<option value="<?=$row->id_grupo;?>"><?=$row->apellido_grupo; ?> <?=$row->nombre_grupo; ?> - <?=$row->cedula_grupo; ?></option>
+			                      	<?php if($representante) : ?>
+			                    		<?php foreach($representante as $row) : ?>
+			                      			<option value="<?=$row->id_representante;?>"><?=$row->apellido_representante; ?> <?=$row->nombre_representante; ?> - <?=$row->cedula_representante; ?></option>
 			                        	<?php endforeach; ?>
 			                      	<?php endif; ?>
 			                    </select>

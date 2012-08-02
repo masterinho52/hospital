@@ -30,7 +30,7 @@ class Impresiones extends CI_Controller {
 		$data['dia'] = $this->conversion_dia($_POST['dia']);
 		$data['mes'] = $_POST['mes'];
 		$data['ano'] = $_POST['ano'];
-		$data['gruposf'] = $this->gruposf_model->get_byid($_POST['id_grupo']);
+		$data['representante'] = $this->representantes_model->get_byid($_POST['id_representante']);
 		$data['adulto'] = $this->adultos_model->get_byid($_POST['id_adulto']);
 		$data['personal'] = $this->personales_model->get_byid($_POST['id_personal']);
 		$data['director'] = $this->personales_model->get_byid($_POST['personal_id']);

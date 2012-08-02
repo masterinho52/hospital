@@ -42,20 +42,26 @@ class Adultos extends CI_Controller {
 			$crud->display_as('estadocivil_adulto', 'Estado Civil');
 			$crud->display_as('fechan_adulto', 'Fecha de Nacimiento');
 			$crud->display_as('fechai_adulto', 'Fecha de Ingreso');
+			$crud->display_as('instruccion_adulto', 'Grado de Instrucción');
+			$crud->display_as('ocupacion_adulto', 'Ocupación');
+			$crud->display_as('ingreso_adulto', 'Ingreso');
 			$crud->display_as('direccion_adulto', 'Direccion');
 			$crud->display_as('telefono_adulto', 'Telefono');
 			$crud->display_as('id_usuario', 'Registrado por');
 			$crud->display_as('fregistro_adulto', 'Fecha de Registro');
 
-			$crud->fields('cedula_adulto', 'nombre_adulto', 'apellido_adulto', 'sexo_adulto', 'lugarn_adulto', 'fechan_adulto', 'fechai_adulto', 'direccion_adulto', 'telefono_adulto', 'id_usuario');
+			$crud->fields('cedula_adulto', 'nombre_adulto', 'apellido_adulto', 'sexo_adulto', 'lugarn_adulto', 'fechan_adulto', 'fechai_adulto', 'direccion_adulto', 'telefono_adulto',  'instruccion_adulto', 'ocupacion_adulto', 'ingreso_adulto', 'id_usuario');
 			
-			$crud->set_rules('cedula_personal', 'Cedula del Adulto', 'required|numeric');
-			$crud->set_rules('nombre_personal', 'Nombres del Adulto', 'required|alpha_space');
-			$crud->set_rules('apellido_personal', 'Apellidos del Adulto', 'required|alpha_space');
+			$crud->set_rules('cedula_adulto', 'Cedula del Adulto', 'required|numeric');
+			$crud->set_rules('nombre_adulto', 'Nombres del Adulto', 'required|alpha_space');
+			$crud->set_rules('apellido_adulto', 'Apellidos del Adulto', 'required|alpha_space');
 			$crud->set_rules('estadocivil_adulto', 'Estado Civil del Adulto', 'required');
 			$crud->set_rules('fechan_adulto', 'Fecha de Nacimiento del Adulto', 'required');
 			$crud->set_rules('fechai_adulto', 'Fecha de Ingreso del Adulto', 'required');
 			$crud->set_rules('direccion_adulto', 'Dirección del Adulto', 'required');
+			$crud->set_rules('instruccion_adulto', 'Grado de Instrucción del Adulto', 'required');
+			$crud->set_rules('ocupacion_adulto', 'Ocupación del Adulto', 'required');
+			$crud->set_rules('ingreso_adulto', 'Ingreso del Adulto', 'required');
 			$crud->set_rules('telefono_adulto', 'Telefono del Adulto', 'required|numeric');
 			
 			$crud->set_relation('id_usuario', 'tbl_usuario', 'nombre_usuario');

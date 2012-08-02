@@ -10,8 +10,9 @@
 		        <?php } ?>
 		        <li><a href="<?=base_url()?>departamentos">Registro del Departamento</a></li>
 				<li><a href="<?=base_url()?>cargos">Registro del Cargo</a></li>
-		        <li><a href="<?=base_url()?>personales">Registro del Personal</a></li> 
+		        <li><a href="<?=base_url()?>personales">Registro del Personal</a></li>
 		        <li><a href="<?=base_url()?>adultos">Registro del Adulto Mayor</a></li>
+		        <li><a href="<?=base_url()?>representantes">Registro del Representante</a></li>
 			    <li><a href="<?=base_url()?>gruposf">Registro del Grupo Familiar</a></li>
 		   	</ul> 
 		</li>
@@ -35,6 +36,7 @@
 				<li><a href="<?=base_url()?>reportes/cargo">Reporte de Cargos</a></li>
 		        <li><a href="<?=base_url()?>reportes/personal">Reporte de Personal</a></li> 
 		        <li><a href="<?=base_url()?>reportes/adulto">Reporte de Adultos Mayores</a></li>
+		        <li><a href="<?=base_url()?>reportes/representante">Reporte del Representante</a></li>
 			    <li><a href="<?=base_url()?>reportes/gruposf">Reporte de Grupos Familiares</a></li>
 		   	</ul> 
 		</li>
