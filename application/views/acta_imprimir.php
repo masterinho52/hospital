@@ -63,12 +63,12 @@
 						<tr>
 							<td width="100"></td>
 							<td align="justify" class="informe_body" width="755">
-								YO, <span class="informe_body2"><?=$representante[0]->nombre_representante;?> <?=$representante[0]->apellido_representante;?>,</span> venezolano (a),
-								titular de la cédula de identidad nº: <span class="informe_body2"><?=$representante[0]->cedula_representante;?>,</span> 
+								YO, <span class="informe_body2"><?=$adulto[0]->nombre_representante;?> <?=$adulto[0]->apellido_representante;?>,</span> venezolano (a),
+								titular de la cédula de identidad nº: <span class="informe_body2"><?=$adulto[0]->cedula_representante;?>,</span> 
 								edad: <span class="informe_body2"></span> años, 
-								preofesión: <span class="informe_body2"><?=$representante[0]->profesion_representante;?>,</span> 
-								dirección de habitación: <span class="informe_body2"><?=$representante[0]->direccion_representante;?>,</span>
-								teléfonos: <span class="informe_body2"><?=$representante[0]->telefono_representante;?>.</span>
+								preofesión: <span class="informe_body2"><?=$adulto[0]->profesion_representante;?>,</span> 
+								dirección de habitación: <span class="informe_body2"><?=$adulto[0]->direccion_representante;?>,</span>
+								teléfonos: <span class="informe_body2"><?=$adulto[0]->telefono_representante;?>.</span>
 							</td>
 							<td width="100"></td>
 						</tr>
@@ -166,7 +166,7 @@
 									<tr>
 										<td align="center" class="informe_body3" width="300"><div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>trabajador social</div></td>
 										<td width="355"></td>
-										<td align="center" class="informe_body3" width="300"><div><?=$representante[0]->nombre_representante;?> <?=$representante[0]->apellido_representante;?></div><div>persona responsable</div></td>
+										<td align="center" class="informe_body3" width="300"><div><?=$adulto[0]->nombre_representante;?> <?=$adulto[0]->apellido_representante;?></div><div>persona responsable</div></td>
 									</tr>
 
 									<tr height="50"><td colspan="3"></td></tr>

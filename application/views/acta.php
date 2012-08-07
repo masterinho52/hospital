@@ -23,22 +23,6 @@
 
 						<tr>
 							<td width="20%"></td>
-							<td width="15%">Representante:</td>
-							<td width="45%">
-								<select name="id_representante" id="id_representante" class="combo">
-			                      	<option value=""></option>
-			                      	<?php if($representante) : ?>
-			                    		<?php foreach($representante as $row) : ?>
-			                      			<option value="<?=$row->id_representante;?>"><?=$row->apellido_representante; ?> <?=$row->nombre_representante; ?> - <?=$row->cedula_representante; ?></option>
-			                        	<?php endforeach; ?>
-			                      	<?php endif; ?>
-			                    </select>
-							</td>
-							<td width="20%"></td>
-						</tr>
-
-						<tr>
-							<td width="20%"></td>
 							<td width="15%">Adulto:</td>
 							<td width="45%">
 								<select name="id_adulto" id="id_adulto" class="combo">
@@ -149,8 +133,7 @@
   	<script type="text/javascript">
 		var frmvalidator = new Validator("formulario");
 		frmvalidator.EnableMsgsTogether();
-		/*frmvalidator.addValidation("id_representante","req","El campo del Representante esta vacio, ¡Debe seleccionar los Datos!");
-		*/frmvalidator.addValidation("id_adulto","req","El campo del Adulto esta vacio, ¡Debe seleccionar los Datos!");
+		frmvalidator.addValidation("id_adulto","req","El campo del Adulto esta vacio, ¡Debe seleccionar los Datos!");
     	frmvalidator.addValidation("ano","req","El campo del Año esta vacio, ¡Debe seleccionar los Datos!");
 		frmvalidator.addValidation("dia","req","El campo del Día esta vacio, ¡Debe seleccionar los Datos!");
 		frmvalidator.addValidation("mes","req","El campo del Mes esta vacio, ¡Debe seleccionar los Datos!");

@@ -17,8 +17,8 @@ class Adultos_model extends CI_Model {
 		return $data;
 	}
 
-	public function get_byid($id_adulto)	{
-		$consulta = $this->db->where("id_adulto", $id_adulto)->get('tbl_adulto');
+	public function get_byid($id_adulto) {
+		$consulta = $this->db->join('tbl_representante', 'tbl_representante.id_representante=tbl_adulto.id_representante')->where("id_adulto", $id_adulto)->get('tbl_adulto');
 		if ($consulta->num_rows()) {
 			$data = $consulta->result();
 		} else {
