@@ -24,13 +24,13 @@ class Visitantes extends CI_Controller {
 			
 			$crud->columns('fechai_adulto', 'id_adulto', 'apellido_adulto', 'nombre_adulto', 'cedula_adulto', 'fechan_adulto', 'telefono_adulto', 'id_usuario', 'fregistro_adulto');
 			
-			$crud->display_as('id_adulto', 'Codigo');
-			$crud->display_as('cedula_adulto', 'Cedula');
+			$crud->display_as('id_adulto', 'Código');
+			$crud->display_as('cedula_adulto', 'Cédula');
 			$crud->display_as('nombre_adulto', 'Nombres');
 			$crud->display_as('apellido_adulto', 'Apellidos');
 			$crud->display_as('fechan_adulto', 'Fecha de Nacimiento');
 			$crud->display_as('fechai_adulto', 'Fecha de Ingreso');
-			$crud->display_as('telefono_adulto', 'Telefono');
+			$crud->display_as('telefono_adulto', 'Teléfono');
 			$crud->display_as('id_usuario', 'Registrado por');
 			$crud->display_as('fregistro_adulto', 'Fecha de Registro');
 
