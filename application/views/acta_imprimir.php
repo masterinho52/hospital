@@ -54,15 +54,15 @@
 			<tr height="50"><td colspan="3"></td></tr>
 
 			<tr>
-				<td colspan="3">
+				<td colspan="3" width="955">
 					<table align="center" border="0" cellpadding="0" cellspacing="5" width="100%">
 						<tr><td colspan="3" class="informe_title">acta convenio</td></tr>
 
 						<tr height="40"><td colspan="3"></td></tr>
 
 						<tr>
-							<td width="100"></td>
-							<td align="justify" class="informe_body" width="755">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								YO, <span class="informe_body2"><?=$adulto[0]->nombre_representante;?> <?=$adulto[0]->apellido_representante;?>,</span> venezolano (a),
 								titular de la cédula de identidad nº: <span class="informe_body2"><?=$adulto[0]->cedula_representante;?>,</span> 
 								edad: <span class="informe_body2"><?=$edad_r?></span> años, 
@@ -70,14 +70,14 @@
 								dirección de habitación: <span class="informe_body2"><?=$adulto[0]->direccion_representante;?>,</span>
 								teléfonos: <span class="informe_body2"><?=$adulto[0]->telefono_representante;?>.</span>
 							</td>
-							<td width="100"></td>
+							<td width="10%"></td>
 						</tr>
 
 						<tr height="40"><td colspan="3"></td></tr>
 
 						<tr>
-							<td width="100"></td>
-							<td align="justify" class="informe_body" width="755">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								he ingresado al hospital especial "alejandro prospero reverend", el dia: <span class="informe_body2"><?php $fecha=$adulto[0]->fechai_adulto; $fecha1=date("d/m/Y",strtotime($fecha)); echo $fecha1;?>,</span>
 								por un lapso a convenir: <span class="informe_body2"><?=$adulto[0]->nombre_adulto;?> <?=$adulto[0]->apellido_adulto;?>,</span> venezolano (a),
 								titular de la cédula de identidad nº: <span class="informe_body2"><?=$adulto[0]->cedula_adulto;?>,</span> 
@@ -86,93 +86,93 @@
 								estado civil: <span class="informe_body2"><?=$adulto[0]->estadocivil_adulto;?>,</span> 
 								dirección de habitación: <span class="informe_body2"><?=$adulto[0]->direccion_adulto;?>.</span>
 							</td>
-							<td width="100"></td>
+							<td width="10%"></td>
 						</tr>
 
 						<tr height="40"><td colspan="3"></td></tr>
 
 						<tr>
-							<td width="100"></td>
-							<td align="justify" class="informe_body" width="755">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								comprometiendome a cumplir con la dirección de esta institución con las siguientes normas:
 							</td>
-							<td width="100"></td>
+							<td width="10%"></td>
 						</tr>
 						
 						<tr>
-							<td width="100"></td>
-							<td align="justify" class="informe_body" width="755">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								1º visitar por lo mínimo una vez al mes al paciente.
 							</td>
-							<td width="100"></td>
+							<td width="10%"></td>
 						</tr>
 
 						<tr>
-							<td width="100"></td>
-							<td align="justify" class="informe_body" width="755">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								2º estar pendiente de suministrar el tratamiento que le sea indicado, así mismo vestimenta y articulos personales en la medida de sus posibilidades.
 							</td>
-							<td width="100"></td>
+							<td width="10%"></td>
 						</tr>
 
 						<tr>
 							<td width="100"></td>
-							<td align="justify" class="informe_body" width="755">
+							<td align="justify" class="informe_body" width="80%">
 								3º estar pendiente de renovar el acta convenio trismestralmente.
 							</td>
 							<td width="100"></td>
 						</tr>
 
 						<tr>
-							<td width="100"></td>
-							<td align="justify" class="informe_body" width="755">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								4º en caso de fallecimiento del paciente, cubrir los gastos funerarios, entre otros.
 							</td>
-							<td width="100"></td>
+							<td width="10%"></td>
 						</tr>
 
 						<tr height="40"><td colspan="3"></td></tr>
 
 						<tr>
-							<td width="100"></td>
-							<td align="justify" class="informe_body" width="755">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								acta que se expide en la ciudad de trujillo a: 
 								<span class="informe_body2"><?=$dia;?> del mes <?=$mes;?> del <?=$ano;?>,</span>
 							</td>
-							<td width="100"></td>
+							<td width="10%"></td>
 						</tr>
 
-						<tr height="50"><td colspan="3"></td></tr>
+						<tr height="20"><td colspan="3"></td></tr>
 
 						<tr><td align="center" class="informe_body3" colspan="3">firmas conformes</td></tr>
 
-						<tr height="50"><td colspan="3"></td></tr>
+						<tr height="100"><td colspan="3"></td></tr>
 
 						<tr>
 							<td align="center" colspan="3">
 								<table align="center" border="0" cellpadding="0" cellspacing="1" width="100%">
 									<tr>
-										<td align="center" width="300">_<span class="hr">____________________________________</span></td>
-										<td width="355"></td>
-										<td align="center" width="300"><span class="hr">____________________________________</span></td>
+										<td align="center" width="30%"><span class="hr">__________________________________________</span></td>
+										<td width="40%"></td>
+										<td align="center" width="30%"><span class="hr">__________________________________________</span></td>
 									</tr>
 
 									<tr>
-										<td align="center" class="informe_body3" width="300"></td>
-										<td width="355"></td>
-										<td align="center" class="informe_body3" width="300"></td>
+										<td align="center" class="informe_body3" width="30%"></td>
+										<td width="40%"></td>
+										<td align="center" class="informe_body3" width="30%"></td>
 									</tr>
 
 									<tr>
-										<td align="center" class="informe_body3" width="300"><div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>trabajador social</div></td>
-										<td width="355"></td>
-										<td align="center" class="informe_body3" width="300"><div><?=$adulto[0]->nombre_representante;?> <?=$adulto[0]->apellido_representante;?></div><div>persona responsable</div></td>
+										<td align="center" class="informe_body3" width="30%"><div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>trabajador social</div></td>
+										<td width="40%"></td>
+										<td align="center" class="informe_body3" width="30%"><div><?=$adulto[0]->nombre_representante;?> <?=$adulto[0]->apellido_representante;?></div><div>persona responsable</div></td>
 									</tr>
 
 									<tr height="50"><td colspan="3"></td></tr>
 
 									<tr>
-										<td align="center" class="informe_body3" colspan="3"><span class="hr">____________________________________</span></td>
+										<td align="center" class="informe_body3" colspan="3"><span class="hr">__________________________________________</span></td>
 									</tr>
 
 									<tr>

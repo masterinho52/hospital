@@ -54,7 +54,7 @@ class Impresiones extends CI_Controller {
 		$data['motivo'] = $_POST['motivo'];
 		$data['acuerdo'] = $_POST['acuerdo'];
 		$data['personal'] = $this->personales_model->get_byid($_POST['id_personal']);
-		$this->load->view('constancia_imprimir.php');	
+		$this->load->view('constancia_imprimir.php', $data);	
 	}
 
 	public function control($data = array()) {
@@ -62,7 +62,7 @@ class Impresiones extends CI_Controller {
 	}
 
 	public function control_print() {
-		$this->load->view('control_imprimir.php');	
+		$this->load->view('control_imprimir.php', $data);	
 	}
 
 	public function cronologia($data = array()) {
@@ -70,7 +70,7 @@ class Impresiones extends CI_Controller {
 	}
 
 	public function cronologia_print() {
-		$this->load->view('cronologia_imprimir.php');	
+		$this->load->view('cronologia_imprimir.php', $data);	
 	}
 
 	public function hoja($data = array()) {
@@ -78,7 +78,7 @@ class Impresiones extends CI_Controller {
 	}
 
 	public function hoja_print() {
-		$this->load->view('hoja_imprimir.php');	
+		$this->load->view('hoja_imprimir.php', $data);	
 	}
 
 	public function cierre($data = array()) {
@@ -86,7 +86,7 @@ class Impresiones extends CI_Controller {
 	}
 
 	public function cierre_print() {
-		$this->load->view('cierre_imprimir.php');	
+		$this->load->view('cierre_imprimir.php', $data);	
 	}
 
 	public function receptoria($data = array()) {
@@ -94,7 +94,7 @@ class Impresiones extends CI_Controller {
 	}
 
 	public function receptoria_print() {
-		$this->load->view('receptoria_imprimir.php');	
+		$this->load->view('receptoria_imprimir.php', $data);	
 	}
 
 	public function social($data = array()) {
@@ -102,7 +102,7 @@ class Impresiones extends CI_Controller {
 	}
 
 	public function social_print() {
-		$this->load->view('social_imprimir.php');	
+		$this->load->view('social_imprimir.php', $data);	
 	}
 
 	public function fn_edad($fn) {

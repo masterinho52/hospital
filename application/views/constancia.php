@@ -18,7 +18,7 @@
 				<p>
 					<h3 class="centrado">CONSTANCIA DE VISITA A INSTITUCIONES</h3>
 					<form action="<?=base_url()?>impresiones/constancia_print" id="imp_constancia" method="post" name="imp_constancia" target="_blank">
-					<table align="center" border="0" cellpadding="0" cellspacing="3" class="texto" width="100%">
+					<table align="center" border="0" cellpadding="0" cellspacing="2" class="texto" width="100%">
 						<tr height="20"><td colspan="4"></td></tr>
 
 						<tr>
