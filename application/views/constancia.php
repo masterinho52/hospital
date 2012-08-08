@@ -68,7 +68,7 @@
                                	<select name="hora" id="hora" class="combo">
                                 	<option value="">hh</option>
 									<script language="JavaScript" type="text/javascript">
-                                       	for(i=01;i<=12;i++){
+                                       	for(i=1;i<=12;i++){
                                         	document.write('<option value="'+i+'">'+i+'</option>');
                                     	}
                                    	</script>
@@ -76,7 +76,7 @@
                                	<select name="minuto" id="minuto" class="combo">
                                 	<option value="">mm</option>
 									<script language="JavaScript" type="text/javascript">
-                                       	for(i=01;i<=60;i++){
+                                       	for(i=1;i<=60;i++){
                                         	document.write('<option value="'+i+'">'+i+'</option>');
                                     	}
                                    	</script>

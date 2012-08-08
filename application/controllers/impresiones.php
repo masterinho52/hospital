@@ -43,11 +43,11 @@ class Impresiones extends CI_Controller {
 
 	public function constancia_print() {
 		$data['institucion'] = $_POST['institucion'];
-		$data['dia'] = $_POST['dia'];
+		$data['dia'] = $this->conversion_tiempo($_POST['dia']);
 		$data['mes'] = $_POST['mes'];
 		$data['ano'] = $_POST['ano'];
-		$data['hora'] = $_POST['hora'];
-		$data['minuto'] = $_POST['minuto'];
+		$data['hora'] = $this->conversion_tiempo($_POST['hora']);
+		$data['minuto'] = $this->conversion_tiempo($_POST['minuto']);
 		$data['tiempo'] = $_POST['tiempo'];
 		$data['funcionario'] = $_POST['funcionario'];
 		$data['cargo'] = $_POST['cargo'];
@@ -128,33 +128,45 @@ class Impresiones extends CI_Controller {
 		if ($dia==1) { return "día uno (01)"; } 
 		if ($dia==2) { return "los dos (02) días"; }
 		if ($dia==3) { return "los tres (03) días"; } 
-		if ($dia==4) { return "los cuatro (04) días"; } 
-		if ($dia==5) { return "los cinco (05) días";  } 
-		if ($dia==6) { return "los seis (06) días";  } 
-		if ($dia==7) { return "los siete (07) días"; }
-		if ($dia==8) { return "los ocho (08) días";  } 
-		if ($dia==9) { return "los nueve (09) días";  } 
-		if ($dia==10) { return "los diez (10) días";  } 
-		if ($dia==11) { return "los once (11) días";  } 
-		if ($dia==12) { return "los doce (12) días";  }
-		if ($dia==13) { return "los trece (13) días";  }
-		if ($dia==14) { return "los cartoce (14) días";  }
-		if ($dia==15) { return "los quince (15) días";  }
-		if ($dia==16) { return "los dieciséis (16) días";  }
-		if ($dia==17) { return "los diecisiete (17) días";  }
-		if ($dia==18) { return "los dieciocho (18) días";  }
-		if ($dia==19) { return "los diecinueve (19) días";  }
-		if ($dia==20) { return "los veinte (20) días";  }
-		if ($dia==21) { return "los veintiun (21) días";  }
-		if ($dia==22) { return "los veintidos (22) días";  }
-		if ($dia==23) { return "los veintitres (23) días";  }
-		if ($dia==24) { return "los veinticuatro (24) días";  }
-		if ($dia==25) { return "los veinticinco (25) días";  }
-		if ($dia==26) { return "los veintiseis (26) días";  }
-		if ($dia==27) { return "los veintisiete (27) días";  }
-		if ($dia==28) { return "los veintiocho (28) días";  }
-		if ($dia==29) { return "los veintinueve (29) días";  }
-		if ($dia==30) { return "los treinta (30) días";  }
-		if ($dia==31) { return "los treintiun (31) días";  } 
+		if ($dia==4) { return "los cuatro (04) días";} 
+		if ($dia==5) { return "los cinco (05) días"; } 
+		if ($dia==6) { return "los seis (06) días"; } 
+		if ($dia==7) { return "los siete (07) días";}
+		if ($dia==8) { return "los ocho (08) días"; } 
+		if ($dia==9) { return "los nueve (09) días"; } 
+		if ($dia==10) { return "los diez (10) días"; } 
+		if ($dia==11) { return "los once (11) días"; } 
+		if ($dia==12) { return "los doce (12) días"; }
+		if ($dia==13) { return "los trece (13) días"; }
+		if ($dia==14) { return "los cartoce (14) días"; }
+		if ($dia==15) { return "los quince (15) días"; }
+		if ($dia==16) { return "los dieciséis (16) días"; }
+		if ($dia==17) { return "los diecisiete (17) días"; }
+		if ($dia==18) { return "los dieciocho (18) días"; }
+		if ($dia==19) { return "los diecinueve (19) días"; }
+		if ($dia==20) { return "los veinte (20) días"; }
+		if ($dia==21) { return "los veintiun (21) días"; }
+		if ($dia==22) { return "los veintidos (22) días"; }
+		if ($dia==23) { return "los veintitres (23) días"; }
+		if ($dia==24) { return "los veinticuatro (24) días"; }
+		if ($dia==25) { return "los veinticinco (25) días"; }
+		if ($dia==26) { return "los veintiseis (26) días"; }
+		if ($dia==27) { return "los veintisiete (27) días"; }
+		if ($dia==28) { return "los veintiocho (28) días"; }
+		if ($dia==29) { return "los veintinueve (29) días"; }
+		if ($dia==30) { return "los treinta (30) días"; }
+		if ($dia==31) { return "los treintiun (31) días"; } 
+	}
+
+	public function conversion_tiempo($var) {
+		if ($var==1) { return "01"; } 
+		if ($var==2) { return "02"; }
+		if ($var==3) { return "03"; } 
+		if ($var==4) { return "04"; } 
+		if ($var==5) { return "05"; } 
+		if ($var==6) { return "06"; } 
+		if ($var==7) { return "07"; }
+		if ($var==8) { return "08"; } 
+		if ($var==9) { return "09"; }
 	}
 }
