@@ -65,7 +65,7 @@
 							<td align="justify" class="informe_body" width="755">
 								YO, <span class="informe_body2"><?=$adulto[0]->nombre_representante;?> <?=$adulto[0]->apellido_representante;?>,</span> venezolano (a),
 								titular de la cédula de identidad nº: <span class="informe_body2"><?=$adulto[0]->cedula_representante;?>,</span> 
-								edad: <span class="informe_body2"></span> años, 
+								edad: <span class="informe_body2"><?=$edad_r?></span> años, 
 								preofesión: <span class="informe_body2"><?=$adulto[0]->profesion_representante;?>,</span> 
 								dirección de habitación: <span class="informe_body2"><?=$adulto[0]->direccion_representante;?>,</span>
 								teléfonos: <span class="informe_body2"><?=$adulto[0]->telefono_representante;?>.</span>
@@ -81,8 +81,8 @@
 								he ingresado al hospital especial "alejandro prospero reverend", el dia: <span class="informe_body2"><?php $fecha=$adulto[0]->fechai_adulto; $fecha1=date("d/m/Y",strtotime($fecha)); echo $fecha1;?>,</span>
 								por un lapso a convenir: <span class="informe_body2"><?=$adulto[0]->nombre_adulto;?> <?=$adulto[0]->apellido_adulto;?>,</span> venezolano (a),
 								titular de la cédula de identidad nº: <span class="informe_body2"><?=$adulto[0]->cedula_adulto;?>,</span> 
-								fecha de nacimiento: <span class="informe_body2"><?php $fecha1=$adulto[0]->fechan_adulto; $fecha2=date("d/m/Y",strtotime($fecha)); echo $fecha2; ?>,</span> 
-								edad: <span class="informe_body2"></span> años, 
+								fecha de nacimiento: <span class="informe_body2"><?=$adulto[0]->fechan_adulto;?>,</span> 
+								edad: <span class="informe_body2"><?=$edad?></span> años, 
 								estado civil: <span class="informe_body2"><?=$adulto[0]->estadocivil_adulto;?>,</span> 
 								dirección de habitación: <span class="informe_body2"><?=$adulto[0]->direccion_adulto;?>.</span>
 							</td>

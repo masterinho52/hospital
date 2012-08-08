@@ -31,6 +31,8 @@ class Impresiones extends CI_Controller {
 		$data['adulto'] = $this->adultos_model->get_byid($_POST['id_adulto']);
 		$data['personal'] = $this->personales_model->get_byid($_POST['id_personal']);
 		$data['director'] = $this->personales_model->get_byid($_POST['personal_id']);
+		$data['edad'] = $this->fn_edad($data['adulto'][0]->fechan_adulto);
+		$data['edad_r'] = $this->fn_edad($data['adulto'][0]->fechan_representante);
 		$this->load->view('acta_imprimir.php', $data);	
 	}
 
@@ -90,6 +92,26 @@ class Impresiones extends CI_Controller {
 		$this->load->view('social_imprimir.php');	
 	}
 
+	public function fn_edad($fn) {
+
+		$fecha = explode('-', $fn);
+		$Yactual = date('Y');
+		$Mactual = date('m');
+		$Dactual = date('d');
+		
+		$edad = $Yactual - $fecha[0];
+
+		if ($Mactual < $fecha[1]) {
+			$edad--;
+		} elseif ($Mactual == $fecha[1]) {
+			if ($Dactual < $fecha[0]) {
+				$edad--;
+			}
+		}
+
+		return $edad;
+		
+	}
 	public function conversion_dia($dia) {
 		if ($dia==1) { return "día uno (01)"; } 
 		if ($dia==2) { return "los dos (02) días"; }
