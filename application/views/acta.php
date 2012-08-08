@@ -17,7 +17,7 @@
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
 				<p>
 					<h3 class="centrado">ACTA CONVENIO</h3>
-					<form action="<?=base_url()?>impresiones/acta_print" id="formulario" method="post" name="formulario" target="_blank">
+					<form action="<?=base_url()?>impresiones/acta_print" id="imp_acta" method="post" name="imp_acta" target="_blank">
 					<table align="center" border="0" cellpadding="0" cellspacing="3" class="texto" width="100%">
 						<tr height="20"><td colspan="4"></td></tr>
 
@@ -131,7 +131,7 @@
   	<script type="text/javascript" src="<?=base_url()?>js/application.js"></script>
   	<script type="text/javascript" src="<?=base_url()?>js/gen_validatorv4.js"></script>
   	<script type="text/javascript">
-		var frmvalidator = new Validator("formulario");
+		var frmvalidator = new Validator("imp_acta");
 		frmvalidator.EnableMsgsTogether();
 		frmvalidator.addValidation("id_adulto","req","El campo del Adulto esta vacio, ¡Debe seleccionar los Datos!");
     	frmvalidator.addValidation("ano","req","El campo del Año esta vacio, ¡Debe seleccionar los Datos!");

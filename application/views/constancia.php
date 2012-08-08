@@ -17,23 +17,23 @@
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
 				<p>
 					<h3 class="centrado">CONSTANCIA DE VISITA A INSTITUCIONES</h3>
-					<form action="<?=base_url()?>impresiones/constancia_print" id="formulario" method="post" name="formulario" target="_blank">
+					<form action="<?=base_url()?>impresiones/constancia_print" id="imp_constancia" method="post" name="imp_constancia" target="_blank">
 					<table align="center" border="0" cellpadding="0" cellspacing="3" class="texto" width="100%">
 						<tr height="20"><td colspan="4"></td></tr>
 
 						<tr>
-							<td width="10%"></td>
+							<td width="15%"></td>
 							<td width="20%">Institución Visitada:</td>
-							<td width="60%">
+							<td width="55%">
 								<input id="institucion" maxlength="70" name="institucion" size="50" />
 							</td>
 							<td width="10%"></td>
 						</tr>
 
 						<tr>
-							<td width="10%"></td>
+							<td width="15%"></td>
 							<td width="20%">Fecha y Hora de la Visita:</td>
-							<td width="60%">
+							<td width="55%">
 								<select name="dia" id="dia" class="combo">
                                 	<option value="">DIA</option>
 									<script language="JavaScript" type="text/javascript">
@@ -82,7 +82,7 @@
                                    	</script>
                                	</select>
                                	<select name="tiempo" id="tiempo" class="combo">
-                                	<option value="">am/pm</option>
+                                	<option value="">am/pm.</option>
 									<option value="am.">am.</option>
 									<option value="pm.">pm.</option>
                                	</select>
@@ -91,45 +91,45 @@
 						</tr>
 
 						<tr>
-							<td width="10%"></td>
+							<td width="15%"></td>
 							<td width="20%">Funcionario Entrevistado:</td>
-							<td width="60%">
+							<td width="55%">
 								<input id="funcionario" maxlength="50" name="funcionario" size="50" />
 							</td>
 							<td width="10%"></td>
 						</tr>
 
 						<tr>
-							<td width="10%"></td>
+							<td width="15%"></td>
 							<td width="20%">Cargo del Funcionario:</td>
-							<td width="60%">
+							<td width="55%">
 								<input id="cargo" maxlength="30" name="cargo" size="30" />
 							</td>
 							<td width="10%"></td>
 						</tr>
 
 						<tr>
-							<td width="10%"></td>
+							<td width="15%"></td>
 							<td valign="top" width="20%">Motivo de la Visita:</td>
-							<td width="60%">
+							<td width="55%">
 								<textarea id="motivo" cols="29" name="motivo" rows="3"></textarea>
 							</td>
 							<td width="10%"></td>
 						</tr>
 
 						<tr>
-							<td width="10%"></td>
+							<td width="15%"></td>
 							<td valign="top" width="20%">Acuerdos Establecidos:</td>
-							<td width="60%">
+							<td width="55%">
 								<textarea id="acuerdo" cols="29" name="acuerdo" rows="3"></textarea>
 							</td>
 							<td width="10%"></td>
 						</tr>
 
 						<tr>
-							<td width="10%"></td>
+							<td width="15%"></td>
 							<td width="20%">Trabajador Social:</td>
-							<td width="60%">
+							<td width="55%">
 								<select name="id_personal" id="id_personal" class="combo">
 			                      	<option value=""></option>
 			                      	<?php if($personal) : ?>
@@ -165,12 +165,19 @@
   	<script type="text/javascript" src="<?=base_url()?>js/application.js"></script>
   	<script type="text/javascript" src="<?=base_url()?>js/gen_validatorv4.js"></script>
   	<script type="text/javascript">
-		var frmvalidator = new Validator("formulario");
+		var frmvalidator = new Validator("imp_constancia");
 		frmvalidator.EnableMsgsTogether();
-		frmvalidator.addValidation("id_adulto","req","El campo del Adulto esta vacio, ¡Debe seleccionar los Datos!");
+    	frmvalidator.addValidation("institucion","req","El campo de la Institución esta vacio, ¡Debe ingresar los Datos!");
     	frmvalidator.addValidation("ano","req","El campo del Año esta vacio, ¡Debe seleccionar los Datos!");
 		frmvalidator.addValidation("dia","req","El campo del Día esta vacio, ¡Debe seleccionar los Datos!");
 		frmvalidator.addValidation("mes","req","El campo del Mes esta vacio, ¡Debe seleccionar los Datos!");
+		frmvalidator.addValidation("hora","req","El campo de la Hora esta vacio, ¡Debe seleccionar los Datos!");
+		frmvalidator.addValidation("minuto","req","El campo de los Minutos esta vacio, ¡Debe seleccionar los Datos!");
+		frmvalidator.addValidation("tiempo","req","El campo del Tiempo (am/pm.) esta vacio, ¡Debe seleccionar los Datos!");
+		frmvalidator.addValidation("funcionario","req","El campo del Funcionario esta vacio, ¡Debe ingresar los Datos!");
+		frmvalidator.addValidation("cargo","req","El campo del Cargo esta vacio, ¡Debe ingresar los Datos!");
+		frmvalidator.addValidation("motivo","req","El campo del Motivo esta vacio, ¡Debe ingresar los Datos!");
+		frmvalidator.addValidation("acuerdo","req","El campo del Acuerdo esta vacio, ¡Debe ingresar los Datos!");
     	frmvalidator.addValidation("id_personal","req","El campo del Trabajador Social esta vacio, ¡Debe seleccionar los Datos!");
     </script>
 </html>
