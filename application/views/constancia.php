@@ -16,31 +16,24 @@
 			<div id="body">
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
 				<p>
-					<h3 class="centrado">ACTA CONVENIO</h3>
-					<form action="<?=base_url()?>impresiones/acta_print" id="formulario" method="post" name="formulario" target="_blank">
+					<h3 class="centrado">CONSTANCIA DE VISITA A INSTITUCIONES</h3>
+					<form action="<?=base_url()?>impresiones/constancia_print" id="formulario" method="post" name="formulario" target="_blank">
 					<table align="center" border="0" cellpadding="0" cellspacing="3" class="texto" width="100%">
 						<tr height="20"><td colspan="4"></td></tr>
 
 						<tr>
-							<td width="20%"></td>
-							<td width="15%">Adulto:</td>
-							<td width="45%">
-								<select name="id_adulto" id="id_adulto" class="combo">
-			                      	<option value=""></option>
-			                      	<?php if($adulto) : ?>
-			                    		<?php foreach($adulto as $row) : ?>
-			                      			<option value="<?=$row->id_adulto;?>"><?=$row->apellido_adulto; ?> <?=$row->nombre_adulto; ?> - <?=$row->cedula_adulto; ?></option>
-			                        	<?php endforeach; ?>
-			                      	<?php endif; ?>
-			                    </select>
+							<td width="10%"></td>
+							<td width="20%">Institución Visitada:</td>
+							<td width="60%">
+								<input id="institucion" maxlength="70" name="institucion" size="50" />
 							</td>
-							<td width="20%"></td>
+							<td width="10%"></td>
 						</tr>
 
 						<tr>
-							<td width="20%"></td>
-							<td width="15%">Fecha:</td>
-							<td width="45%">
+							<td width="10%"></td>
+							<td width="20%">Fecha y Hora de la Visita:</td>
+							<td width="60%">
 								<select name="dia" id="dia" class="combo">
                                 	<option value="">DIA</option>
 									<script language="JavaScript" type="text/javascript">
@@ -71,15 +64,72 @@
                                         	document.write('<option value="'+i+'">'+i+'</option>');
                                     	}
                                    	</script>
+                               	</select> - 
+                               	<select name="hora" id="hora" class="combo">
+                                	<option value="">hh</option>
+									<script language="JavaScript" type="text/javascript">
+                                       	for(i=01;i<=12;i++){
+                                        	document.write('<option value="'+i+'">'+i+'</option>');
+                                    	}
+                                   	</script>
+                               	</select> :
+                               	<select name="minuto" id="minuto" class="combo">
+                                	<option value="">mm</option>
+									<script language="JavaScript" type="text/javascript">
+                                       	for(i=01;i<=60;i++){
+                                        	document.write('<option value="'+i+'">'+i+'</option>');
+                                    	}
+                                   	</script>
+                               	</select>
+                               	<select name="tiempo" id="tiempo" class="combo">
+                                	<option value="">am/pm</option>
+									<option value="am.">am.</option>
+									<option value="pm.">pm.</option>
                                	</select>
 							</td>
-							<td width="20%"></td>
+							<td width="10%"></td>
 						</tr>
 
 						<tr>
-							<td width="20%"></td>
-							<td width="15%">Trabajador Social:</td>
-							<td width="45%">
+							<td width="10%"></td>
+							<td width="20%">Funcionario Entrevistado:</td>
+							<td width="60%">
+								<input id="funcionario" maxlength="50" name="funcionario" size="50" />
+							</td>
+							<td width="10%"></td>
+						</tr>
+
+						<tr>
+							<td width="10%"></td>
+							<td width="20%">Cargo del Funcionario:</td>
+							<td width="60%">
+								<input id="cargo" maxlength="30" name="cargo" size="30" />
+							</td>
+							<td width="10%"></td>
+						</tr>
+
+						<tr>
+							<td width="10%"></td>
+							<td valign="top" width="20%">Motivo de la Visita:</td>
+							<td width="60%">
+								<textarea id="motivo" cols="29" name="motivo" rows="3"></textarea>
+							</td>
+							<td width="10%"></td>
+						</tr>
+
+						<tr>
+							<td width="10%"></td>
+							<td valign="top" width="20%">Acuerdos Establecidos:</td>
+							<td width="60%">
+								<textarea id="acuerdo" cols="29" name="acuerdo" rows="3"></textarea>
+							</td>
+							<td width="10%"></td>
+						</tr>
+
+						<tr>
+							<td width="10%"></td>
+							<td width="20%">Trabajador Social:</td>
+							<td width="60%">
 								<select name="id_personal" id="id_personal" class="combo">
 			                      	<option value=""></option>
 			                      	<?php if($personal) : ?>
@@ -89,23 +139,7 @@
 			                      	<?php endif; ?>
 			                    </select>
 							</td>
-							<td width="20%"></td>
-						</tr>
-
-						<tr>
-							<td width="20%"></td>
-							<td width="15%">Director(a):</td>
-							<td width="45%">
-								<select name="personal_id" id="personal_id" class="combo">
-			                      	<option value=""></option>
-			                      	<?php if($director) : ?>
-			                    		<?php foreach($director as $row) : ?>
-			                      			<option value="<?=$row->id_personal;?>"><?=$row->apellido_personal; ?> <?=$row->nombre_personal; ?> - <?=$row->cedula_personal; ?></option>
-			                        	<?php endforeach; ?>
-			                      	<?php endif; ?>
-			                    </select>
-							</td>
-							<td width="20%"></td>
+							<td width="10%"></td>
 						</tr>
 
 						<tr height="20"><td colspan="4"></td></tr>
@@ -138,6 +172,5 @@
 		frmvalidator.addValidation("dia","req","El campo del Día esta vacio, ¡Debe seleccionar los Datos!");
 		frmvalidator.addValidation("mes","req","El campo del Mes esta vacio, ¡Debe seleccionar los Datos!");
     	frmvalidator.addValidation("id_personal","req","El campo del Trabajador Social esta vacio, ¡Debe seleccionar los Datos!");
-    	frmvalidator.addValidation("personal_id","req","El campo del Director(a) esta vacio, ¡Debe seleccionar los Datos!");
     </script>
 </html>

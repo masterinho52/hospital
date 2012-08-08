@@ -37,10 +37,23 @@ class Impresiones extends CI_Controller {
 	}
 
 	public function constancia() {
+		$data['personal'] = $this->personales_model->get_all_bycargo();
 		$this->load->view('constancia.php');	
 	}
 
 	public function constancia_print() {
+		$data['institucion'] = $_POST['institucion'];
+		$data['dia'] = $_POST['dia'];
+		$data['mes'] = $_POST['mes'];
+		$data['ano'] = $_POST['ano'];
+		$data['hora'] = $_POST['hora'];
+		$data['minuto'] = $_POST['minuto'];
+		$data['tiempo'] = $_POST['tiempo'];
+		$data['funcionario'] = $_POST['funcionario'];
+		$data['cargo'] = $_POST['cargo'];
+		$data['motivo'] = $_POST['motivo'];
+		$data['acuerdo'] = $_POST['acuerdo'];
+		$data['personal'] = $this->personales_model->get_byid($_POST['id_personal']);
 		$this->load->view('constancia_imprimir.php');	
 	}
 
@@ -93,7 +106,6 @@ class Impresiones extends CI_Controller {
 	}
 
 	public function fn_edad($fn) {
-
 		$fecha = explode('-', $fn);
 		$Yactual = date('Y');
 		$Mactual = date('m');
@@ -110,8 +122,8 @@ class Impresiones extends CI_Controller {
 		}
 
 		return $edad;
-		
 	}
+	
 	public function conversion_dia($dia) {
 		if ($dia==1) { return "día uno (01)"; } 
 		if ($dia==2) { return "los dos (02) días"; }
