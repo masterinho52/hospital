@@ -52,11 +52,11 @@
 				</td>
 			</tr>
 
-			<tr height="20"><td colspan="3"></td></tr>
+			<tr height="30"><td colspan="3"></td></tr>
 
 			<tr><td align="center" colspan="3" class="informe_title">control de asistencia</td></tr>
 
-			<tr height="20"><td colspan="3"></td></tr>
+			<tr height="30"><td colspan="3"></td></tr>
 
 			<tr>
 				<td colspan="3" width="955">
@@ -92,31 +92,31 @@
 							<td align="center" class="informe_body" width="15%"><strong>firma</strong></td>
 						</tr>
 
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 					</table>
 				</td>
 			</tr>

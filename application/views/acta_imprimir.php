@@ -51,14 +51,14 @@
 				</td>
 			</tr>
 
-			<tr height="20"><td colspan="3"></td></tr>
+			<tr height="30"><td colspan="3"></td></tr>
 
 			<tr>
 				<td colspan="3" width="955">
 					<table align="center" border="0" cellpadding="0" cellspacing="5" width="100%">
 						<tr><td colspan="3" class="informe_title">acta convenio</td></tr>
 
-						<tr height="20"><td colspan="3"></td></tr>
+						<tr height="30"><td colspan="3"></td></tr>
 
 						<tr>
 							<td width="10%"></td>
