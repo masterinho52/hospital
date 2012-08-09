@@ -17,7 +17,7 @@
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
 				<p>
 					<h3 class="centrado">CONTROL DE ASISTENCIA</h3>
-					<form action="<?=base_url()?>impresiones/control_print" id="imp_constancia" method="post" name="imp_constancia" target="_blank">
+					<form action="<?=base_url()?>impresiones/control_print" id="formulario" method="post" name="formulario" target="_blank">
 					<table align="center" border="0" cellpadding="0" cellspacing="2" class="texto" width="100%">
 						<tr height="20"><td colspan="4"></td></tr>
 
@@ -110,7 +110,7 @@
   	<script type="text/javascript" src="<?=base_url()?>js/application.js"></script>
   	<script type="text/javascript" src="<?=base_url()?>js/gen_validatorv4.js"></script>
   	<script type="text/javascript">
-		var frmvalidator = new Validator("imp_constancia");
+		var frmvalidator = new Validator("formulario");
 		frmvalidator.EnableMsgsTogether();
     	frmvalidator.addValidation("dia","req","El campo del Día esta vacio, ¡Debe seleccionar los Datos!");
 		frmvalidator.addValidation("mes","req","El campo del Mes esta vacio, ¡Debe seleccionar los Datos!");

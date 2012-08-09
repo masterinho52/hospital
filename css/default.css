@@ -248,6 +248,16 @@
 		font-weight: bold;
 	}
 
+	.informe_body4 {
+		color: #000;
+		float: right;
+		text-transform: uppercase;
+		text-decoration: underline;
+		font-family: Arial;
+		font-size: 12px;
+		font-weight: bold;
+	}
+
 	h4 {
 		color: #FF0000;
 		text-decoration: none;

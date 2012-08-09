@@ -72,10 +72,18 @@ class Impresiones extends CI_Controller {
 	}
 
 	public function cronologia($data = array()) {
+		$data['adulto'] = $this->adultos_model->get_all();
+		$data['personal'] = $this->personales_model->get_all_bycargo();
 		$this->load->view('cronologia.php', $data);	
 	}
 
 	public function cronologia_print() {
+		$data['adulto'] = $this->adultos_model->get_byid($_POST['id_adulto']);
+		$data['dia'] = $this->conversion_tiempo($_POST['dia']);
+		$data['mes'] = $_POST['mes'];
+		$data['ano'] = $_POST['ano'];
+		$data['situacion'] = $_POST['situacion'];
+		$data['personal'] = $this->personales_model->get_byid($_POST['id_personal']);
 		$this->load->view('cronologia_imprimir.php', $data);	
 	}
 
