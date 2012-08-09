@@ -78,10 +78,10 @@
 						<tr>
 							<td width="10%"></td>
 							<td align="justify" class="informe_body" width="80%">
-								he ingresado al hospital especial "alejandro prospero reverend", el dia: <span class="informe_body2"><?php $fecha=$adulto[0]->fechai_adulto; $fecha1=date("d/m/Y",strtotime($fecha)); echo $fecha1;?>,</span>
+								he ingresado al hospital especial "alejandro prospero reverend", el dia: <span class="informe_body2"><?=$fecha=date("d/m/Y",strtotime($adulto[0]->fechai_adulto));?>,</span>
 								por un lapso a convenir: <span class="informe_body2"><?=$adulto[0]->nombre_adulto;?> <?=$adulto[0]->apellido_adulto;?>,</span> venezolano (a),
 								titular de la cédula de identidad nº: <span class="informe_body2"><?=$adulto[0]->cedula_adulto;?>,</span> 
-								fecha de nacimiento: <span class="informe_body2"><?=$fecha=date("d-m-Y",strtotime($adulto[0]->fechan_adulto));?>,</span> 
+								fecha de nacimiento: <span class="informe_body2"><?=$fecha=date("d/m/Y",strtotime($adulto[0]->fechan_adulto));?>,</span> 
 								edad: <span class="informe_body2"><?=$edad?></span> años, 
 								estado civil: <span class="informe_body2"><?=$adulto[0]->estadocivil_adulto;?>,</span> 
 								dirección de habitación: <span class="informe_body2"><?=$adulto[0]->direccion_adulto;?>.</span>
