@@ -16,31 +16,15 @@
 			<div id="body">
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
 				<p>
-					<h3 class="centrado">ACTA CONVENIO</h3>
-					<form action="<?=base_url()?>impresiones/acta_print" id="imp_acta" method="post" name="imp_acta" target="_blank">
+					<h3 class="centrado">CONTROL DE ASISTENCIA</h3>
+					<form action="<?=base_url()?>impresiones/control_print" id="imp_constancia" method="post" name="imp_constancia" target="_blank">
 					<table align="center" border="0" cellpadding="0" cellspacing="2" class="texto" width="100%">
 						<tr height="20"><td colspan="4"></td></tr>
 
 						<tr>
 							<td width="20%"></td>
-							<td width="15%">Adulto:</td>
-							<td width="45%">
-								<select name="id_adulto" id="id_adulto" class="combo">
-			                      	<option value=""></option>
-			                      	<?php if($adulto) : ?>
-			                    		<?php foreach($adulto as $row) : ?>
-			                      			<option value="<?=$row->id_adulto;?>"><?=$row->apellido_adulto; ?> <?=$row->nombre_adulto; ?> - <?=$row->cedula_adulto; ?></option>
-			                        	<?php endforeach; ?>
-			                      	<?php endif; ?>
-			                    </select>
-							</td>
-							<td width="20%"></td>
-						</tr>
-
-						<tr>
-							<td width="20%"></td>
-							<td width="15%">Fecha:</td>
-							<td width="45%">
+							<td width="12%">Fecha:</td>
+							<td width="48%">
 								<select name="dia" id="dia" class="combo">
                                 	<option value="">DIA</option>
 									<script language="JavaScript" type="text/javascript">
@@ -71,39 +55,34 @@
                                         	document.write('<option value="'+i+'">'+i+'</option>');
                                     	}
                                    	</script>
-                               	</select>
+                               	</select> 
 							</td>
 							<td width="20%"></td>
 						</tr>
 
 						<tr>
 							<td width="20%"></td>
-							<td width="15%">Trabajador Social:</td>
-							<td width="45%">
-								<select name="id_personal" id="id_personal" class="combo">
-			                      	<option value=""></option>
-			                      	<?php if($personal) : ?>
-			                    		<?php foreach($personal as $row) : ?>
-			                      			<option value="<?=$row->id_personal;?>"><?=$row->apellido_personal; ?> <?=$row->nombre_personal; ?> - <?=$row->cedula_personal; ?></option>
-			                        	<?php endforeach; ?>
-			                      	<?php endif; ?>
-			                    </select>
+							<td width="12%">Lugar:</td>
+							<td width="48%">
+								<input id="lugar" maxlength="80" name="lugar" size="50" />
 							</td>
 							<td width="20%"></td>
 						</tr>
 
 						<tr>
 							<td width="20%"></td>
-							<td width="15%">Director(a):</td>
-							<td width="45%">
-								<select name="personal_id" id="personal_id" class="combo">
-			                      	<option value=""></option>
-			                      	<?php if($director) : ?>
-			                    		<?php foreach($director as $row) : ?>
-			                      			<option value="<?=$row->id_personal;?>"><?=$row->apellido_personal; ?> <?=$row->nombre_personal; ?> - <?=$row->cedula_personal; ?></option>
-			                        	<?php endforeach; ?>
-			                      	<?php endif; ?>
-			                    </select>
+							<td width="12%">Asunto:</td>
+							<td width="48%">
+								<input id="asunto" maxlength="80" name="asunto" size="50" />
+							</td>
+							<td width="20%"></td>
+						</tr>
+
+						<tr>
+							<td width="20%"></td>
+							<td width="12%">Responsable:</td>
+							<td width="48%">
+								<input id="responsable" maxlength="50" name="responsable" size="50" />
 							</td>
 							<td width="20%"></td>
 						</tr>
@@ -131,13 +110,13 @@
   	<script type="text/javascript" src="<?=base_url()?>js/application.js"></script>
   	<script type="text/javascript" src="<?=base_url()?>js/gen_validatorv4.js"></script>
   	<script type="text/javascript">
-		var frmvalidator = new Validator("imp_acta");
+		var frmvalidator = new Validator("imp_constancia");
 		frmvalidator.EnableMsgsTogether();
-		frmvalidator.addValidation("id_adulto","req","El campo del Adulto esta vacio, ¡Debe seleccionar los Datos!");
     	frmvalidator.addValidation("dia","req","El campo del Día esta vacio, ¡Debe seleccionar los Datos!");
 		frmvalidator.addValidation("mes","req","El campo del Mes esta vacio, ¡Debe seleccionar los Datos!");
-    	frmvalidator.addValidation("ano","req","El campo del Año esta vacio, ¡Debe seleccionar los Datos!");
-    	frmvalidator.addValidation("id_personal","req","El campo del Trabajador Social esta vacio, ¡Debe seleccionar los Datos!");
-    	frmvalidator.addValidation("personal_id","req","El campo del Director(a) esta vacio, ¡Debe seleccionar los Datos!");
+		frmvalidator.addValidation("ano","req","El campo de la Año esta vacio, ¡Debe seleccionar los Datos!");
+		frmvalidator.addValidation("lugar","req","El campo de los Lugar esta vacio, ¡Debe seleccionar los Datos!");
+		frmvalidator.addValidation("asunto","req","El campo del Asunto esta vacio, ¡Debe seleccionar los Datos!");
+		frmvalidator.addValidation("responsable","req","El campo del Responsable esta vacio, ¡Debe ingresar los Datos!");
     </script>
 </html>

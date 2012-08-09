@@ -168,9 +168,9 @@
 		var frmvalidator = new Validator("imp_constancia");
 		frmvalidator.EnableMsgsTogether();
     	frmvalidator.addValidation("institucion","req","El campo de la Institución esta vacio, ¡Debe ingresar los Datos!");
-    	frmvalidator.addValidation("ano","req","El campo del Año esta vacio, ¡Debe seleccionar los Datos!");
-		frmvalidator.addValidation("dia","req","El campo del Día esta vacio, ¡Debe seleccionar los Datos!");
+    	frmvalidator.addValidation("dia","req","El campo del Día esta vacio, ¡Debe seleccionar los Datos!");
 		frmvalidator.addValidation("mes","req","El campo del Mes esta vacio, ¡Debe seleccionar los Datos!");
+		frmvalidator.addValidation("ano","req","El campo del Año esta vacio, ¡Debe seleccionar los Datos!");
 		frmvalidator.addValidation("hora","req","El campo de la Hora esta vacio, ¡Debe seleccionar los Datos!");
 		frmvalidator.addValidation("minuto","req","El campo de los Minutos esta vacio, ¡Debe seleccionar los Datos!");
 		frmvalidator.addValidation("tiempo","req","El campo del Tiempo (am/pm.) esta vacio, ¡Debe seleccionar los Datos!");

@@ -26,20 +26,20 @@
 			</tr>
 
 			<tr>
-				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/logo_mpps.jpg" /></td>
+				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/logo_mpps.jpg" height="130" width="130" /></td>
 				<td align="center" width="655">
 					<table align="center" border="0" cellpadding="0" cellspacing="2" class="informe_top" width="100%">
-						<tr><td>república bolivariana de venezuela</td></tr>
-						<tr><td>ministerio del poder popular para la salud</td></tr>
-						<tr><td>hospital especial dr. "alejandro prospero reverend"</td></tr>
-						<tr><td>mesa de gallardo edo. trujillo</td></tr>
-						<tr><td>coordinación de promoción de salud y</td></tr>
-						<tr><td>prevención de la enfermedad</td></tr>
+						<tr><td align="center">república bolivariana de venezuela</td></tr>
+						<tr><td align="center">ministerio del poder popular para la salud</td></tr>
+						<tr><td align="center">hospital especial dr. "alejandro prospero reverend"</td></tr>
+						<tr><td align="center">mesa de gallardo edo. trujillo</td></tr>
+						<tr><td align="center">coordinación de promoción de salud y</td></tr>
+						<tr><td align="center">prevención de la enfermedad</td></tr>
 					</table>
-				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/escudo_trujillo.jpg" /></td>
+				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/escudo_trujillo.jpg" height="145" width="145" /></td>
 			</tr>
 
-			<tr height="20"><td colspan="3"></td></tr>
+			<tr><td colspan="3"></td></tr>
 
 			<tr>
 				<td align="left" colspan="3">
@@ -52,14 +52,14 @@
 				</td>
 			</tr>
 
-			<tr height="50"><td colspan="3"></td></tr>
+			<tr height="20"><td colspan="3"></td></tr>
 
 			<tr>
 				<td colspan="3" width="955">
 					<table align="center" border="0" cellpadding="0" cellspacing="5" width="100%">
 						<tr><td colspan="3" class="informe_title">constancia de visita a instituciones</td></tr>
 
-						<tr height="40"><td colspan="3"></td></tr>
+						<tr height="20"><td colspan="3"></td></tr>
 
 						<tr>
 							<td width="20%"></td>

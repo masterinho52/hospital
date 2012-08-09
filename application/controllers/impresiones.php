@@ -62,6 +62,12 @@ class Impresiones extends CI_Controller {
 	}
 
 	public function control_print() {
+		$data['dia'] = $this->conversion_tiempo($_POST['dia']);
+		$data['mes'] = $_POST['mes'];
+		$data['ano'] = $_POST['ano'];
+		$data['lugar'] = $_POST['lugar'];
+		$data['asunto'] = $_POST['asunto'];
+		$data['responsable'] = $_POST['responsable'];
 		$this->load->view('control_imprimir.php', $data);	
 	}
 
@@ -168,5 +174,6 @@ class Impresiones extends CI_Controller {
 		if ($var==7) { return "07"; }
 		if ($var==8) { return "08"; } 
 		if ($var==9) { return "09"; }
+		if ($var>9) { return $var; }
 	}
 }
