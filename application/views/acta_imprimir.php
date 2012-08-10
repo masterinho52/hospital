@@ -158,9 +158,7 @@
 									</tr>
 
 									<tr>
-										<td align="center" class="informe_body3" width="30%"></td>
-										<td width="40%"></td>
-										<td align="center" class="informe_body3" width="30%"></td>
+										<td colspan="3"></td>
 									</tr>
 
 									<tr>
@@ -172,7 +170,7 @@
 									<tr height="50"><td colspan="3"></td></tr>
 
 									<tr>
-										<td align="center" class="informe_body3" colspan="3"><span class="hr">__________________________________________</span></td>
+										<td align="center" colspan="3"><span class="hr">__________________________________________</span></td>
 									</tr>
 
 									<tr>

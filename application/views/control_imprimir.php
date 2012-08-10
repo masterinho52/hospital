@@ -62,10 +62,10 @@
 				<td colspan="3" width="955">
 					<table align="center" border="1" cellpadding="0" cellspacing="5" width="100%">
 						<tr>
-							<td align="justify" class="informe_body" width="25%">
+							<td align="justify" class="informe_body" width="40%">
 								fecha: <span class="informe_body2"><?=$dia;?> de <?=$mes;?> del <?=$ano;?></span>
 							</td>
-							<td align="justify" class="informe_body" width="75%">
+							<td align="justify" class="informe_body" width="60%">
 								lugar: <span class="informe_body2"><?=$lugar;?></span>
 							</td>
 						</tr>

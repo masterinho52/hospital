@@ -207,7 +207,7 @@
 		text-transform: uppercase;
 		text-decoration: none;
 		font-family: Arial;
-		font-size: 16px;
+		font-size: 14pt;
 		font-weight: bold;
 	}
 
@@ -217,7 +217,7 @@
 		text-transform: uppercase;
 		text-decoration: underline;
 		font-family: Arial;
-		font-size: 14px;
+		font-size: 16pt;
 		font-weight: bold;
 	}
 
@@ -226,7 +226,7 @@
 		text-transform: uppercase;
 		text-decoration: none;
 		font-family: Arial;
-		font-size: 12px;
+		font-size: 14pt;
 		font-weight: normal;
 	}
 
@@ -235,7 +235,7 @@
 		text-transform: uppercase;
 		text-decoration: underline;
 		font-family: Arial;
-		font-size: 12px;
+		font-size: 14pt;
 		font-weight: bold;
 	}
 
@@ -244,7 +244,7 @@
 		text-transform: uppercase;
 		text-decoration: none;
 		font-family: Arial;
-		font-size: 12px;
+		font-size: 12pt;
 		font-weight: bold;
 	}
 
@@ -254,8 +254,18 @@
 		text-transform: uppercase;
 		text-decoration: underline;
 		font-family: Arial;
-		font-size: 12px;
+		font-size: 14pt;
 		font-weight: bold;
+	}
+
+	.informe_body5 {
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: underline;
+		font-family: Arial;
+		font-size: 14pt;
+		font-weight: bold;
+		line-height: 25pt;
 	}
 
 	h4 {
