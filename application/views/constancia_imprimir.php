@@ -137,7 +137,7 @@
 									</tr>
 
 									<tr>
-										<td align="center" class="informe_body3" width="30%"><div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>trabajado social</div></td>
+										<td align="center" class="informe_body3" width="30%"><div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>trabajo social</div></td>
 										<td width="40%"></td>
 										<td align="center" class="informe_body3" width="30%"><div><?=$institucion;?></div><div>por la institución visitada</div></td>
 									</tr>

@@ -12,7 +12,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="<?=base_url()?>img/logo_bandera.png" rel="shortcut icon" >
 		<link href="<?=base_url()?>css/default.css" rel="stylesheet" type="text/css">
-  		<link href="<?=base_url()?>css/admin.css" rel="stylesheet" type="text/css">
   	</head>
   	<body>
 		<div id="container">
