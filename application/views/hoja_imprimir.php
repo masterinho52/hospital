@@ -33,7 +33,8 @@
 						<tr><td align="center">ministerio del poder popular para la salud</td></tr>
 						<tr><td align="center">hospital especial dr. "alejandro prospero reverend"</td></tr>
 						<tr><td align="center">mesa de gallardo edo. trujillo</td></tr>
-						<tr><td align="center">departamento de desarrollo social</td></tr>
+						<tr><td align="center">coordinación promoción de la salud y</td></tr>
+						<tr><td align="center">prevención de la enfermedad. trabajo social</td></tr>
 					</table>
 				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/escudo_trujillo.jpg" height="145" width="145" /></td>
 			</tr>
@@ -53,23 +54,7 @@
 
 			<tr height="30"><td colspan="3"></td></tr>
 
-			<tr><td align="center" colspan="3" class="informe_title">informe de cierre</td></tr>
-
-			<tr height="30"><td colspan="3"></td></tr>
-
-			<tr>
-				<td align="right" class="informe_body" colspan="3" width="955">
-					matricula: <span class="informe_body2"><?=$adulto[0]->cedula_adulto;?>.</span>
-				</td>
-			</tr>
-
-			<tr height="30"><td colspan="3"></td></tr>
-
-			<tr>
-				<td align="left" class="informe_title2" colspan="3" width="955">
-					identificación del caso:
-				</td>
-			</tr>
+			<tr><td align="center" colspan="3" class="informe_title">hoja de vida</td></tr>
 
 			<tr height="30"><td colspan="3"></td></tr>
 
@@ -78,7 +63,7 @@
 					<table align="center" border="0" cellpadding="0" cellspacing="5" width="100%">
 						<tr>
 							<td align="justify" class="informe_body">
-								cliente: <span class="informe_body5"><?=$adulto[0]->nombre_adulto;?> <?=$adulto[0]->apellido_adulto;?>.</span>
+								nombres: <span class="informe_body5"><?=$adulto[0]->nombre_adulto;?>.</span>
 							</td>
 						</tr>
 
@@ -86,7 +71,7 @@
 
 						<tr>
 							<td align="justify" class="informe_body">
-								dirección: <span class="informe_body5"><?=$adulto[0]->direccion_adulto;?>.</span>
+								apellidos: <span class="informe_body5"><?=$adulto[0]->apellido_adulto;?>.</span>
 							</td>
 						</tr>
 
@@ -94,7 +79,7 @@
 
 						<tr>
 							<td align="justify" class="informe_body">
-								lapso de atención: <span class="informe_body5"><?=$lapso;?>.</span>
+								cédula de identidad nº: <span class="informe_body5"><?=$adulto[0]->cedula_adulto;?>.</span>
 							</td>
 						</tr>
 
@@ -102,7 +87,7 @@
 
 						<tr>
 							<td align="justify" class="informe_body">
-								sintesis del caso: <span class="informe_body5"><?=$sintesis;?>.</span>
+								lugar y fecha de nacimiento: <span class="informe_body5"><?=$adulto[0]->lugarn_adulto;?>, el <?=$fecha=date("d/m/Y",strtotime($adulto[0]->fechan_adulto));?>.</span>
 							</td>
 						</tr>
 
@@ -110,7 +95,7 @@
 
 						<tr>
 							<td align="justify" class="informe_body">
-								motivo de cierre: <span class="informe_body5"><?=$motivo;?>.</span>
+								fecha de ingreso: <span class="informe_body5"><?=$fecha=date("d/m/Y",strtotime($adulto[0]->fechai_adulto));?>.</span>
 							</td>
 						</tr>
 
@@ -118,34 +103,48 @@
 
 						<tr>
 							<td align="left" class="informe_body">
-								trujillo, <span class="informe_body2"><?=$dia;?></span> de <span class="informe_body2"><?=$mes;?></span> del <span class="informe_body2"><?=$ano;?>.</span>
+								procedente de: <span class="informe_body2"><?=$procedente;?>.</span>
+							</td>
+						</tr>
+
+						<tr height="10"><td></td></tr>
+
+						<tr>
+							<td align="left" class="informe_body">
+								referido por: <span class="informe_body2"><?=$referido;?>.</span>
+							</td>
+						</tr>
+
+						<tr height="10"><td></td></tr>
+
+						<tr>
+							<td align="left" class="informe_body">
+								posee familiares: <span class="informe_body2"><?=$posee;?>.</span>
+							</td>
+						</tr>
+
+						<tr height="10"><td></td></tr>
+
+						<tr>
+							<td align="left" class="informe_body">
+								teléfono: <span class="informe_body2"><?=$telefono;?>.</span>
 							</td>
 						</tr>
 					</table>
 				</td>
 			</tr>
 
+			<tr height="100"><td colspan="3"></td></tr>
+
 			<tr>
 				<td align="center" colspan="3">
-					<table align="center" border="0" cellpadding="0" cellspacing="1" width="100%">
-						<tr height="100"><td colspan="3"></td></tr>
+					<span class="hr">_________________________________________________________________</span>
+				</td>
+			</tr>
 
-						<tr>
-							<td width="30%"></td>
-							<td width="40%"></td>
-							<td align="center" width="30%"><span class="hr">__________________________________________</span></td>
-						</tr>
-
-						<tr>
-							<td colspan="3"></td>
-						</tr>
-
-						<tr>
-							<td width="30%"></td>
-							<td width="40%"></td>
-							<td align="center" class="informe_body3" width="30%"><div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>trabajador social</div></td>
-						</tr>
-					</table>
+			<tr>
+				<td align="center" class="informe_body3" colspan="3">
+					<?=$funcionario_receptor;?>
 				</td>
 			</tr>
 		</table>

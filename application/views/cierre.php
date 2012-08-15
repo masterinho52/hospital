@@ -41,7 +41,7 @@
 							<td width="20%"></td>
 							<td valign="top" width="15%">Lapso de Atención:</td>
 							<td width="45%">
-								<input id="lapso" maxlength="50" name="lapso" size="30" />
+								<input id="lapso" maxlength="50" name="lapso" size="30" type="text" />
 							</td>
 							<td width="20%"></td>
 						</tr>

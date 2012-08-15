@@ -63,28 +63,28 @@
 						<tr>
 							<td width="35%"></td>
 							<td align="left" class="informe_body" width="65%">
-								adulto mayor: <span class="informe_body4"><?=$adulto[0]->nombre_adulto;?> <?=$adulto[0]->apellido_adulto;?></span>
+								adulto mayor: <span class="informe_body4"><?=$adulto[0]->nombre_adulto;?> <?=$adulto[0]->apellido_adulto;?>.</span>
 							</td>
 						</tr>
 
 						<tr>
 							<td width="35%"></td>
 							<td align="left" class="informe_body" width="65%">
-								cédula de identidad: <span class="informe_body4"><?=$adulto[0]->cedula_adulto;?></span>
+								cédula de identidad: <span class="informe_body4"><?=$adulto[0]->cedula_adulto;?>.</span>
 							</td>
 						</tr>
 
 						<tr>
 							<td width="35%"></td>
 							<td align="left" class="informe_body" width="65%">
-								historia nº: <span class="informe_body4"><?=$adulto[0]->numero_expediente_adulto;?></span>
+								historia nº: <span class="informe_body4"><?=$adulto[0]->numero_expediente_adulto;?>.</span>
 							</td>
 						</tr>
 
 						<tr>
 							<td width="35%"></td>
 							<td align="left" class="informe_body" width="65%">
-								fecha: <span class="informe_body4"><?=$dia;?> de <?=$mes;?> del <?=$ano;?></span>
+								fecha: <span class="informe_body4"><?=$dia;?> de <?=$mes;?> del <?=$ano;?>.</span>
 							</td>
 						</tr>
 					</table>
@@ -98,7 +98,7 @@
 					<table align="center" border="0" cellpadding="0" cellspacing="5" width="100%">
 						<tr>
 							<td align="justify" class="informe_body">
-								situación actual: <span class="informe_body5"><?=$situacion;?></span>
+								situación actual: <span class="informe_body5"><?=$situacion;?>.</span>
 							</td>
 						</tr>
 					</table>

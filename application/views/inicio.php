@@ -20,9 +20,9 @@
 					<form action="<?=base_url()?>login" method="post" accept-charset="utf-8" class="entrar">
 						<h4 align="center">Bienvenidos al Sistema</h4>
 						<label for="login">Usuario: </label>
-						<input type="text" name="login" id="login" placeholder="Ingrese Código del Usuario" size="25" />
+						<input type="text" name="login" id="login" placeholder="Ingrese Código del Usuario" size="30" />
 						<label for="password">Contraseña: </label>
-						<input type="password" name="password" id="password" placeholder="Ingrese Contraseña del Usuario" size="25" />	
+						<input type="password" name="password" id="password" placeholder="Ingrese Contraseña del Usuario" size="30" />	
 						<input type="submit" value="Ingresar">
 				        <a href="<?=base_url()?>visitantes" class="enlace_visitor">
 					        <div align="right" style="margin-top:-10px; margin-right:3px;">

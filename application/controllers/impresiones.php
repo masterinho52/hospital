@@ -88,10 +88,17 @@ class Impresiones extends CI_Controller {
 	}
 
 	public function hoja($data = array()) {
+		$data['adulto'] = $this->adultos_model->get_all();
 		$this->load->view('hoja.php', $data);	
 	}
 
 	public function hoja_print() {
+		$data['adulto'] = $this->adultos_model->get_byid($_POST['id_adulto']);
+		$data['procedente'] = $_POST['procedente'];
+		$data['referido'] = $_POST['referido'];
+		$data['posee'] = $_POST['posee'];
+		$data['telefono'] = $_POST['telefono'];
+		$data['funcionario_receptor'] = $_POST['funcionario_receptor'];
 		$this->load->view('hoja_imprimir.php', $data);	
 	}
 

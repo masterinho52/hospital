@@ -64,7 +64,7 @@
 							<td width="20%"></td>
 							<td width="12%">Lugar:</td>
 							<td width="48%">
-								<input id="lugar" maxlength="80" name="lugar" size="50" />
+								<input id="lugar" maxlength="80" name="lugar" size="50" type="text" />
 							</td>
 							<td width="20%"></td>
 						</tr>
@@ -73,7 +73,7 @@
 							<td width="20%"></td>
 							<td width="12%">Asunto:</td>
 							<td width="48%">
-								<input id="asunto" maxlength="80" name="asunto" size="50" />
+								<input id="asunto" maxlength="80" name="asunto" size="50" type="text" />
 							</td>
 							<td width="20%"></td>
 						</tr>
@@ -82,7 +82,7 @@
 							<td width="20%"></td>
 							<td width="12%">Responsable:</td>
 							<td width="48%">
-								<input id="responsable" maxlength="50" name="responsable" size="50" />
+								<input id="responsable" maxlength="50" name="responsable" size="50" type="text" />
 							</td>
 							<td width="20%"></td>
 						</tr>

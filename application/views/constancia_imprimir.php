@@ -64,7 +64,7 @@
 						<tr>
 							<td width="20%"></td>
 							<td align="justify" class="informe_body" width="60%">
-								institución visitada: <span class="informe_body2"><?=$institucion;?></span>
+								institución visitada: <span class="informe_body2"><?=$institucion;?>.</span>
 							</td>
 							<td width="20%"></td>
 						</tr>
@@ -74,7 +74,7 @@
 						<tr>
 							<td width="20%"></td>
 							<td align="justify" class="informe_body" width="60%">
-								fecha y hora de la visita: <span class="informe_body2"><?=$dia;?> de <?=$mes;?> del <?=$ano;?> a las <?=$hora;?>:<?=$minuto;?> <?=$tiempo;?></span>
+								fecha y hora de la visita: <span class="informe_body2"><?=$dia;?> de <?=$mes;?> del <?=$ano;?> a las <?=$hora;?>:<?=$minuto;?> <?=$tiempo;?>.</span>
 							</td>
 							<td width="20%"></td>
 						</tr>
@@ -84,7 +84,7 @@
 						<tr>
 							<td width="20%"></td>
 							<td align="justify" class="informe_body" width="60%">
-								funcionario entrevistado: <span class="informe_body2"><?=$funcionario;?></span>
+								funcionario entrevistado: <span class="informe_body2"><?=$funcionario;?>.</span>
 							</td>
 							<td width="20%"></td>
 						</tr>
@@ -94,7 +94,7 @@
 						<tr>
 							<td width="200"></td>
 							<td align="justify" class="informe_body" width="60%">
-								cargo del funcionario: <span class="informe_body2"><?=$cargo;?></span>
+								cargo del funcionario: <span class="informe_body2"><?=$cargo;?>.</span>
 							</td>
 							<td width="20%"></td>
 						</tr>
@@ -104,7 +104,7 @@
 						<tr>
 							<td width="20%"></td>
 							<td align="justify" class="informe_body" width="60%">
-								motivo de la visita: <span class="informe_body2"><?=$motivo;?></span>
+								motivo de la visita: <span class="informe_body2"><?=$motivo;?>.</span>
 							</td>
 							<td width="20%"></td>
 						</tr>
@@ -114,7 +114,7 @@
 						<tr>
 							<td width="20%"></td>
 							<td align="justify" class="informe_body" width="60%">
-								acuerdos establecidos: <span class="informe_body2"><?=$acuerdo;?></span>
+								acuerdos establecidos: <span class="informe_body2"><?=$acuerdo;?>.</span>
 							</td>
 							<td width="20%"></td>
 						</tr>

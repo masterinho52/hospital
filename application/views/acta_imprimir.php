@@ -137,7 +137,7 @@
 							<td width="10%"></td>
 							<td align="justify" class="informe_body" width="80%">
 								acta que se expide en la ciudad de trujillo a: 
-								<span class="informe_body2"><?=$dia;?> del mes <?=$mes;?> del <?=$ano;?>,</span>
+								<span class="informe_body2"><?=$dia;?> del mes <?=$mes;?> del <?=$ano;?>.</span>
 							</td>
 							<td width="10%"></td>
 						</tr>

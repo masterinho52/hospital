@@ -25,7 +25,7 @@
 							<td width="15%"></td>
 							<td width="20%">Institución Visitada:</td>
 							<td width="55%">
-								<input id="institucion" maxlength="70" name="institucion" size="50" />
+								<input id="institucion" maxlength="70" name="institucion" size="50" type="text" />
 							</td>
 							<td width="10%"></td>
 						</tr>
@@ -94,7 +94,7 @@
 							<td width="15%"></td>
 							<td width="20%">Funcionario Entrevistado:</td>
 							<td width="55%">
-								<input id="funcionario" maxlength="50" name="funcionario" size="50" />
+								<input id="funcionario" maxlength="50" name="funcionario" size="50" type="text" />
 							</td>
 							<td width="10%"></td>
 						</tr>
@@ -103,7 +103,7 @@
 							<td width="15%"></td>
 							<td width="20%">Cargo del Funcionario:</td>
 							<td width="55%">
-								<input id="cargo" maxlength="30" name="cargo" size="30" />
+								<input id="cargo" maxlength="30" name="cargo" size="30" type="text" />
 							</td>
 							<td width="10%"></td>
 						</tr>
