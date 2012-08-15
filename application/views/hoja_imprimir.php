@@ -103,7 +103,7 @@
 
 						<tr>
 							<td align="left" class="informe_body">
-								procedente de: <span class="informe_body2"><?=$procedente;?>.</span>
+								procedente de: <span class="informe_body5"><?=$procedente;?>.</span>
 							</td>
 						</tr>
 
@@ -111,7 +111,7 @@
 
 						<tr>
 							<td align="left" class="informe_body">
-								referido por: <span class="informe_body2"><?=$referido;?>.</span>
+								referido por: <span class="informe_body5"><?=$referido;?>.</span>
 							</td>
 						</tr>
 
@@ -119,7 +119,7 @@
 
 						<tr>
 							<td align="left" class="informe_body">
-								posee familiares: <span class="informe_body2"><?=$posee;?>.</span>
+								posee familiares: <span class="informe_body5"><?=$posee;?>.</span>
 							</td>
 						</tr>
 
@@ -127,7 +127,7 @@
 
 						<tr>
 							<td align="left" class="informe_body">
-								teléfono: <span class="informe_body2"><?=$telefono;?>.</span>
+								teléfono: <span class="informe_body5"><?=$telefono;?>.</span>
 							</td>
 						</tr>
 					</table>
