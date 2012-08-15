@@ -144,7 +144,8 @@
 
 			<tr>
 				<td align="center" class="informe_body3" colspan="3">
-					<?=$funcionario_receptor;?>
+					<div><?=$funcionario_receptor;?></div>
+					<div>funcionario receptor</div>
 				</td>
 			</tr>
 		</table>
