@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 07-08-2012 a las 17:15:56
+-- Tiempo de generación: 22-08-2012 a las 18:52:06
 -- Versión del servidor: 5.5.24
 -- Versión de PHP: 5.3.10-1ubuntu3.2
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `tbl_adulto` (
   `apellido_adulto` varchar(50) NOT NULL,
   `numero_expediente_adulto` varchar(12) NOT NULL,
   `fechan_adulto` date NOT NULL,
-  `estadocivil_adulto` enum('CASADO(A)','CONCUBINO(A)','DIVORCIADO(A)','SOLTERO(A)','VIUDO(A)') NOT NULL,
+  `estadocivil_adulto` enum('CASADO','CASADA','CONCUBINO','CONCUBINA','DIVORCIADO','DIVORCIADO','SOLTERO','SOLTERA','VIUDO','VIUDA') NOT NULL,
   `lugarn_adulto` varchar(50) DEFAULT NULL,
   `direccion_adulto` text NOT NULL,
   `telefono_adulto` varchar(12) DEFAULT NULL,
@@ -46,14 +46,15 @@ CREATE TABLE IF NOT EXISTS `tbl_adulto` (
   `id_usuario` int(11) DEFAULT NULL,
   `fregistro_adulto` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_adulto`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Volcado de datos para la tabla `tbl_adulto`
 --
 
 INSERT INTO `tbl_adulto` (`id_adulto`, `cedula_adulto`, `nombre_adulto`, `apellido_adulto`, `numero_expediente_adulto`, `fechan_adulto`, `estadocivil_adulto`, `lugarn_adulto`, `direccion_adulto`, `telefono_adulto`, `sexo_adulto`, `fechai_adulto`, `instruccion_adulto`, `ocupacion_adulto`, `comunal_adulto`, `id_representante`, `id_usuario`, `fregistro_adulto`) VALUES
-(2, '1234567', 'PABLO', 'ZAMORA', 'HOF-34535', '2012-08-03', 'CASADO(A)', 'VALERA EDO TRUJILLO', 'URBANIZACIÓN LAS ACACIAS, CALLE 18 CON AVENIDA 6, CASA #15-545, VALERA EDO TRUJILLO', '04241234567', 'MASCULINO', '2012-08-24', 'T.S.U.', 'ESTUDIA', 'LAS ACACIAS', 1, 1, '2012-08-02 21:44:08');
+(2, '1234567', 'PABLO', 'ZAMORA', 'HOF-34535', '1945-08-03', 'DIVORCIADO', 'VALERA EDO TRUJILLO', 'URBANIZACIÓN LAS ACACIAS, CALLE 18 CON AVENIDA 6', '04241234567', 'MASCULINO', '2012-08-24', 'T.S.U.', 'ESTUDIA', 'LAS ACACIAS', 1, 1, '2012-08-02 21:44:08'),
+(3, '3423424', 'JOSE', 'PAREDES', 'DF-45353', '1935-08-14', 'CONCUBINO', 'VALERA', 'TRUJILLO', '8674635325', 'FEMENINO', '2007-08-21', 'TEC.', 'SIN OFICIO', 'SAN JACINTO', 1, 1, '2012-08-22 16:16:59');
 
 -- --------------------------------------------------------
 
@@ -76,6 +77,32 @@ CREATE TABLE IF NOT EXISTS `tbl_cargo` (
 INSERT INTO `tbl_cargo` (`id_cargo`, `nombre_cargo`, `id_usuario`, `fregistro_cargo`) VALUES
 (11, 'TRABAJADOR SOCIAL', 1, '2012-08-01 15:23:21'),
 (12, 'DIRECTOR', 1, '2012-08-01 15:23:38');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tbl_cierre`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_cierre` (
+  `id_cierre` int(11) NOT NULL AUTO_INCREMENT,
+  `id_adulto` int(11) NOT NULL,
+  `id_personal` int(11) NOT NULL,
+  `lapso_cierre` varchar(200) NOT NULL,
+  `sintesis_cierre` text NOT NULL,
+  `motivo_cierre` text NOT NULL,
+  `fecha_cierre` date NOT NULL,
+  `id_usuario` int(11) DEFAULT NULL,
+  `fregistro_cierre` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id_cierre`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Volcado de datos para la tabla `tbl_cierre`
+--
+
+INSERT INTO `tbl_cierre` (`id_cierre`, `id_adulto`, `id_personal`, `lapso_cierre`, `sintesis_cierre`, `motivo_cierre`, `fecha_cierre`, `id_usuario`, `fregistro_cierre`) VALUES
+(1, 2, 1, 'EXCELENTE', 'ESTABA EN LA ÚLTIMA ETAPA DEL CANCER', 'FALLECIÓ POR HIPERTENSIÓN ALTA', '2012-08-13', 1, '2012-08-22 21:40:36');
 
 -- --------------------------------------------------------
 
@@ -123,14 +150,19 @@ CREATE TABLE IF NOT EXISTS `tbl_grupo_familiar` (
   `id_usuario` int(11) DEFAULT NULL,
   `fregistro_grupo` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_grupo`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Volcado de datos para la tabla `tbl_grupo_familiar`
 --
 
 INSERT INTO `tbl_grupo_familiar` (`id_grupo`, `cedula_grupo`, `nombre_grupo`, `apellido_grupo`, `fechan_grupo`, `sexo_grupo`, `instruccion_grupo`, `ocupacion_grupo`, `ingreso_grupo`, `aporte_grupo`, `direccion_grupo`, `telefono_grupo`, `parentesco_grupo`, `id_adulto`, `id_usuario`, `fregistro_grupo`) VALUES
-(1, '23456789', 'JOSE', 'SANCHEZ', '1972-02-15', 'MASCULINO', 'INGENIERO', 'AMA DE CASA', '2560', 'NINGUNO', '<P>AVENIDA 13 CON CALLE 15, CASA #14-64, VALERA EDO. TRUJILLO</P>', '04161234567', 'HERMANO', 2, 1, '2012-08-03 20:46:07');
+(1, '23456789', 'JOSE', 'SANCHEZ', '1972-02-15', 'MASCULINO', 'INGENIERO', 'AMA DE CASA', '2560', 'NINGUNO', 'AVENIDA 13 CON CALLE 15, CASA #14-64, VALERA EDO. TRUJILLO', '04161234567', 'HERMANO', 2, 1, '2012-08-22 22:50:13'),
+(2, '4242423424', 'PEREZ', 'CARMONA', '2012-08-07', 'MASCULINO', 'INGENIERO', 'TRABAJA', '2356', 'NADA', 'VALERA', '11245787676', 'TIO', 2, 1, '2012-08-22 22:50:13'),
+(3, '656746353', 'JOSE', 'ALBORNOZ', '1988-08-10', 'MASCULINO', 'T.S.U.', 'TRABAJA', '2467', '500', 'BARQUISIMETO', '97857646535', 'SOBRINO', 2, 1, '2012-08-22 22:50:13'),
+(4, '343434', 'CARLOS', 'MONTILLA', '1979-08-08', 'MASCULINO', 'BACHILLER', 'AMA DE CASA', '5675', '200', 'VALENCIA', '233546', 'PADRINO', 2, 1, '2012-08-22 22:50:14'),
+(5, '7352353', 'PEDRO', 'FERNANDEZ', '1986-08-20', 'MASCULINO', 'LICENCIADA', 'TRABAJA', '2345', '544', 'VALERA', '753535', 'PADRINO', 3, 1, '2012-08-22 22:50:14'),
+(6, '342', 'ALBERTO', 'FERNANDEZ', '2012-08-14', 'MASCULINO', 'T.S.U.', 'ESTUDIA', '2000', '200', 'BETIJOQUE', '2324', 'AHIJADO', 3, 1, '2012-08-22 22:50:14');
 
 -- --------------------------------------------------------
 
@@ -172,7 +204,7 @@ CREATE TABLE IF NOT EXISTS `tbl_representante` (
   `apellido_representante` varchar(50) NOT NULL,
   `sexo_representante` enum('MASCULINO','FEMENINO') NOT NULL,
   `fechan_representante` date NOT NULL,
-  `estadocivil_representante` enum('CASADO(A)','CONCUBINO(A)','DIVORCIADO(A)','SOLTERO(A)','VIUDO(A)') NOT NULL,
+  `estadocivil_representante` enum('CASADO','CASADA','CONCUBINO','CONCUBINA','DIVORCIADO','DIVORCIADO','SOLTERO','SOLTERA','VIUDO','VIUDA') NOT NULL,
   `lugarn_representante` varchar(50) NOT NULL,
   `direccion_representante` text NOT NULL,
   `parentesco_representante` enum('PADRE','MADRE','PADRINO','MADRINA','TIO','TIA','HERMANO','HERMANA','SOBRINO','SOBRINA','AHIJADO','AHIJADA') NOT NULL,
@@ -188,7 +220,7 @@ CREATE TABLE IF NOT EXISTS `tbl_representante` (
 --
 
 INSERT INTO `tbl_representante` (`id_representante`, `cedula_representante`, `nombre_representante`, `apellido_representante`, `sexo_representante`, `fechan_representante`, `estadocivil_representante`, `lugarn_representante`, `direccion_representante`, `parentesco_representante`, `telefono_representante`, `profesion_representante`, `id_usuario`, `fregistro_representante`) VALUES
-(1, '2345678', 'PETRONILO', 'SINFOROSO', 'MASCULINO', '2012-08-21', 'DIVORCIADO(A)', 'TRUJILLO EDO. TRUJILLO', 'URB. LA BEATRIZ, BLOQUE 40, APTO 3C PISO 3', 'HERMANA', '26556565', 'NINGUNA', 1, '2012-08-16 04:30:00');
+(1, '2345678', 'PETRONILO', 'SINFOROSO', 'MASCULINO', '1980-08-21', 'CASADO', 'TRUJILLO EDO. TRUJILLO', 'URB. LA BEATRIZ, BLOQUE 40, APTO 3C PISO 3', 'HERMANA', '26556565', 'NINGUNA', 1, '2012-08-22 22:50:44');
 
 -- --------------------------------------------------------
 
