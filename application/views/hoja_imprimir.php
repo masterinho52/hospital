@@ -67,15 +67,11 @@
 							</td>
 						</tr>
 
-						<tr height="10"><td></td></tr>
-
 						<tr>
 							<td align="justify" class="informe_body">
 								apellidos: <span class="informe_body5"><?=$adulto[0]->apellido_adulto;?>.</span>
 							</td>
 						</tr>
-
-						<tr height="10"><td></td></tr>
 
 						<tr>
 							<td align="justify" class="informe_body">
@@ -83,15 +79,11 @@
 							</td>
 						</tr>
 
-						<tr height="10"><td></td></tr>
-
 						<tr>
 							<td align="justify" class="informe_body">
 								lugar y fecha de nacimiento: <span class="informe_body5"><?=$adulto[0]->lugarn_adulto;?>, el <?=$fecha=date("d/m/Y",strtotime($adulto[0]->fechan_adulto));?>.</span>
 							</td>
 						</tr>
-
-						<tr height="10"><td></td></tr>
 
 						<tr>
 							<td align="justify" class="informe_body">
@@ -99,15 +91,11 @@
 							</td>
 						</tr>
 
-						<tr height="10"><td></td></tr>
-
 						<tr>
 							<td align="left" class="informe_body">
 								procedente de: <span class="informe_body5"><?=$procedente;?>.</span>
 							</td>
 						</tr>
-
-						<tr height="10"><td></td></tr>
 
 						<tr>
 							<td align="left" class="informe_body">
@@ -115,26 +103,44 @@
 							</td>
 						</tr>
 
-						<tr height="10"><td></td></tr>
-
+						<?php if(empty($grupo)) : ?>
 						<tr>
-							<td align="left" class="informe_body">
-								posee familiares: <span class="informe_body5"><?=$posee;?>.</span>
+							<td align="left" colspan="3" class="informe_body">
+								posee familiares: <span class="informe_body5">no.</span>
+							</td>
+						</tr>
+						<?php endif; ?>
+						<?php if($grupo) : ?>
+						<tr>
+							<td align="left" colspan="3" class="informe_body">
+								posee familiares: <span class="informe_body5">si.</span>
 							</td>
 						</tr>
 
-						<tr height="10"><td></td></tr>
-
 						<tr>
-							<td align="left" class="informe_body">
-								teléfono: <span class="informe_body5"><?=$telefono;?>.</span>
+							<td align="center" width="100%">
+								<table align="center" border="1" cellpadding="0" cellspacing="2" width="100%">
+									<tr>
+										<td align="center" class="informe_body" width="50%"><strong>nombres y apellidos</strong></td>
+										<td align="center" class="informe_body" width="30%"><strong>parentesco</strong></td>
+										<td align="center" class="informe_body" width="20%"><strong>teléfono</strong></td>
+									</tr>
+									<?php foreach($grupo as $row) : ?>
+									<tr>
+										<td align="left" class="informe_body" width="50%"><?=$row->nombre_grupo;?> <?=$row->apellido_grupo;?></td>
+										<td align="center" class="informe_body" width="30%"><?=$row->parentesco_grupo;?></td>
+										<td align="center" class="informe_body" width="20%"><?=$row->telefono_grupo;?></td>
+									</tr>
+									<?php endforeach; ?>									
+								</table>
 							</td>
 						</tr>
+						<?php endif; ?>
 					</table>
 				</td>
 			</tr>
 
-			<tr height="100"><td colspan="3"></td></tr>
+			<tr height="150"><td colspan="3"></td></tr>
 
 			<tr>
 				<td align="center" colspan="3">
@@ -144,8 +150,7 @@
 
 			<tr>
 				<td align="center" class="informe_body3" colspan="3">
-					<div><?=$funcionario_receptor;?></div>
-					<div>funcionario receptor</div>
+					<div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>funcionario receptor</div>
 				</td>
 			</tr>
 		</table>

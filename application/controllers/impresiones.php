@@ -11,6 +11,7 @@ class Impresiones extends CI_Controller {
 		} else {
 			$this->load->model("adultos_model");
 			$this->load->model("personales_model");
+			$this->load->model("gruposf_model");
 		}
 
 		$this->load->database();
@@ -89,6 +90,7 @@ class Impresiones extends CI_Controller {
 
 	public function hoja($data = array()) {
 		$data['adulto'] = $this->adultos_model->get_all();
+		$data['personal'] = $this->personales_model->get_all_bycargo();
 		$this->load->view('hoja.php', $data);	
 	}
 
@@ -96,9 +98,8 @@ class Impresiones extends CI_Controller {
 		$data['adulto'] = $this->adultos_model->get_byid($_POST['id_adulto']);
 		$data['procedente'] = $_POST['procedente'];
 		$data['referido'] = $_POST['referido'];
-		$data['posee'] = $_POST['posee'];
-		$data['telefono'] = $_POST['telefono'];
-		$data['funcionario_receptor'] = $_POST['funcionario_receptor'];
+		$data['grupo'] = $this->gruposf_model->get_byid($_POST['id_adulto']);
+		$data['personal'] = $this->personales_model->get_byid($_POST['id_personal']);
 		$this->load->view('hoja_imprimir.php', $data);	
 	}
 

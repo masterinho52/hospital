@@ -7,7 +7,7 @@ class Gruposf_model extends CI_Model {
 	}
 
 	public function get_all() {
-		$consulta = $this->db->order_by('apellido_grupo')->order_by('nombre_grupo')->get('tbl_grupo_familiar');
+		$consulta = $this->db->order_by('apellido_grupo asc, nombre_grupo asc')->get('tbl_grupo_familiar');
 		if ($consulta->num_rows()) {
 			$data = $consulta->result();
 		} else {
@@ -17,8 +17,8 @@ class Gruposf_model extends CI_Model {
 		return $data;
 	}
 
-	public function get_byid($id_grupo)	{
-		$consulta = $this->db->where("id_grupo", $id_grupo)->get('tbl_grupo_familiar');
+	public function get_byid($id_adulto) {
+		$consulta = $this->db->where("id_adulto", $id_adulto)->order_by('apellido_grupo asc, nombre_grupo asc')->limit(3)->get('tbl_grupo_familiar');
 		if ($consulta->num_rows()) {
 			$data = $consulta->result();
 		} else {

@@ -57,31 +57,16 @@
 
 						<tr>
 							<td width="20%"></td>
-							<td width="18%">Posee Familiares:</td>
+							<td width="18%">Trabajador Social:</td>
 							<td width="42%">
-								<select name="posee" id="posee" class="combo">
-                                	<option value=""></option>
-									<option value="SI">SI</option>
-									<option value="NO">NO</option>
-                               	</select> 
-							</td>
-							<td width="20%"></td>
-						</tr>
-
-						<tr>
-							<td width="20%"></td>
-							<td width="18%">Teléfono:</td>
-							<td width="42%">
-								<input id="telefono" maxlength="12" name="telefono" type="text" />
-							</td>
-							<td width="20%"></td>
-						</tr>
-
-						<tr>
-							<td width="20%"></td>
-							<td width="18%">Funcionario Receptor:</td>
-							<td width="42%">
-								<input id="funcionario_receptor" maxlength="50" name="funcionario_receptor" size="50" type="text" />
+								<select name="id_personal" id="id_personal" class="combo">
+			                      	<option value=""></option>
+			                      	<?php if($personal) : ?>
+			                    		<?php foreach($personal as $row) : ?>
+			                      			<option value="<?=$row->id_personal;?>"><?=$row->apellido_personal; ?> <?=$row->nombre_personal; ?> - <?=$row->cedula_personal; ?></option>
+			                        	<?php endforeach; ?>
+			                      	<?php endif; ?>
+			                    </select>
 							</td>
 							<td width="20%"></td>
 						</tr>

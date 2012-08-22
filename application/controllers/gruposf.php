@@ -69,7 +69,7 @@ class Gruposf extends CI_Controller {
 			$crud->set_relation('id_adulto', 'tbl_adulto', '{apellido_adulto} {nombre_adulto} - {cedula_adulto}');
 			$crud->set_relation('id_usuario', 'tbl_usuario', 'nombre_usuario');
 
-			$crud->order_by('apellido_grupo','ASC');
+			$crud->order_by('apellido_grupo, nombre_grupo', 'ASC');
 
 			if ($this->session->userdata("tipo_usuario")=='Supervisor') {
 				$crud->unset_delete();

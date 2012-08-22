@@ -7,7 +7,7 @@ class Adultos_model extends CI_Model {
 	}
 
 	public function get_all() {
-		$consulta = $this->db->order_by('apellido_adulto')->order_by('nombre_adulto')->get('tbl_adulto');
+		$consulta = $this->db->order_by('apellido_adulto asc, nombre_adulto asc')->get('tbl_adulto');
 		if ($consulta->num_rows()) {
 			$data = $consulta->result();
 		} else {

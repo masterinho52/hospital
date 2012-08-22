@@ -16,7 +16,16 @@
 		        <li><a href="<?=base_url()?>gruposf">Registro del Grupo Familiar</a></li>
 		   	</ul> 
 		</li>
-		<?php if ($this->session->userdata("tipo_usuario")=='Administrador') { ?>  
+		<?php if (($this->session->userdata("tipo_usuario")=='Administrador') || ($this->session->userdata("tipo_usuario")=='Supervisor')) { ?>  
+		<li> 
+			<a href="#">Procesos</a> 
+		    <ul class="submenu">
+		        <li><a href="<?=base_url()?>cierres/cierre">Informe de Cierre</a></li>
+		        <li><a href="<?=base_url()?>receptorias/receptoria">Informe de Receptoria</a></li>
+				<li><a href="<?=base_url()?>sociales/social">Informe Social</a></li>
+		   	</ul> 
+		</li>
+		<?php } if ($this->session->userdata("tipo_usuario")=='Administrador') { ?>  
 		<li> 
 			<a href="#">Impresiones</a> 
 		    <ul class="submenu">
@@ -29,7 +38,7 @@
 		        <li><a href="<?=base_url()?>impresiones/receptoria">Informe de Receptoria</a></li>
 				<li><a href="<?=base_url()?>impresiones/social">Informe Social</a></li>
 		   	</ul> 
-		</li> 
+		</li>
 		<li> 
 			<a href="#">Reportes</a> 
 		    <ul class="submenu">
