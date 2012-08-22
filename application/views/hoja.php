@@ -10,7 +10,6 @@
 	</head>
   	<body>
 		<div id="container">
-			
 			<?php include_once("inc/header_admin.php");?>
 			
 			<div id="body">

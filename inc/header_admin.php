@@ -20,9 +20,9 @@
 		<li> 
 			<a href="#">Procesos</a> 
 		    <ul class="submenu">
-		        <li><a href="<?=base_url()?>cierres/cierre">Informe de Cierre</a></li>
-		        <li><a href="<?=base_url()?>receptorias/receptoria">Informe de Receptoria</a></li>
-				<li><a href="<?=base_url()?>sociales/social">Informe Social</a></li>
+		        <li><a href="<?=base_url()?>cierres">Informe de Cierre</a></li>
+		        <li><a href="<?=base_url()?>receptorias">Informe de Receptoria</a></li>
+				<li><a href="<?=base_url()?>sociales">Informe Social</a></li>
 		   	</ul> 
 		</li>
 		<?php } if ($this->session->userdata("tipo_usuario")=='Administrador') { ?>  

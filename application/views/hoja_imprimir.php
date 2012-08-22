@@ -60,6 +60,19 @@
 
 			<tr>
 				<td colspan="3" width="955">
+					<table align="center" border="0" cellpadding="0" cellspacing="0" width="955">
+						<tr>
+							<td align="right" valign="top" width="250"><img border="0" class="bg" src="<?=base_url()?>img/foto.jpg" style="margin-right:2px;" /></td>
+							<td align="center" width="745"><img border="0" class="bg" src="<?=base_url()?>img/cedula.jpg" /></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<tr height="20"><td colspan="3"></td></tr>
+
+			<tr>
+				<td colspan="3" width="955">
 					<table align="center" border="0" cellpadding="0" cellspacing="5" width="100%">
 						<tr>
 							<td align="justify" class="informe_body">
@@ -121,13 +134,13 @@
 							<td align="center" width="100%">
 								<table align="center" border="1" cellpadding="0" cellspacing="2" width="100%">
 									<tr>
-										<td align="center" class="informe_body" width="50%"><strong>nombres y apellidos</strong></td>
+										<td align="center" class="informe_body" width="50%"><strong>apellidos y nombres</strong></td>
 										<td align="center" class="informe_body" width="30%"><strong>parentesco</strong></td>
 										<td align="center" class="informe_body" width="20%"><strong>teléfono</strong></td>
 									</tr>
 									<?php foreach($grupo as $row) : ?>
 									<tr>
-										<td align="left" class="informe_body" width="50%"><?=$row->nombre_grupo;?> <?=$row->apellido_grupo;?></td>
+										<td align="left" class="informe_body" width="50%"><?=$row->apellido_grupo;?> <?=$row->nombre_grupo;?></td>
 										<td align="center" class="informe_body" width="30%"><?=$row->parentesco_grupo;?></td>
 										<td align="center" class="informe_body" width="20%"><?=$row->telefono_grupo;?></td>
 									</tr>
@@ -140,7 +153,7 @@
 				</td>
 			</tr>
 
-			<tr height="150"><td colspan="3"></td></tr>
+			<tr height="130"><td colspan="3"></td></tr>
 
 			<tr>
 				<td align="center" colspan="3">

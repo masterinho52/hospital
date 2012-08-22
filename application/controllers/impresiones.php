@@ -12,6 +12,7 @@ class Impresiones extends CI_Controller {
 			$this->load->model("adultos_model");
 			$this->load->model("personales_model");
 			$this->load->model("gruposf_model");
+			$this->load->model("cierres_model");
 		}
 
 		$this->load->database();
@@ -104,20 +105,12 @@ class Impresiones extends CI_Controller {
 	}
 
 	public function cierre($data = array()) {
-		$data['adulto'] = $this->adultos_model->get_all();
-		$data['personal'] = $this->personales_model->get_all_bycargo();
+		$data['cierr'] = $this->cierres_model->get_all();
 		$this->load->view('cierre.php', $data);	
 	}
 
 	public function cierre_print() {
-		$data['adulto'] = $this->adultos_model->get_byid($_POST['id_adulto']);
-		$data['lapso'] = $_POST['lapso'];
-		$data['sintesis'] = $_POST['sintesis'];
-		$data['motivo'] = $_POST['motivo'];
-		$data['dia'] = $this->conversion_tiempo($_POST['dia']);
-		$data['mes'] = $_POST['mes'];
-		$data['ano'] = $_POST['ano'];
-		$data['personal'] = $this->personales_model->get_byid($_POST['id_personal']);
+		$data['cierr'] = $this->cierres_model->get_byid($_POST['id_cierre']);
 		$this->load->view('cierre_imprimir.php', $data);	
 	}
 

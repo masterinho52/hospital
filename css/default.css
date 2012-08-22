@@ -40,6 +40,13 @@
 		border-bottom: 3px solid #FF0000;
 	}
 
+	.bg {
+		border-bottom: 1px solid #000000;
+		border-top: 1px solid #000000;
+		border-right: 1px solid #000000;
+		border-left: 1px solid #000000;
+	}
+
 	#body{
 		margin: 0 15px 0 15px;
 	}
