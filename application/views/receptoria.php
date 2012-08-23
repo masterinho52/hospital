@@ -16,20 +16,20 @@
 			<div id="body">
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
 				<p>
-					<h3 class="centrado">Informe de Cierre</h3>
+					<h3 class="centrado">Informe de Receptoría</h3>
 					<form action="<?=base_url()?>impresiones/cierre_print" id="formulario" method="post" name="formulario" target="_blank">
 					<table align="center" border="0" cellpadding="0" cellspacing="2" class="texto" width="100%">
 						<tr height="20"><td colspan="3"></td></tr>
 
 						<tr>
 							<td width="22%"></td>
-							<td width="15%">Cierre del Adulto:</td>
-							<td width="63%">
-								<select name="id_cierre" id="id_cierre" class="combo">
+							<td width="18%">Receptoría del Adulto:</td>
+							<td width="60%">
+								<select name="id_receptoria" id="id_receptoria" class="combo">
 			                      	<option value=""></option>
-			                      	<?php if($cierr) : ?>
-			                    		<?php foreach($cierr as $row) : ?>
-			                      			<option value="<?=$row->id_cierre;?>"><?=$row->apellido_adulto; ?> <?=$row->nombre_adulto; ?> - <?=$row->cedula_adulto; ?></option>
+			                      	<?php if($recept) : ?>
+			                    		<?php foreach($recept as $row) : ?>
+			                      			<option value="<?=$row->id_receptoria;?>"><?=$row->apellido_adulto; ?> <?=$row->nombre_adulto; ?> - <?=$row->cedula_adulto; ?></option>
 			                        	<?php endforeach; ?>
 			                      	<?php endif; ?>
 			                    </select>
@@ -61,6 +61,6 @@
   	<script type="text/javascript">
 		var frmvalidator = new Validator("formulario");
 		frmvalidator.EnableMsgsTogether();
-		frmvalidator.addValidation("id_cierre","req","El campo del Cierre esta vacio, ¡Debe seleccionar los Datos!");
+		frmvalidator.addValidation("id_receptoria","req","El campo de la Receptoría esta vacio, ¡Debe seleccionar los Datos!");
     </script>
 </html>

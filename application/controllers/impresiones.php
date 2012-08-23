@@ -13,6 +13,8 @@ class Impresiones extends CI_Controller {
 			$this->load->model("personales_model");
 			$this->load->model("gruposf_model");
 			$this->load->model("cierres_model");
+			$this->load->model("receptorias_model");
+			$this->load->model("sociales_model");
 		}
 
 		$this->load->database();
@@ -115,18 +117,22 @@ class Impresiones extends CI_Controller {
 	}
 
 	public function receptoria($data = array()) {
+		$data['recept'] = $this->receptorias_model->get_all();
 		$this->load->view('receptoria.php', $data);	
 	}
 
 	public function receptoria_print() {
+		$data['recept'] = $this->receptorias_model->get_byid($_POST['id_receptoria']);
 		$this->load->view('receptoria_imprimir.php', $data);	
 	}
 
 	public function social($data = array()) {
+		$data['soc'] = $this->sociales_model->get_all();
 		$this->load->view('social.php', $data);	
 	}
 
 	public function social_print() {
+		$data['soc'] = $this->sociales_model->get_byid($_POST['id_social']);
 		$this->load->view('social_imprimir.php', $data);	
 	}
 
