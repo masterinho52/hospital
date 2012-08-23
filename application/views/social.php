@@ -16,7 +16,7 @@
 			<div id="body">
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
 				<p>
-					<h3 class="centrado">Informe Social</h3>
+					<h3 class="centrado">Impresión de Informe Social</h3>
 					<form action="<?=base_url()?>impresiones/cierre_print" id="formulario" method="post" name="formulario" target="_blank">
 					<table align="center" border="0" cellpadding="0" cellspacing="2" class="texto" width="100%">
 						<tr height="20"><td colspan="3"></td></tr>

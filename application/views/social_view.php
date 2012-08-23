@@ -22,7 +22,7 @@
 			<div id="body">
 				<h1 class="centrado">Hospital Especial Dr. Alejandro Próspero Reverend</h1>
 				<p>
-					<h3 class="centrado">Proceso de Informe de Cierre</h3>
+					<h3 class="centrado">Proceso de Informe Social</h3>
 					<p>
 					<?php echo $output; ?>
 					</p>
