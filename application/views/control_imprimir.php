@@ -60,18 +60,18 @@
 
 			<tr>
 				<td colspan="3" width="955">
-					<table align="center" border="1" cellpadding="0" cellspacing="5" width="100%">
+					<table align="center" border="1" cellpadding="0" cellspacing="2" width="100%">
 						<tr>
-							<td align="justify" class="informe_body" width="40%">
-								fecha: <span class="informe_body2"><?=$dia;?> de <?=$mes;?> del <?=$ano;?>.</span>
+							<td class="informe_body5" width="40%">
+								fecha: <span class="informe_body14"><?=$dia;?> de <?=$mes;?> del <?=$ano;?>.</span>
 							</td>
-							<td align="justify" class="informe_body" width="60%">
-								lugar: <span class="informe_body2"><?=$lugar;?>.</span>
+							<td align="justify" class="informe_body5" width="60%">
+								lugar: <span class="informe_body14"><?=$lugar;?>.</span>
 							</td>
 						</tr>
 						<tr>
-							<td align="justify" class="informe_body" colspan="2">
-								asunto: <span class="informe_body2"><?=$asunto;?>.</span>
+							<td align="justify" class="informe_body5" colspan="2">
+								asunto: <span class="informe_body14"><?=$asunto;?>.</span>
 							</td>
 						</tr>
 					</table>
@@ -82,48 +82,48 @@
 
 			<tr>
 				<td colspan="3" width="955">
-					<table align="center" border="1" cellpadding="0" cellspacing="5" width="100%">
+					<table align="center" border="1" cellpadding="0" cellspacing="2" width="100%">
 						<tr>
-							<td align="center" class="informe_body" width="25%"><strong>apellido y nombre</strong></td>
-							<td align="center" class="informe_body" width="10%"><strong>cédula</strong></td>
-							<td align="center" class="informe_body" width="20%"><strong>institución</strong></td>
-							<td align="center" class="informe_body" width="20%"><strong>localidad</strong></td>
-							<td align="center" class="informe_body" width="10%"><strong>teléfono</strong></td>
-							<td align="center" class="informe_body" width="15%"><strong>firma</strong></td>
+							<td align="center" class="informe_body5" width="25%"><strong>apellido y nombre</strong></td>
+							<td align="center" class="informe_body5" width="10%"><strong>cédula</strong></td>
+							<td align="center" class="informe_body5" width="20%"><strong>institución</strong></td>
+							<td align="center" class="informe_body5" width="20%"><strong>localidad</strong></td>
+							<td align="center" class="informe_body5" width="10%"><strong>teléfono</strong></td>
+							<td align="center" class="informe_body5" width="15%"><strong>firma</strong></td>
 						</tr>
 
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-						<tr height="25"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="30"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+						<tr height="35"><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 					</table>
 				</td>
 			</tr>
 
 			<tr height="20"><td colspan="3"></td></tr>
 
-			<tr><td align="right" colspan="3" class="informe_body">responsable: <span class="informe_body2"><?=$responsable;?></span></td></tr>
+			<tr><td align="right" colspan="3" class="informe_body" width="955">responsable: <span class="informe_body2"><?=$responsable;?></span></td></tr>
 		</table>
 	</body>
 </html>

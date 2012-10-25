@@ -35,7 +35,7 @@
 						<tr><td align="center">mesa de gallardo edo. trujillo</td></tr>
 						<tr><td align="center">departamento de desarrollo social</td></tr>
 					</table>
-				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/escudo_trujillo.jpg" height="145" width="145" /></td>
+				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/logo_gob_trujillo.jpg" height="145" width="145" /></td>
 			</tr>
 
 			<tr><td colspan="3"></td></tr>
@@ -66,73 +66,88 @@
 			<tr height="30"><td colspan="3"></td></tr>
 
 			<tr>
-				<td align="left" class="informe_title2" colspan="3" width="955">
-					identificación del caso:
-				</td>
-			</tr>
-
-			<tr height="30"><td colspan="3"></td></tr>
-
-			<tr>
 				<td colspan="3" width="955">
 					<table align="center" border="0" cellpadding="0" cellspacing="5" width="100%">
 						<tr>
-							<td align="justify" class="informe_body">
+							<td width="10%"></td>
+							<td class="informe_title2" width="80%">
+								identificación del caso:
+							</td>
+							<td width="10%"></td>
+						</tr>
+
+						<tr height="30"><td colspan="3"></td></tr>
+						
+						<tr>
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								cliente: <span class="informe_body5"><?=$cierr[0]->nombre_adulto;?> <?=$cierr[0]->apellido_adulto;?>.</span>
 							</td>
+							<td width="10%"></td>
 						</tr>
 
 						<tr height="10"><td></td></tr>
 
 						<tr>
-							<td align="justify" class="informe_body">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								dirección: <span class="informe_body5"><?=$cierr[0]->direccion_adulto;?>.</span>
 							</td>
+							<td width="10%"></td>
 						</tr>
 
 						<tr height="10"><td></td></tr>
 
 						<tr>
-							<td align="justify" class="informe_body">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								lapso de atención: <span class="informe_body5"><?=$cierr[0]->lapso_cierre;?>.</span>
 							</td>
+							<td width="10%"></td>
 						</tr>
 
 						<tr height="10"><td></td></tr>
 
 						<tr>
-							<td align="justify" class="informe_body">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								sintesis del caso: <span class="informe_body5"><?=$cierr[0]->sintesis_cierre;?>.</span>
 							</td>
+							<td width="10%"></td>
 						</tr>
 
 						<tr height="10"><td></td></tr>
 
 						<tr>
-							<td align="justify" class="informe_body">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								motivo de cierre: <span class="informe_body5"><?=$cierr[0]->motivo_cierre;?>.</span>
 							</td>
+							<td width="10%"></td>
 						</tr>
 
 						<tr height="10"><td></td></tr>
 
 						<tr>
-							<td align="left" class="informe_body">
-								trujillo, <span class="informe_body2"><?php $fecha = explode('-', $cierr[0]->fecha_cierre); echo $fecha[2];?></span> de <span class="informe_body2"><?php $fecha = explode('-', $cierr[0]->fecha_cierre); if ($fecha[1]=='01') { echo "enero";} if ($fecha[1]=='02') { echo "febrero";} if ($fecha[1]=='03') { echo "marzo";} if ($fecha[1]=='04') { echo "abril";} if ($fecha[1]=='05') { echo "mayo";} if ($fecha[1]=='07') { echo "julio";} if ($fecha[1]=='08') { echo "agosto";} if ($fecha[1]=='09') { echo "septiembre";} if ($fecha[1]=='10') { echo "octubre";} if ($fecha[1]=='11') { echo "noviembre";} if ($fecha[1]=='12') { echo "diciembre";} ?></span> del <span class="informe_body2"><?php $fecha = explode('-', $cierr[0]->fecha_cierre); echo $fecha[0];?>.</span>							</td>
+							<td width="10%"></td>
+							<td align="left" class="informe_body" width="80%">
+								trujillo, <span class="informe_body2"><?php $fecha = explode('-', $cierr[0]->fecha_cierre); echo $fecha[2];?></span> de <span class="informe_body2"><?php $fecha = explode('-', $cierr[0]->fecha_cierre); if ($fecha[1]=='01') { echo "enero";} if ($fecha[1]=='02') { echo "febrero";} if ($fecha[1]=='03') { echo "marzo";} if ($fecha[1]=='04') { echo "abril";} if ($fecha[1]=='05') { echo "mayo";} if ($fecha[1]=='07') { echo "julio";} if ($fecha[1]=='08') { echo "agosto";} if ($fecha[1]=='09') { echo "septiembre";} if ($fecha[1]=='10') { echo "octubre";} if ($fecha[1]=='11') { echo "noviembre";} if ($fecha[1]=='12') { echo "diciembre";} ?></span> del <span class="informe_body2"><?php $fecha = explode('-', $cierr[0]->fecha_cierre); echo $fecha[0];?>.</span>
+							</td>
+							<td width="10%"></td>
 						</tr>
 					</table>
 				</td>
 			</tr>
 
-			<tr>
-				<td align="center" colspan="3">
-					<table align="center" border="0" cellpadding="0" cellspacing="1" width="100%">
-						<tr height="150"><td colspan="3"></td></tr>
+			<tr height="200"><td colspan="3"></td></tr>
 
+			<tr>
+				<td align="center" colspan="3" width="955">
+					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
 						<tr>
-							<td width="30%"></td>
 							<td width="40%"></td>
-							<td align="center" width="30%"><span class="hr">__________________________________________</span></td>
+							<td width="20%"></td>
+							<td align="center" width="40%"><span class="hr">_____________________________________________________</span></td>
 						</tr>
 
 						<tr>
@@ -140,9 +155,9 @@
 						</tr>
 
 						<tr>
-							<td width="30%"></td>
 							<td width="40%"></td>
-							<td align="center" class="informe_body3" width="30%"><div><?=$cierr[0]->instruccion_personal;?> <?=$cierr[0]->nombre_personal;?> <?=$cierr[0]->apellido_personal;?></div><div>trabajador social</div></td>
+							<td width="20%"></td>
+							<td align="center" class="informe_body3" width="40%"><div>c.i: <?=$cierr[0]->cedula_personal;?></div><div><?=$cierr[0]->instruccion_personal;?> <?=$cierr[0]->nombre_personal;?> <?=$cierr[0]->apellido_personal;?></div><div>trabajador social</div></td>
 						</tr>
 					</table>
 				</td>

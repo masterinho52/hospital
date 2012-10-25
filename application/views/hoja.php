@@ -47,7 +47,7 @@
 
 						<tr>
 							<td width="20%"></td>
-							<td width="18%">Refereido por:</td>
+							<td width="18%">Referido por:</td>
 							<td width="42%">
 								<input id="referido" maxlength="50" name="referido" size="50" type="text" />
 							</td>

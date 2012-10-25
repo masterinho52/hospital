@@ -244,6 +244,7 @@
 		font-family: Arial;
 		font-size: 14pt;
 		font-weight: normal;
+		line-height: 25pt;
 	}
 
 	.informe_body2 {
@@ -253,6 +254,7 @@
 		font-family: Arial;
 		font-size: 14pt;
 		font-weight: bold;
+		line-height: 25pt;
 	}
 
 	.informe_body3 {
@@ -277,11 +279,150 @@
 	.informe_body5 {
 		color: #000;
 		text-transform: uppercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 14pt;
+		font-weight: normal;
+	}
+
+	.informe_body6 {
+		color: #000;
+		margin-left: 10px;
+		background: #FF0000;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 16pt;
+		font-weight: bold;
+		line-height: 20pt;
+	}
+
+	.informe_body7 {
+		color: #000;
+		text-transform: lowercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 14pt;
+		font-weight: bold;
+		line-height: 15pt;
+	}
+
+	.informe_body8 {
+		color: #000;
+		margin-left: 10px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 14pt;
+		font-weight: bold;
+		line-height: 15pt;
+	}
+
+	.informe_body9 {
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 14pt;
+		font-weight: normal;
+		line-height: 15pt;
+	}
+
+	.informe_body10 {
+		color: #000;
+		float: right;
+		margin-top: 7px;
+		margin-right: 10px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 14pt;
+		font-weight: bold;
+		line-height: 15pt;
+	}
+
+	.informe_body11 {
+		color: #0000FF;
+		text-transform: uppercase;
 		text-decoration: underline;
 		font-family: Arial;
 		font-size: 14pt;
 		font-weight: bold;
-		line-height: 25pt;
+		line-height: 15pt;
+	}
+
+	.informe_body12 {
+		color: #000;
+		text-transform: lowercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 10pt;
+		font-weight: bold;
+		line-height: 15pt;
+	}
+
+	.informe_body13 {
+		color: #000;
+		margin-left: 10px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 12pt;
+		font-weight: normal;
+		line-height: 15pt;
+	}
+
+	.informe_body14 {
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: underline;
+		font-family: Arial;
+		font-size: 14pt;
+		font-weight: bold;
+	}
+
+	.informe_body15 {
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 12pt;
+		font-weight: bold;
+		line-height: 15pt;
+	}
+
+	.informe_body16 {
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 12pt;
+		font-weight: normal;
+		line-height: 15pt;
+	}
+
+	.informe_body17 {
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 10pt;
+		font-weight: bold;
+		line-height: 15pt;
+	}
+
+	.informe_body18 {
+		color: #000;
+		text-transform: lowercase;
+		text-decoration: none;
+		font-family: Arial;
+		font-size: 14pt;
+		font-weight: normal;
+		line-height: 15pt;
+	}
+
+	.hr {
+		color: #000;
 	}
 
 	h4 {

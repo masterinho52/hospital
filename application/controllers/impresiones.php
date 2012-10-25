@@ -101,7 +101,7 @@ class Impresiones extends CI_Controller {
 		$data['adulto'] = $this->adultos_model->get_byid($_POST['id_adulto']);
 		$data['procedente'] = $_POST['procedente'];
 		$data['referido'] = $_POST['referido'];
-		$data['grupo'] = $this->gruposf_model->get_byid($_POST['id_adulto']);
+		$data['grupo'] = $this->gruposf_model->get_byid_limit3($_POST['id_adulto']);
 		$data['personal'] = $this->personales_model->get_byid($_POST['id_personal']);
 		$this->load->view('hoja_imprimir.php', $data);	
 	}
@@ -123,6 +123,8 @@ class Impresiones extends CI_Controller {
 
 	public function receptoria_print() {
 		$data['recept'] = $this->receptorias_model->get_byid($_POST['id_receptoria']);
+		$data['edad'] = $this->fn_edad($data['recept'][0]->fechan_adulto);
+		$data['edad_r'] = $this->fn_edad($data['recept'][0]->fechan_representante);
 		$this->load->view('receptoria_imprimir.php', $data);	
 	}
 
@@ -133,6 +135,8 @@ class Impresiones extends CI_Controller {
 
 	public function social_print() {
 		$data['soc'] = $this->sociales_model->get_byid($_POST['id_social']);
+		$data['edad'] = $this->fn_edad($data['soc'][0]->fechan_adulto);
+		$data['edad_r'] = $this->fn_edad($data['soc'][0]->fechan_representante);
 		$this->load->view('social_imprimir.php', $data);	
 	}
 

@@ -32,7 +32,7 @@ class Cierres extends CI_Controller {
 			
 			$crud->set_subject('Informe de Cierre');
 			
-			$crud->columns('id_adulto', 'id_personal', 'fecha_cierre', 'id_usuario', 'fregistro_cierre');
+			$crud->columns('id_adulto', 'fecha_cierre', 'id_personal', 'id_usuario', 'fregistro_cierre');
 			
 			$crud->display_as('id_adulto', 'Adulto');
 			$crud->display_as('id_personal', 'Personal');

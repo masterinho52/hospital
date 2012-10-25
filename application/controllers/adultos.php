@@ -58,6 +58,7 @@ class Adultos extends CI_Controller {
 			$crud->set_rules('nombre_adulto', 'Nombres del Adulto', 'required|alpha_space');
 			$crud->set_rules('apellido_adulto', 'Apellidos del Adulto', 'required|alpha_space');
 			$crud->set_rules('numero_expediente_adulto', 'Número de Expediente del Adulto', 'required');
+			$crud->set_rules('sexo_adulto', 'Sexo del Adulto', 'required');
 			$crud->set_rules('estadocivil_adulto', 'Estado Civil del Adulto', 'required');
 			$crud->set_rules('lugarn_adulto', 'Lugar de Nacimiento del Adulto', 'required|alpha_space');
 			$crud->set_rules('fechan_adulto', 'Fecha de Nacimiento del Adulto', 'required');

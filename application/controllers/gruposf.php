@@ -60,8 +60,9 @@ class Gruposf extends CI_Controller {
 			$crud->set_rules('instruccion_grupo', 'Grado de Instrucción del Grupo Familiar', 'required');
 			$crud->set_rules('direccion_grupo', 'Dirección del Grupo Familiar', 'required');
 			$crud->set_rules('telefono_grupo', 'Teléfono del Grupo Familiar', 'required|numeric');
+			$crud->set_rules('parentesco_grupo', 'Parentesco del Grupo Familiar', 'required');
 			$crud->set_rules('ocupacion_grupo', 'Ocupación del Grupo Familiar', 'required');
-			$crud->set_rules('ingreso_grupo', 'Ingreso del Grupo Familiar', 'required');
+			$crud->set_rules('ingreso_grupo', 'Ingreso del Grupo Familiar', 'required|numeric');
 			$crud->set_rules('aporte_grupo', 'Aporte del Grupo Familiar', 'required|alpha_space');
 			$crud->set_rules('id_adulto', 'Nombre del Adulto', 'required');
 			$crud->set_rules('id_usuario', 'Nombre del Usuario', 'required'); 

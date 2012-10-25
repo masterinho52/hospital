@@ -36,7 +36,7 @@
 						<tr><td align="center">coordinación de promoción de salud y</td></tr>
 						<tr><td align="center">prevención de la enfermedad</td></tr>
 					</table>
-				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/escudo_trujillo.jpg" height="145" width="145" /></td>
+				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/logo_gob_trujillo.jpg" height="145" width="145" /></td>
 			</tr>
 
 			<tr><td colspan="3"></td></tr>
@@ -62,84 +62,84 @@
 						<tr height="30"><td colspan="3"></td></tr>
 
 						<tr>
-							<td width="20%"></td>
-							<td align="justify" class="informe_body" width="60%">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								institución visitada: <span class="informe_body2"><?=$institucion;?>.</span>
 							</td>
-							<td width="20%"></td>
+							<td width="10%"></td>
 						</tr>
 
-						<tr height="40"><td colspan="3"></td></tr>
+						<tr height="10"><td colspan="3"></td></tr>
 
 						<tr>
-							<td width="20%"></td>
-							<td align="justify" class="informe_body" width="60%">
-								fecha y hora de la visita: <span class="informe_body2"><?=$dia;?> de <?=$mes;?> del <?=$ano;?> a las <?=$hora;?>:<?=$minuto;?> <?=$tiempo;?>.</span>
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
+								fecha y hora de la visita: <span class="informe_body2"><?=$dia;?> de <?=$mes;?> del <?=$ano;?> a las <?=$hora;?>:<?=$minuto;?> <span class="informe_body7"><?=$tiempo;?></span>.</span>
 							</td>
-							<td width="20%"></td>
+							<td width="10%"></td>
 						</tr>
 
-						<tr height="40"><td colspan="3"></td></tr>
+						<tr height="10"><td colspan="3"></td></tr>
 
 						<tr>
-							<td width="20%"></td>
-							<td align="justify" class="informe_body" width="60%">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								funcionario entrevistado: <span class="informe_body2"><?=$funcionario;?>.</span>
 							</td>
-							<td width="20%"></td>
+							<td width="10%"></td>
 						</tr>
 
-						<tr height="40"><td colspan="3"></td></tr>
+						<tr height="10"><td colspan="3"></td></tr>
 
 						<tr>
-							<td width="200"></td>
-							<td align="justify" class="informe_body" width="60%">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								cargo del funcionario: <span class="informe_body2"><?=$cargo;?>.</span>
 							</td>
-							<td width="20%"></td>
+							<td width="10%"></td>
 						</tr>
 
-						<tr height="40"><td colspan="3"></td></tr>
+						<tr height="10"><td colspan="3"></td></tr>
 
 						<tr>
-							<td width="20%"></td>
-							<td align="justify" class="informe_body" width="60%">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								motivo de la visita: <span class="informe_body2"><?=$motivo;?>.</span>
 							</td>
-							<td width="20%"></td>
+							<td width="10%"></td>
 						</tr>
 
-						<tr height="40"><td colspan="3"></td></tr>
+						<tr height="10"><td colspan="3"></td></tr>
 
 						<tr>
-							<td width="20%"></td>
-							<td align="justify" class="informe_body" width="60%">
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
 								acuerdos establecidos: <span class="informe_body2"><?=$acuerdo;?>.</span>
 							</td>
-							<td width="20%"></td>
+							<td width="10%"></td>
 						</tr>
 
-						<tr height="120"><td colspan="3"></td></tr>
+						<tr height="200"><td colspan="3"></td></tr>
 
 						<tr>
-							<td align="center" colspan="3">
-								<table align="center" border="0" cellpadding="0" cellspacing="1" width="100%">
+							<td align="center" colspan="3" width="955">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tr>
-										<td align="center" width="30%"><span class="hr">_________________________________________</span></td>
-										<td width="40%"></td>
-										<td align="center" width="30%"><span class="hr">__________________________________________</span></td>
+										<td align="center" width="40%"><span class="hr">_____________________________________________________</span></td>
+										<td width="20%"></td>
+										<td align="center" width="40%"><span class="hr">_____________________________________________________</span></td>
 									</tr>
 
 									<tr>
-										<td align="center" class="informe_body3" width="30%"></td>
-										<td width="40%"></td>
-										<td align="center" class="informe_body3" width="30%"></td>
+										<td align="center" class="informe_body3" width="40%"></td>
+										<td width="20%"></td>
+										<td align="center" class="informe_body3" width="40%"></td>
 									</tr>
 
 									<tr>
-										<td align="center" class="informe_body3" width="30%"><div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>trabajo social</div></td>
-										<td width="40%"></td>
-										<td align="center" class="informe_body3" width="30%"><div><?=$institucion;?></div><div>por la institución visitada</div></td>
+										<td align="center" class="informe_body3" width="40%"><div>c.i: <?=$personal[0]->cedula_personal;?></div><div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>trabajo social</div></td>
+										<td width="20%"></td>
+										<td align="center" class="informe_body3" width="40%"><div><?=$institucion;?></div><div>por la institución visitada</div></td>
 									</tr>
 								</table>
 							</td>

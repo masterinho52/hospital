@@ -35,7 +35,7 @@
 						<tr><td align="center">mesa de gallardo edo. trujillo</td></tr>
 						<tr><td align="center">departamento de desarrollo social</td></tr>
 					</table>
-				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/escudo_trujillo.jpg" height="145" width="145" /></td>
+				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/logo_gob_trujillo.jpg" height="145" width="145" /></td>
 			</tr>
 
 			<tr><td colspan="3"></td></tr>
@@ -62,28 +62,28 @@
 					<table align="center" border="0" cellpadding="0" cellspacing="5" width="100%">
 						<tr>
 							<td width="35%"></td>
-							<td align="left" class="informe_body" width="65%">
+							<td align="left" class="informe_body5" width="65%">
 								adulto mayor: <span class="informe_body4"><?=$adulto[0]->nombre_adulto;?> <?=$adulto[0]->apellido_adulto;?>.</span>
 							</td>
 						</tr>
 
 						<tr>
 							<td width="35%"></td>
-							<td align="left" class="informe_body" width="65%">
+							<td align="left" class="informe_body5" width="65%">
 								cédula de identidad: <span class="informe_body4"><?=$adulto[0]->cedula_adulto;?>.</span>
 							</td>
 						</tr>
 
 						<tr>
 							<td width="35%"></td>
-							<td align="left" class="informe_body" width="65%">
+							<td align="left" class="informe_body5" width="65%">
 								historia nº: <span class="informe_body4"><?=$adulto[0]->numero_expediente_adulto;?>.</span>
 							</td>
 						</tr>
 
 						<tr>
 							<td width="35%"></td>
-							<td align="left" class="informe_body" width="65%">
+							<td align="left" class="informe_body5" width="65%">
 								fecha: <span class="informe_body4"><?=$dia;?> de <?=$mes;?> del <?=$ano;?>.</span>
 							</td>
 						</tr>
@@ -91,28 +91,36 @@
 				</td>
 			</tr>
 
-			<tr height="50"><td colspan="3"></td></tr>
+			<tr height="30"><td colspan="3"></td></tr>
 
 			<tr>
 				<td colspan="3" width="955">
 					<table align="center" border="0" cellpadding="0" cellspacing="5" width="100%">
 						<tr>
-							<td align="justify" class="informe_body">
-								situación actual: <span class="informe_body5"><?=$situacion;?>.</span>
+							<td width="10%"></td>
+							<td align="justify" class="informe_body" width="80%">
+								situación actual: <span class="informe_body2"><?=$situacion;?>.</span>
 							</td>
+							<td width="10%"></td>
 						</tr>
 					</table>
 				</td>
 			</tr>
 
-			<tr height="50"><td colspan="3"></td></tr>
+			<tr height="200"><td colspan="3"></td></tr>
 
 			<tr>
-				<td align="center" colspan="3"><span class="hr">__________________________________________</span></td>
-			</tr>
+				<td align="center" colspan="3" width="955">
+					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td align="center" width="100%"><span class="hr">_____________________________________________________</span></td>
+						</tr>
 
-			<tr>
-				<td align="center" colspan="3" class="informe_body3"><div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>trabajador social</div></td>
+						<tr>
+							<td align="center" class="informe_body3" width="100%"><div>c.i: <?=$personal[0]->cedula_personal;?></div><div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>trabajador social</div></td>
+						</tr>
+					</table>
+				</td>
 			</tr>
 		</table>
 	</body>

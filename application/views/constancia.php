@@ -83,8 +83,8 @@
                                	</select>
                                	<select name="tiempo" id="tiempo" class="combo">
                                 	<option value="">am/pm.</option>
-									<option value="am.">am.</option>
-									<option value="pm.">pm.</option>
+									<option value="am">am.</option>
+									<option value="pm">pm.</option>
                                	</select>
 							</td>
 							<td width="10%"></td>

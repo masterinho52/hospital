@@ -17,8 +17,19 @@ class Gruposf_model extends CI_Model {
 		return $data;
 	}
 
-	public function get_byid($id_adulto) {
+	public function get_byid_limit3($id_adulto) {
 		$consulta = $this->db->where("id_adulto", $id_adulto)->order_by('apellido_grupo asc, nombre_grupo asc')->limit(3)->get('tbl_grupo_familiar');
+		if ($consulta->num_rows()) {
+			$data = $consulta->result();
+		} else {
+			$data = FALSE;
+		}
+		$consulta->free_result();
+		return $data;
+	}
+
+	public function get_byid($id_adulto) {
+		$consulta = $this->db->where("id_adulto", $id_adulto)->order_by('apellido_grupo asc, nombre_grupo asc')->get('tbl_grupo_familiar');
 		if ($consulta->num_rows()) {
 			$data = $consulta->result();
 		} else {

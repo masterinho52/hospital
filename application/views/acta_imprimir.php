@@ -35,7 +35,7 @@
 						<tr><td align="center">mesa de gallardo edo. trujillo</td></tr>
 					</table>
 				</td>
-				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/escudo_trujillo.jpg" height="145" width="145" /></td>
+				<td align="center" width="150"><img border="0" src="<?=base_url()?>img/logo_gob_trujillo.jpg" height="145" width="145" /></td>
 			</tr>
 
 			<tr><td colspan="3"></td></tr>
@@ -73,7 +73,7 @@
 							<td width="10%"></td>
 						</tr>
 
-						<tr height="40"><td colspan="3"></td></tr>
+						<tr height="10"><td colspan="3"></td></tr>
 
 						<tr>
 							<td width="10%"></td>
@@ -89,7 +89,7 @@
 							<td width="10%"></td>
 						</tr>
 
-						<tr height="40"><td colspan="3"></td></tr>
+						<tr height="10"><td colspan="3"></td></tr>
 
 						<tr>
 							<td width="10%"></td>
@@ -131,7 +131,7 @@
 							<td width="10%"></td>
 						</tr>
 
-						<tr height="40"><td colspan="3"></td></tr>
+						<tr height="10"><td colspan="3"></td></tr>
 
 						<tr>
 							<td width="10%"></td>
@@ -149,12 +149,12 @@
 						<tr height="100"><td colspan="3"></td></tr>
 
 						<tr>
-							<td align="center" colspan="3">
-								<table align="center" border="0" cellpadding="0" cellspacing="1" width="100%">
+							<td align="center" colspan="3" width="955">
+								<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tr>
-										<td align="center" width="30%"><span class="hr">__________________________________________</span></td>
-										<td width="40%"></td>
-										<td align="center" width="30%"><span class="hr">__________________________________________</span></td>
+										<td align="center" width="40%"><span class="hr">_____________________________________________________</span></td>
+										<td width="20%"></td>
+										<td align="center" width="40%"><span class="hr">_____________________________________________________</span></td>
 									</tr>
 
 									<tr>
@@ -162,19 +162,19 @@
 									</tr>
 
 									<tr>
-										<td align="center" class="informe_body3" width="30%"><div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>trabajador social</div></td>
-										<td width="40%"></td>
-										<td align="center" class="informe_body3" width="30%"><div><?=$adulto[0]->nombre_representante;?> <?=$adulto[0]->apellido_representante;?></div><div>persona responsable</div></td>
+										<td align="center" class="informe_body3" width="40%"><div>c.i: <?=$personal[0]->cedula_personal;?></div><div><?=$personal[0]->instruccion_personal;?> <?=$personal[0]->nombre_personal;?> <?=$personal[0]->apellido_personal;?></div><div>trabajador social</div></td>
+										<td width="20%"></td>
+										<td align="center" class="informe_body3" width="40%"><div>c.i: <?=$adulto[0]->cedula_representante;?></div><div><?=$adulto[0]->nombre_representante;?> <?=$adulto[0]->apellido_representante;?></div><div>persona responsable</div></td>
 									</tr>
 
 									<tr height="50"><td colspan="3"></td></tr>
 
 									<tr>
-										<td align="center" colspan="3"><span class="hr">__________________________________________</span></td>
+										<td align="center" colspan="3" width="100%"><span class="hr">_____________________________________________________</span></td>
 									</tr>
 
 									<tr>
-										<td align="center" colspan="3" class="informe_body3"><div><?=$director[0]->instruccion_personal;?> <?=$director[0]->nombre_personal;?> <?=$director[0]->apellido_personal;?></div><div>director(a)</div></td>
+										<td align="center" colspan="3" class="informe_body3" width="100%"><div>c.i: <?=$director[0]->cedula_personal;?></div><div><?=$director[0]->instruccion_personal;?> <?=$director[0]->nombre_personal;?> <?=$director[0]->apellido_personal;?></div><div>director(a)</div></td>
 									</tr>
 								</table>
 							</td>

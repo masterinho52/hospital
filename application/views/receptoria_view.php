@@ -24,7 +24,7 @@
 				<p>
 					<h3 class="centrado">Proceso de Informe de Receptoría</h3>
 					<p>
-					<?php echo $output; ?>
+						<?php echo $output; ?>
 					</p>
 				</p>
 			</div>
