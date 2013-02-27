@@ -44,8 +44,8 @@ class Gruposf extends CI_Controller {
 			$crud->display_as('telefono_grupo', 'Teléfono');
 			$crud->display_as('parentesco_grupo', 'Parentesco');
 			$crud->display_as('ocupacion_grupo', 'Ocupación');
-			$crud->display_as('ingreso_grupo', 'Ingreso');
-			$crud->display_as('aporte_grupo', 'Aporte');
+			$crud->display_as('ingreso_grupo', 'Ingreso(Bs)');
+			$crud->display_as('aporte_grupo', 'Aporte(Bs)');
 			$crud->display_as('id_adulto', 'Adulto');
 			$crud->display_as('id_usuario', 'Registrado por');
 			$crud->display_as('fregistro_adulto', 'Fecha de Registro');
@@ -63,7 +63,7 @@ class Gruposf extends CI_Controller {
 			$crud->set_rules('parentesco_grupo', 'Parentesco del Grupo Familiar', 'required');
 			$crud->set_rules('ocupacion_grupo', 'Ocupación del Grupo Familiar', 'required');
 			$crud->set_rules('ingreso_grupo', 'Ingreso del Grupo Familiar', 'required|numeric');
-			$crud->set_rules('aporte_grupo', 'Aporte del Grupo Familiar', 'required|alpha_space');
+			$crud->set_rules('aporte_grupo', 'Aporte del Grupo Familiar', 'required|numeric');
 			$crud->set_rules('id_adulto', 'Nombre del Adulto', 'required');
 			$crud->set_rules('id_usuario', 'Nombre del Usuario', 'required'); 
 			

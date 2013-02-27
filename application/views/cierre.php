@@ -29,7 +29,7 @@
 			                      	<option value=""></option>
 			                      	<?php if($cierr) : ?>
 			                    		<?php foreach($cierr as $row) : ?>
-			                      			<option value="<?=$row->id_cierre;?>"><?=$row->apellido_adulto; ?> <?=$row->nombre_adulto; ?> - <?=$row->cedula_adulto; ?></option>
+			                      			<option value="<?=$row->id_cierre;?>"><?=$row->cedula_adulto; ?> - <?=$row->apellido_adulto; ?> <?=$row->nombre_adulto; ?></option>
 			                        	<?php endforeach; ?>
 			                      	<?php endif; ?>
 			                    </select>

@@ -36,7 +36,7 @@ class Usuarios extends CI_Controller {
 			
 			// Definición del Indivíduo
 			$crud->set_subject('Usuario');
-			
+
 			// Campos a Mostrar en la Lista
 			$crud->columns('nombre_usuario', 'cedula_usuario', 'tipo_usuario', 'login');
 			
@@ -57,7 +57,7 @@ class Usuarios extends CI_Controller {
 			$crud->change_field_type('password_confirmacion','password');
 
 			// Definición de campos que se van a mostrar en Guardar y Modificar
-			$crud->fields('cedula_usuario', 'nombre_usuario', 'tipo_usuario');
+			$crud->fields('cedula_usuario', 'nombre_usuario', 'tipo_usuario', 'password','password_confirmacion');
 
 			// Reglas de Validación
 			$crud->set_rules('cedula_usuario', 'Cédula del Usuario', 'required');
@@ -68,8 +68,9 @@ class Usuarios extends CI_Controller {
 			
 			// Permisos de usuario
 			if (($this->session->userdata("tipo_usuario")=='Supervisor') or ($this->session->userdata("tipo_usuario")=='Usuario')) {
+				$crud->where('cedula_usuario', $this->session->userdata("cedula_usuario"));
 				$crud->unset_add();
-				$crud->unset_edit();
+				// $crud->unset_edit();
 				$crud->unset_delete();
 			}
 			

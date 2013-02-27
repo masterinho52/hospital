@@ -5,9 +5,6 @@
 		<li> 
 			<a href="#">Archivo</a> 
 		    <ul class="submenu">
-		    	<?php if ($this->session->userdata("tipo_usuario")=='Administrador') { ?>           
-		        	<li><a href="<?=base_url()?>usuarios">Registro de Usuarios</a></li>
-		        <?php } ?>
 		        <li><a href="<?=base_url()?>departamentos">Registro del Departamento</a></li>
 				<li><a href="<?=base_url()?>cargos">Registro del Cargo</a></li>
 		        <li><a href="<?=base_url()?>personales">Registro del Personal</a></li>
@@ -42,19 +39,24 @@
 		<li> 
 			<a href="#">Reportes</a> 
 		    <ul class="submenu">
-		        <li><a href="<?=base_url()?>reportes/departamento">Reporte de Departamentos</a></li>
-				<li><a href="<?=base_url()?>reportes/cargo">Reporte de Cargos</a></li>
-		        <li><a href="<?=base_url()?>reportes/personal">Reporte de Personal</a></li> 
+		        <li><a href="<?=base_url()?>reportes/adulto">Reporte de Adultos</a></li>
+				<li><a href="<?=base_url()?>reportes/cierre">Reporte de Cierres</a></li>
+		    <!-- 
+		    	<li><a href="<?=base_url()?>reportes/personal">Reporte de Personal</a></li> 
 		        <li><a href="<?=base_url()?>reportes/representante">Reporte del Representante</a></li>
 		        <li><a href="<?=base_url()?>reportes/adulto">Reporte de Adultos Mayores</a></li>
 		        <li><a href="<?=base_url()?>reportes/gruposf">Reporte de Grupos Familiares</a></li>
-		   	</ul> 
+ 			-->		   	
+			</ul> 
 		</li>
 		<?php } ?>
 		<li> 
-			<a href="#">Mantenimiento</a> 
+			<a href="#">Configuración</a> 
+				
 		    <ul class="submenu">
-		        <li><a href="<?=base_url()?>cambios">Cambio de Contraseña</a></li>
+		        <?php // if ($this->session->userdata("tipo_usuario")=='Administrador') { ?>           
+		        	<li><a href="<?=base_url()?>usuarios">Usuarios</a></li>
+		        <?php //} ?>
 		   	</ul> 
 		</li> 
 		<li class="pull-right">

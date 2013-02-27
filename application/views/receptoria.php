@@ -29,7 +29,7 @@
 			                      	<option value=""></option>
 			                      	<?php if($recept) : ?>
 			                    		<?php foreach($recept as $row) : ?>
-			                      			<option value="<?=$row->id_receptoria;?>"><?=$row->apellido_adulto; ?> <?=$row->nombre_adulto; ?> - <?=$row->cedula_adulto; ?></option>
+			                      			<option value="<?=$row->id_receptoria;?>"><?=$row->cedula_adulto; ?> - <?=$row->apellido_adulto; ?> <?=$row->nombre_adulto; ?></option>
 			                        	<?php endforeach; ?>
 			                      	<?php endif; ?>
 			                    </select>

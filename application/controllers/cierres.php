@@ -16,6 +16,7 @@ class Cierres extends CI_Controller {
 		$this->load->database();
 		$this->load->helper('url');
 		
+    	$this->load->model("adultos_model", "adultos");
 		$this->load->library('grocery_CRUD');	
 	}
 	
@@ -39,7 +40,7 @@ class Cierres extends CI_Controller {
 			$crud->display_as('fecha_cierre', 'Fecha de Cierre');
 			$crud->display_as('lapso_cierre', 'Lapso de Atención');
 			$crud->display_as('sintesis_cierre', 'Sintesis del Caso');
-			$crud->display_as('motivo_cierre', 'Motico de Cierre');
+			$crud->display_as('motivo_cierre', 'Motivo de Cierre');
 			$crud->display_as('id_usuario', 'Registrado por');
 			$crud->display_as('fregistro_cierre', 'Fecha de Registro');
 
@@ -53,7 +54,13 @@ class Cierres extends CI_Controller {
 			$crud->set_rules('fecha_cierre', 'Fecha del Cierre', 'required');
 			$crud->set_rules('id_usuario', 'Nombre del Usuario', 'required');
 
-			$crud->set_relation('id_adulto', 'tbl_adulto', '{apellido_adulto} {nombre_adulto} - {cedula_adulto}');
+			$crud->set_relation('id_adulto', 'tbl_adulto', '{apellido_adulto} {nombre_adulto} - {cedula_adulto}', array('estatus_adulto' => '1'),'id_adulto ASC');
+
+
+			// $crud->set_relation('user_id','users','username',array('status' => 'active'),'priority ASC');
+
+
+
 			$crud->set_relation('id_personal', 'tbl_personal', '{apellido_personal} {nombre_personal} - {cedula_personal}');
 			$crud->set_relation('id_usuario', 'tbl_usuario', 'nombre_usuario');
 
@@ -73,6 +80,12 @@ class Cierres extends CI_Controller {
 			$crud->callback_before_insert(array($this,'valid_uppercase'));
     		$crud->callback_before_update(array($this,'valid_uppercase'));
 
+
+    		// Función a ejecutarse después de Guardar, cambia el estatus del adulto a cero
+    		$crud->callback_after_insert(array($this,'cambiar_estatus_adulto_cero'));
+    		$crud->callback_after_delete(array($this,'cambiar_estatus_adulto_uno'));
+
+
 			$output = $crud->render();
 			
 			$this->_example_output($output);
@@ -87,7 +100,21 @@ class Cierres extends CI_Controller {
     	$post_array['lapso_cierre'] = strtoupper($post_array['lapso_cierre']);
     	$post_array['sintesis_cierre'] = strtoupper($post_array['sintesis_cierre']);
     	$post_array['motivo_cierre'] = strtoupper($post_array['motivo_cierre']);
+
     	// Devuelve el arreglo para Guardar
     	return $post_array;
-    }	
+    }
+
+    function cambiar_estatus_adulto_cero($post_array, $primary_key = null) {
+    	
+    	$id_adulto = $post_array['id_adulto'];
+    	$this->adultos->estatus_cero($id_adulto);
+    }
+
+    function cambiar_estatus_adulto_uno($post_array, $primary_key = null) {
+    	
+    	$id_adulto = $post_array['id_adulto'];
+    	$this->adultos->estatus_uno($id_adulto);
+    }
+
 }

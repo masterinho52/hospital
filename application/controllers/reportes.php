@@ -8,49 +8,40 @@ class Reportes extends CI_Controller {
 
 		if (!$this->session->userdata("logged_in")) {
 			redirect('/');
+		} else {
+			$this->load->model("adultos_model");
+			$this->load->model("personales_model");
+			$this->load->model("gruposf_model");
+			$this->load->model("cierres_model");
+			$this->load->model("receptorias_model");
+			$this->load->model("sociales_model");
 		}
 
 		$this->load->database();
-		$this->load->helper('url');	
-	}
-
-	public function departamento() {
-		$this->load->view('departamento_reporte.php');	
-	}
-
-	public function departamento_report() {
-		$this->load->view('departamento_reporte_imprimir.php');	
-	}
-
-	public function cargo() {
-		$this->load->view('cargo_reporte.php');	
-	}
-
-	public function cargo_report() {
-		$this->load->view('cargo_reporte_imprimir.php');	
-	}
-
-	public function personal() {
-		$this->load->view('personal_reporte.php');	
-	}
-
-	public function personal_report() {
-		$this->load->view('personal_reporte_imprimir.php');	
+		$this->load->helper('url');
 	}
 
 	public function adulto() {
 		$this->load->view('adulto_reporte.php');	
 	}
 
-	public function adulto_report() {
-		$this->load->view('adulto_reporte_imprimir.php');	
+	public function adultos_print() {
+		$d = $this->fecha2sql($_POST['desde']);
+		$h = $this->fecha2sql($_POST['hasta']);
+		// echo $d;
+		$data['adultos'] = $this->adultos_model->get_all_byDate($d, $h);
+		// $data['adultos'] = $this->adultos_model->get_all();
+		$this->load->view('adulto_imprimir.php', $data);	
 	}
 
-	public function gruposf() {
-		$this->load->view('gruposf_reporte.php');	
+	
+	public function fecha2sql($fecha)
+	{
+		$fech = explode('/', $fecha);
+		$nfecha = $fech[2].'-'.$fech[1].'-'.$fech[0];
+		return $nfecha;
 	}
-
-	public function gruposf_report() {
-		$this->load->view('gruposf_reporte_imprimir.php');	
+	public function cierre() {
+		$this->load->view('cierre_reporte.php');	
 	}
 }

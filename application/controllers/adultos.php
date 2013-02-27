@@ -31,6 +31,8 @@ class Adultos extends CI_Controller {
 			$crud->set_table('tbl_adulto');
 			
 			$crud->set_subject('Adulto');
+
+			$crud->where("estatus_adulto", "1");
 			
 			$crud->columns('apellido_adulto', 'nombre_adulto', 'cedula_adulto', 'numero_expediente_adulto', 'fechan_adulto', 'fechai_adulto', 'telefono_adulto', 'id_representante', 'id_usuario', 'fregistro_adulto');
 			
@@ -88,7 +90,7 @@ class Adultos extends CI_Controller {
 			// Función a ejecutarse antes de Guardar y Modificar modificac el texto en mayuscula 
 			$crud->callback_before_insert(array($this,'valid_uppercase'));
     		$crud->callback_before_update(array($this,'valid_uppercase'));
-
+    		
 			$output = $crud->render();
 			
 			$this->_example_output($output);
@@ -109,5 +111,8 @@ class Adultos extends CI_Controller {
     	$post_array['numero_expediente_adulto'] = strtoupper($post_array['numero_expediente_adulto']);
     	// Devuelve el arreglo para Guardar
     	return $post_array;
-    }	
+    }
+
+    
+
 }

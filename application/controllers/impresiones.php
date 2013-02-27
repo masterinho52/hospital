@@ -108,6 +108,7 @@ class Impresiones extends CI_Controller {
 
 	public function cierre($data = array()) {
 		$data['cierr'] = $this->cierres_model->get_all();
+		// print_r($data);
 		$this->load->view('cierre.php', $data);	
 	}
 
