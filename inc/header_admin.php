@@ -50,8 +50,10 @@
 		    <ul class="submenu">
 		        <?php // if ($this->session->userdata("tipo_usuario")=='Administrador') { ?>           
 		        	<li><a href="<?=base_url()?>usuarios">Usuarios</a></li>
+		        	<li><a href="<?=base_url()?>inc/mu.pdf" target="_blank">Manual de Usuario</a></li>
 		        <?php //} ?>
 		   	</ul> 
+
 		</li> 
 		<li class="pull-right"  id="nombreses">
 			<a href="#">Cuenta: <?php echo $this->session->userdata("nombre_usuario"); ?></a>
