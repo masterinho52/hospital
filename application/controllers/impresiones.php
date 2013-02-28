@@ -181,7 +181,7 @@ class Impresiones extends CI_Controller {
 		if ($dia==18) { return "los dieciocho (18) días"; }
 		if ($dia==19) { return "los diecinueve (19) días"; }
 		if ($dia==20) { return "los veinte (20) días"; }
-		if ($dia==21) { return "los veintiun (21) días"; }
+		if ($dia==21) { return "los veintiún (21) días"; }
 		if ($dia==22) { return "los veintidos (22) días"; }
 		if ($dia==23) { return "los veintitres (23) días"; }
 		if ($dia==24) { return "los veinticuatro (24) días"; }

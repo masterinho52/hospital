@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 08, 2013 at 04:48 PM
+-- Generation Time: Feb 28, 2013 at 11:07 AM
 -- Server version: 5.5.29
 -- PHP Version: 5.3.10-1ubuntu3.5
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `tbl_adulto` (
   `apellido_adulto` varchar(50) NOT NULL,
   `numero_expediente_adulto` varchar(12) NOT NULL,
   `fechan_adulto` date NOT NULL,
-  `estadocivil_adulto` enum('CASADO(A)','CONCUBINO(A)','DIVORCIADO(A)','SOLTERO(A)','VIUDO(A)') NOT NULL,
+  `estadocivil_adulto` enum('SOLTERO[A]','CASADO[A]','CONCUBINO[A]','DIVORCIADO[A]','VIUDO[A]') NOT NULL,
   `lugarn_adulto` varchar(50) DEFAULT NULL,
   `direccion_adulto` text NOT NULL,
   `telefono_adulto` varchar(12) DEFAULT NULL,
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `tbl_adulto` (
 --
 
 INSERT INTO `tbl_adulto` (`id_adulto`, `cedula_adulto`, `nombre_adulto`, `apellido_adulto`, `numero_expediente_adulto`, `fechan_adulto`, `estadocivil_adulto`, `lugarn_adulto`, `direccion_adulto`, `telefono_adulto`, `sexo_adulto`, `fechai_adulto`, `instruccion_adulto`, `ocupacion_adulto`, `comunal_adulto`, `id_representante`, `estatus_adulto`, `id_usuario`, `fregistro_adulto`) VALUES
-(2, '1234567', 'PABLO', 'ZAMORA', 'HOF-34535', '2012-08-03', '', 'VALERA EDO TRUJILLO', 'URBANIZACIÓN LAS ACACIAS, CALLE 18 CON AVENIDA 6, CASA #15-545, VALERA EDO TRUJILLO', '04241234567', 'MASCULINO', '2012-08-24', 'T.S.U.', 'ESTUDIA', 'LAS ACACIAS', 1, '1', 1, '2012-08-02 21:44:08');
+(2, '1234567', 'PABLO', 'ZAMORA', 'HOF-34535', '2012-08-03', '', 'VALERA EDO TRUJILLO', 'URBANIZACIÓN LAS ACACIAS, CALLE 18 CON AVENIDA 6, CASA #15-545, VALERA EDO TRUJILLO', '04241234567', 'MASCULINO', '2012-08-24', 'T.S.U.', 'ESTUDIA', 'LAS ACACIAS', 1, '0', 1, '2012-08-02 21:44:08');
 
 -- --------------------------------------------------------
 
@@ -95,22 +95,14 @@ CREATE TABLE IF NOT EXISTS `tbl_cierre` (
   `id_usuario` int(11) DEFAULT NULL,
   `fregistro_cierre` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_cierre`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=23 ;
 
 --
 -- Dumping data for table `tbl_cierre`
 --
 
 INSERT INTO `tbl_cierre` (`id_cierre`, `id_adulto`, `id_personal`, `lapso_cierre`, `sintesis_cierre`, `motivo_cierre`, `fecha_cierre`, `id_usuario`, `fregistro_cierre`) VALUES
-(10, 2, 2, 'SDFDS', 'SDFDS', 'SDFDS', '2013-02-20', 1, '2013-02-06 14:50:50'),
-(11, 2, 2, 'JG JAGSD JHGASJ D', 'JSAHG JHGSA DJHAG SJDGASJD', 'AS KJDH AKJHD KJASH DKAS', '2013-02-13', 1, '2013-02-06 14:52:33'),
-(12, 2, 2, 'SDDFSF', 'SDFDSF', 'SDFDS', '2013-02-13', 3, '2013-02-06 14:54:45'),
-(13, 2, 2, 'FSDFSD', 'SDFDSFDS', 'DSFDSF', '2013-02-21', 1, '2013-02-06 15:11:13'),
-(14, 2, 1, 'JHG DJHASG DJHA SJHDA', 'KJH SAKJHD KJAH KDHAKDA', 'KJAHSD KJASH DKJAH KDJHA KJD', '2013-02-06', 1, '2013-02-06 15:12:06'),
-(15, 2, 1, 'JHDSF JHDSG FJHDS', 'KHDS KFJDSH KF', 'KJSDHF KJDSHF KJHDS KJFSD', '2013-02-06', 1, '2013-02-06 15:14:31'),
-(16, 2, 2, 'KJH FKJDHFD SKJHF KSD', 'K SJDHFKJD S', 'KJSHD FKJHKDS', '2013-02-06', 1, '2013-02-06 15:15:06'),
-(17, 2, 1, 'DFDSFDS', 'SDFDSF', 'SDFDSF', '2013-02-06', 1, '2013-02-06 15:29:31'),
-(18, 2, 1, 'DSFKJDSHF KSJKHSDKF', 'JKSHD FKJHDS KJFHDSK', 'KSJDHF KJDSH FKJDS', '2013-02-06', 1, '2013-02-06 15:30:55');
+(22, 2, 2, '24', 'KJHF SKJHF KJSH KFH SKJHF KJHS KJFH KSDJ HF', 'KJH DFKSJDH FKJDSH FKJH SDKJF HSKD ', '2013-02-28', 1, '2013-02-28 15:21:15');
 
 -- --------------------------------------------------------
 
@@ -181,7 +173,7 @@ CREATE TABLE IF NOT EXISTS `tbl_grupo_familiar` (
 --
 
 INSERT INTO `tbl_grupo_familiar` (`id_grupo`, `cedula_grupo`, `nombre_grupo`, `apellido_grupo`, `fechan_grupo`, `sexo_grupo`, `instruccion_grupo`, `ocupacion_grupo`, `ingreso_grupo`, `aporte_grupo`, `direccion_grupo`, `telefono_grupo`, `parentesco_grupo`, `id_adulto`, `id_usuario`, `fregistro_grupo`) VALUES
-(1, '23456789', 'JOSE', 'SANCHEZ', '1972-02-15', 'MASCULINO', 'INGENIERO', 'AMA DE CASA', '2560', 'NINGUNO', '<P>AVENIDA 13 CON CALLE 15, CASA #14-64, VALERA EDO. TRUJILLO</P>', '04161234567', 'HERMANO', 2, 1, '2012-08-03 20:46:07');
+(1, '23456789', 'JOSE', 'SANCHEZ', '1972-02-15', 'MASCULINO', 'INGENIERO', 'AMA DE CASA', '2560', '0', '<P>AVENIDA 13 CON CALLE 15, CASA #14-64, VALERA EDO. TRUJILLO</P>', '04161234567', 'HERMANO', 2, 1, '2013-02-27 13:57:19');
 
 -- --------------------------------------------------------
 
@@ -364,7 +356,7 @@ CREATE TABLE IF NOT EXISTS `tbl_usuario` (
 --
 
 INSERT INTO `tbl_usuario` (`id_usuario`, `cedula_usuario`, `nombre_usuario`, `tipo_usuario`, `login`, `password`, `password_confirmacion`, `fregistro_usuario`) VALUES
-(1, '17', 'Marcos Orozco', 'Administrador', 'admin', '202cb962ac59075b964b07152d234b70', '202cb962ac59075b964b07152d234b70', '2012-07-23 14:49:26'),
+(1, '17', 'MARCOS OROZCO XXXX', 'Administrador', 'admin', '202cb962ac59075b964b07152d234b70', '202cb962ac59075b964b07152d234b70', '2012-07-23 14:49:26'),
 (3, '123456', 'USUARIO DOS', 'Supervisor', 'usuario', '202cb962ac59075b964b07152d234b70', '202cb962ac59075b964b07152d234b70', '2012-07-27 15:25:00');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -17,8 +17,8 @@ class Adultos_model extends CI_Model {
 		return $data;
 	}
 
-	public function get_all_byDate($desde, $hasta) {
-		$consulta = $this->db->join('tbl_representante', 'tbl_representante.id_representante=tbl_adulto.id_representante')->where('estatus_adulto',1)->where('fechai_adulto >='.$desde)->where('fechai_adulto <=', $hasta)->order_by('apellido_adulto asc, nombre_adulto asc')->get('tbl_adulto');
+	public function get_all_between($desde, $hasta) {
+		$consulta = $this->db->join('tbl_representante', 'tbl_representante.id_representante=tbl_adulto.id_representante')->where('estatus_adulto',1)->where('fechai_adulto >=', $desde)->where('fechai_adulto <=', $hasta)->order_by('apellido_adulto asc, nombre_adulto asc')->get('tbl_adulto');
 		if ($consulta->num_rows()) {
 			$data = $consulta->result();
 		} else {

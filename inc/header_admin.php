@@ -41,13 +41,7 @@
 		    <ul class="submenu">
 		        <li><a href="<?=base_url()?>reportes/adulto">Reporte de Adultos</a></li>
 				<li><a href="<?=base_url()?>reportes/cierre">Reporte de Cierres</a></li>
-		    <!-- 
-		    	<li><a href="<?=base_url()?>reportes/personal">Reporte de Personal</a></li> 
-		        <li><a href="<?=base_url()?>reportes/representante">Reporte del Representante</a></li>
-		        <li><a href="<?=base_url()?>reportes/adulto">Reporte de Adultos Mayores</a></li>
-		        <li><a href="<?=base_url()?>reportes/gruposf">Reporte de Grupos Familiares</a></li>
- 			-->		   	
-			</ul> 
+		   	</ul> 
 		</li>
 		<?php } ?>
 		<li> 
@@ -59,7 +53,7 @@
 		        <?php //} ?>
 		   	</ul> 
 		</li> 
-		<li class="pull-right">
+		<li class="pull-right"  id="nombreses">
 			<a href="#">Cuenta: <?php echo $this->session->userdata("nombre_usuario"); ?></a>
 			<ul class="submenu">
 				<li><a href="<?=base_url()?>login/logout">Cerrar Sesion</a></li>

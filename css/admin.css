@@ -129,3 +129,8 @@ body:before
       right: 10px;
       left: auto;
     } 
+
+#nombreses
+{
+  font-size: .7em !important;
+}

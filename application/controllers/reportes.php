@@ -28,12 +28,9 @@ class Reportes extends CI_Controller {
 	public function adultos_print() {
 		$d = $this->fecha2sql($_POST['desde']);
 		$h = $this->fecha2sql($_POST['hasta']);
-		// echo $d;
-		$data['adultos'] = $this->adultos_model->get_all_byDate($d, $h);
-		// $data['adultos'] = $this->adultos_model->get_all();
+		$data['adultos'] = $this->adultos_model->get_all_between($d, $h);
 		$this->load->view('adulto_imprimir.php', $data);	
 	}
-
 	
 	public function fecha2sql($fecha)
 	{
@@ -41,7 +38,15 @@ class Reportes extends CI_Controller {
 		$nfecha = $fech[2].'-'.$fech[1].'-'.$fech[0];
 		return $nfecha;
 	}
+
 	public function cierre() {
 		$this->load->view('cierre_reporte.php');	
+	}
+
+	public function cierres_print() {
+		$d = $this->fecha2sql($_POST['desde']);
+		$h = $this->fecha2sql($_POST['hasta']);
+		$data['adultos'] = $this->cierres_model->get_all_between($d, $h);
+		$this->load->view('cierres_imprimir.php', $data);	
 	}
 }
