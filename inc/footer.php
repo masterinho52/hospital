@@ -1,1 +1,2 @@
-<!-- <p class="footer">Diseñado y Desarrollado por: <span class="footer_2">Marcos Orozco</span></p> -->
+<p class="footer">Diseño y Programación: <span class="footer_2">Marcos Orozco</span></p>
+<p class="footer">Asesoría de Programación y Desarrollo: <span class="footer_2"><br><a href="http://www.twitter.com/bjohnmer">Johnmer Bencomo</a> y <a href="#">Leonardo Suárez</a></span></p>

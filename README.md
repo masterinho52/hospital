@@ -1,5 +1,5 @@
-Hospital
-========
+Hospital (versión, sin reportes, actualmente en desarrollo)
+===========================================================
 
 Aplicación Web para el Departamento de Trabajo Social Sistema para Hospital Especial de Ancianos Dr. Alejandro Próspero Reverend
 
