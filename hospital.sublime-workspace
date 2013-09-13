@@ -1,0 +1,619 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"PACIENTE",
+				"paciente"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"paciente",
+				"pacientes_id"
+			],
+			[
+				"sigui",
+				"siguienteEspera"
+			],
+			[
+				"medico",
+				"medico_id"
+			],
+			[
+				"field",
+				"field_type"
+			],
+			[
+				"indicac",
+				"indicaciones"
+			],
+			[
+				"Admin",
+				"Administrador"
+			],
+			[
+				"array",
+				"array	$… = array (…)"
+			],
+			[
+				"arra",
+				"array	$… = array (…)"
+			],
+			[
+				"pacientes",
+				"pacientes"
+			],
+			[
+				"REPOSOS",
+				"reposos"
+			],
+			[
+				"unset",
+				"unset_texteditor"
+			],
+			[
+				"CONSULTAS",
+				"consultas"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"acti",
+				"activar_paciente"
+			],
+			[
+				"sou",
+				"sources"
+			],
+			[
+				"css",
+				"css_files"
+			],
+			[
+				"outp",
+				"output"
+			],
+			[
+				"base",
+				"base_url"
+			],
+			[
+				"dat",
+				"datos"
+			],
+			[
+				"ass",
+				"ASSETS_DIR"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 517,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "inc/footer.php",
+			"settings":
+			{
+				"buffer_size": 279,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 6356,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 56.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"INSTALL",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 507.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/bjohnmer/www/usm/application/config/autoload.php",
+		"/home/bjohnmer/www/usm/application/views/recipe_vista.php",
+		"/home/bjohnmer/www/usm/application/views/cabecerarecipe_vista.php",
+		"/home/bjohnmer/www/usm/application/views/pierecipe_vista.php",
+		"/home/bjohnmer/www/usm/application/views/cabecerafront_vista.php",
+		"/home/bjohnmer/www/usm/application/views/cabeceraadmin_vista.php",
+		"/home/bjohnmer/www/usm/application/views/piemedico_vista.php",
+		"/home/bjohnmer/www/usm/application/views/sesmedico_vista.php",
+		"/home/bjohnmer/www/usm/application/views/informe_vista.php",
+		"/home/bjohnmer/www/usm/application/views/informe1_vista.php",
+		"/home/bjohnmer/www/usm/application/views/pierecipe\\_vista.php",
+		"/home/bjohnmer/www/usm/application/views/entrada_vista.php",
+		"/home/bjohnmer/www/usm/application/controllers/welcome.php",
+		"/home/bjohnmer/www/usm/application/controllers/espera.php",
+		"/home/bjohnmer/www/usm/application/views/espera_vista.php",
+		"/home/bjohnmer/www/usm/application/controllers/usuarios.php",
+		"/home/bjohnmer/www/usm/application/controllers/pacientes.php",
+		"/home/bjohnmer/www/usm/application/controllers/medicos.php",
+		"/home/bjohnmer/www/usm/application/controllers/admin.php",
+		"/home/bjohnmer/www/usm/application/config/config.php",
+		"/home/bjohnmer/www/umoviles/application/libraries/MY_Form_validation.php",
+		"/home/bjohnmer/www/umoviles/application/libraries/constantes.php",
+		"/home/bjohnmer/www/umoviles/application/libraries/datemanager.php",
+		"/home/bjohnmer/www/umoviles/.htaccess",
+		"/home/bjohnmer/www/usm/application/views/cabeceramedico_vista.php",
+		"/home/bjohnmer/www/pdvsa/.htaccess",
+		"/home/bjohnmer/www/usm/application/controllers/sesmedico.php",
+		"/home/bjohnmer/www/usm/application/views/sesmedicos_consulta_vista.php",
+		"/home/bjohnmer/www/usm/application/views/sesmedicos_reposo_vista.php",
+		"/home/bjohnmer/www/usm/.htaccess",
+		"/home/bjohnmer/www/pdvsa/application/libraries/MY_Form_validation.php",
+		"/home/bjohnmer/www/pdvsa/application/libraries/constantes.php",
+		"/home/bjohnmer/www/pdvsa/application/libraries/datemanager.php",
+		"/home/bjohnmer/www/pdvsa/application/models/auth_model.php",
+		"/home/bjohnmer/www/usm/application/views/lmedicos_vista.php",
+		"/home/bjohnmer/www/usm/application/libraries/constantes.php",
+		"/home/bjohnmer/www/usm/assets/css/estilos.css",
+		"/home/bjohnmer/www/usm/application/views/test.php",
+		"/home/bjohnmer/www/usm/assets/css/jumbotron.css",
+		"/home/bjohnmer/www/usm/application/models/espera_model.php",
+		"/home/bjohnmer/www/usm/application/views/admin_vista.php",
+		"/home/bjohnmer/www/usm/application/views/lespecialidades.html",
+		"/home/bjohnmer/www/usm/application/views/lpacientes.html",
+		"/home/bjohnmer/www/usm/application/views/lpacientes_vista.php",
+		"/home/bjohnmer/www/usm/application/views/lusuarios_vista.php",
+		"/home/bjohnmer/www/usm/application/views/reposos.html",
+		"/home/bjohnmer/www/usm/application/views/pacientes_vista.php",
+		"/home/bjohnmer/www/usm/application/views/espera1_vista.php",
+		"/home/bjohnmer/www/usm/application/views/espera2_vista.php",
+		"/home/bjohnmer/www/usm/application/views/medicos_vista.php",
+		"/home/bjohnmer/www/usm/application/views/usuarios_vista.php",
+		"/home/bjohnmer/www/usm/application/views/pieadmin_vista.php",
+		"/home/bjohnmer/www/usm/assets/grocery_crud/js/jquery_plugins/config/jquery.datepicker.config.js",
+		"/home/bjohnmer/www/usm/application/views/piefront.php",
+		"/home/bjohnmer/www/usm/application/views/piefront_vista.php",
+		"/home/bjohnmer/www/usm/application/libraries/MY_Form_validation.php",
+		"/home/bjohnmer/www/usm/application/libraries/Grocery_CRUD.php",
+		"/home/bjohnmer/www/usm/application/language/spanish/form_validation_lang.php",
+		"/home/bjohnmer/www/usm/application/libraries/Form_validation.php",
+		"/home/bjohnmer/www/usm/system/libraries/Form_validation.php",
+		"/home/bjohnmer/www/usm/application/views/lusuarios.html",
+		"/home/bjohnmer/www/usm/grocery-crud-1.4/assets/grocery_crud/themes/twitter-bootstrap/views/add.php",
+		"/home/bjohnmer/www/usm/grocery-crud-1.4/assets/grocery_crud/themes/twitter-bootstrap/config.php",
+		"/home/bjohnmer/www/usm/grocery-crud-1.4/application/views/example.php",
+		"/home/bjohnmer/www/usm/grocery-crud-1.4/application/controllers/examples.php",
+		"/home/bjohnmer/www/usm/grocery-crud-1.4/application/models/grocery_crud_model.php",
+		"/home/bjohnmer/www/usm/application/config/grocery_crud.php",
+		"/home/bjohnmer/www/usm/application/models/auth_model.php",
+		"/home/bjohnmer/www/usm/application/views/medicos.html",
+		"/home/bjohnmer/www/camiula/application/controllers/medico.php",
+		"/home/bjohnmer/www/usm/application/controllers/auth.php",
+		"/home/bjohnmer/www/usm/application/views/entrada.php",
+		"/home/bjohnmer/www/usm/application/views/cabecerafront.php",
+		"/home/bjohnmer/www/usm/application/views/index.php",
+		"/home/bjohnmer/www/camiula/application/views/welcome_message.php",
+		"/home/bjohnmer/www/camiula/application/models/login_model.php",
+		"/home/bjohnmer/www/usm/application/views/cabeceraadmin.php",
+		"/home/bjohnmer/www/usm/application/views/pieadmin.php",
+		"/home/bjohnmer/www/usm/application/views/admin.php",
+		"/home/bjohnmer/www/usm/application/libraries/index.html",
+		"/home/bjohnmer/www/usm/application/config/database.php",
+		"/home/bjohnmer/www/usm/application/config/constants.php",
+		"/home/bjohnmer/www/usm/application/libraries/datemanager.php",
+		"/home/bjohnmer/www/usm/application/views/index___.php",
+		"/home/bjohnmer/Software/Files.desktop",
+		"/home/bjohnmer/Software/Gimp.desktop",
+		"/home/bjohnmer/Software/Inkscape-1.desktop",
+		"/home/bjohnmer/Software/LibreOffice Calc.desktop",
+		"/home/bjohnmer/Software/LibreOffice Writer.desktop",
+		"/media/bjohnmer/MasY+/Respaldo Vaio/varias/Inkscape-1.desktop",
+		"/media/bjohnmer/MasY+/Respaldo Vaio/varias/Gimp.desktop",
+		"/media/bjohnmer/MasY+/Respaldo Vaio/varias/LibreOffice Calc.desktop",
+		"/media/bjohnmer/MasY+/Respaldo Vaio/varias/LibreOffice Writer.desktop",
+		"/home/bjohnmer/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/bjohnmer/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/bjohnmer/.config/sublime-text-2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/home/bjohnmer/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/bjohnmer/www/usm/application/views",
+			"<project>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"md5",
+			"Cédula",
+			"div",
+			"siguiente",
+			"siguienteEspera",
+			"h4",
+			"h3",
+			"&nbsp;",
+			"reposos",
+			"consultas",
+			"rea",
+			"pacientes_id",
+			"calcio",
+			"`",
+			"consultas",
+			"Consultas",
+			"consultas",
+			"pacientes",
+			"Pacientes",
+			"pacientes",
+			"condition",
+			"4",
+			"h4",
+			"&nbsp;",
+			"p",
+			"pacientes",
+			"activo",
+			"espera",
+			"crud",
+			"col-lg-4 col-offset-4",
+			"medicos",
+			"cnf_usuario",
+			"pwd_usuario",
+			"cnf_usuario",
+			"pwd_usuario",
+			"cnf_usuario",
+			"pwd_usuario",
+			"crud",
+			"pacientes",
+			"datepicker",
+			"medicos",
+			"valid",
+			"medicos",
+			"strong",
+			"model",
+			"theme"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"        ",
+			"col-lg-2 col-offset-5"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"settings":
+					{
+						"buffer_size": 517,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10,
+								10
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "inc/footer.php",
+					"settings":
+					{
+						"buffer_size": 279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								247,
+								247
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 940.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 6356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								576,
+								576
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"grocery_crud_model",
+				"grocery-crud-1.4/application/models/grocery_crud_model.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 337.0,
+	"status_bar_visible": true
+}
