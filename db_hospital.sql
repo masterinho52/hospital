@@ -161,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `tbl_grupo_familiar` (
   `aporte_grupo` varchar(12) NOT NULL,
   `direccion_grupo` text NOT NULL,
   `telefono_grupo` varchar(12) NOT NULL,
-  `parentesco_grupo` enum('PADRE','MADRE','PADRINO','MADRINA','TIO','TIA','HERMANO','HERMANA','SOBRINO','SOBRINA','AHIJADO','AHIJADA') NOT NULL,
+  `parentesco_grupo` enum('PADRE','MADRE','PADRINO','MADRINA','TIO','TIA','HERMANO','HERMANA','SOBRINO','SOBRINA','HIJO','HIJA') NOT NULL,
   `id_adulto` int(11) NOT NULL,
   `id_usuario` int(11) DEFAULT NULL,
   `fregistro_grupo` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
@@ -249,10 +249,10 @@ CREATE TABLE IF NOT EXISTS `tbl_representante` (
   `apellido_representante` varchar(50) NOT NULL,
   `sexo_representante` enum('MASCULINO','FEMENINO') NOT NULL,
   `fechan_representante` date NOT NULL,
-  `estadocivil_representante` enum('CASADO(A)','CONCUBINO(A)','DIVORCIADO(A)','SOLTERO(A)','VIUDO(A)') NOT NULL,
+  `estadocivil_representante` enum('SOLTERO[A]','CASADO[A]','CONCUBINO[A]','DIVORCIADO[A]','VIUDO[A]') NOT NULL,
   `lugarn_representante` varchar(50) NOT NULL,
   `direccion_representante` text NOT NULL,
-  `parentesco_representante` enum('PADRE','MADRE','PADRINO','MADRINA','TIO','TIA','HERMANO','HERMANA','SOBRINO','SOBRINA','AHIJADO','AHIJADA') NOT NULL,
+  `parentesco_representante` enum('PADRE','MADRE','PADRINO','MADRINA','TIO','TIA','HERMANO','HERMANA','SOBRINO','SOBRINA','HIJO','HIJA') NOT NULL,
   `telefono_representante` varchar(12) NOT NULL,
   `profesion_representante` varchar(50) NOT NULL,
   `id_usuario` int(11) NOT NULL,
@@ -265,7 +265,7 @@ CREATE TABLE IF NOT EXISTS `tbl_representante` (
 --
 
 INSERT INTO `tbl_representante` (`id_representante`, `cedula_representante`, `nombre_representante`, `apellido_representante`, `sexo_representante`, `fechan_representante`, `estadocivil_representante`, `lugarn_representante`, `direccion_representante`, `parentesco_representante`, `telefono_representante`, `profesion_representante`, `id_usuario`, `fregistro_representante`) VALUES
-(1, '2345678', 'PETRONILO', 'SINFOROSO', 'MASCULINO', '2012-08-21', 'DIVORCIADO(A)', 'TRUJILLO EDO. TRUJILLO', 'URB. LA BEATRIZ, BLOQUE 40, APTO 3C PISO 3', 'HERMANA', '26556565', 'NINGUNA', 1, '2012-08-16 04:30:00');
+(1, '2345678', 'PETRONILO', 'SINFOROSO', 'MASCULINO', '2012-08-21', '', 'TRUJILLO EDO. TRUJILLO', 'URB. LA BEATRIZ, BLOQUE 40, APTO 3C PISO 3', 'HERMANA', '26556565', 'NINGUNA', 1, '2012-08-16 04:30:00');
 
 -- --------------------------------------------------------
 

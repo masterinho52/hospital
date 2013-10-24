@@ -458,7 +458,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td align="justify"><span class="informe_body8">vobo por: <span class="informe_body9"><?=$recept[0]->vobo_receptoria;?></span></span></td>
+										<td align="justify"><span class="informe_body8">Elaborado por: <span class="informe_body9"><?=$recept[0]->vobo_receptoria;?></span></span></td>
 									</tr>
 									<tr>
 										<td align="center">

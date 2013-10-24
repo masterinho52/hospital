@@ -59,7 +59,7 @@
 
 			<tr>
 				<td align="right" class="informe_body" colspan="3" width="955">
-					matricula: <span class="informe_body2"><?=$cierr[0]->cedula_adulto;?>.</span>
+					Cédula: <span class="informe_body2"><?=$cierr[0]->cedula_adulto;?>.</span>
 				</td>
 			</tr>
 

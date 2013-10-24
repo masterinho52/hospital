@@ -78,7 +78,7 @@ class Sociales extends CI_Controller {
 			$crud->display_as('sintesis_social', 'Sintesis del Caso');
 			$crud->display_as('diagnostico_social', 'Diagnóstico Social');
 			$crud->display_as('recomendacion_social', 'Recomendacion');
-			$crud->display_as('vobo_social', 'VoBo por');
+			$crud->display_as('vobo_social', 'Elaborado por');
 			$crud->display_as('id_personal', 'Personal');
 			$crud->display_as('id_usuario', 'Registrado por');
 			$crud->display_as('fregistro_social', 'Fecha de Registro');

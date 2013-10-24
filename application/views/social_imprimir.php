@@ -471,7 +471,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td align="justify"><span class="informe_body8">vobo por: <span class="informe_body9"><?=$soc[0]->vobo_social;?></span></span></td>
+										<td align="justify"><span class="informe_body8">Elaboradopor: <span class="informe_body9"><?=$soc[0]->vobo_social;?></span></span></td>
 									</tr>
 									<tr>
 										<td align="center">

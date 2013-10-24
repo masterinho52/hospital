@@ -46,7 +46,7 @@ class Receptorias extends CI_Controller {
 			$crud->display_as('sintesis_receptoria', 'Sintesis del Caso');
 			$crud->display_as('diagnostico_receptoria', 'Diagnóstico Social');
 			$crud->display_as('gestiones_receptoria', 'Gestiones Realizadas');
-			$crud->display_as('vobo_receptoria', 'VoBo por');
+			$crud->display_as('vobo_receptoria', 'Elaborado por');
 			$crud->display_as('id_personal', 'Personal');
 			$crud->display_as('id_usuario', 'Registrado por');
 			$crud->display_as('fregistro_receptoria', 'Fecha de Registro');
@@ -65,7 +65,7 @@ class Receptorias extends CI_Controller {
 			$crud->set_rules('sintesis_receptoria', 'Sintesis del Caso', 'required|alpha_space');
 			$crud->set_rules('diagnositco_receptoria', 'Diagnóstico Social y/o Médico', 'required|alpha_space');
 			$crud->set_rules('gestiones_receptoria', 'Gestiones Realizadas', 'required|alpha_space');
-			$crud->set_rules('vobo_receptoria', 'VoBo de la Receptoría', 'required|alpha_space');
+			$crud->set_rules('vobo_receptoria', 'Receptoria por', 'required|alpha_space');
 			$crud->set_rules('id_personal', 'Nombre del Personal', 'required');
 			$crud->set_rules('id_usuario', 'Nombre del Usuario', 'required');
 

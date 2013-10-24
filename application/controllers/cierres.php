@@ -83,7 +83,7 @@ class Cierres extends CI_Controller {
 
     		// Función a ejecutarse después de Guardar, cambia el estatus del adulto a cero
     		$crud->callback_after_insert(array($this,'cambiar_estatus_adulto_cero'));
-    		$crud->callback_after_delete(array($this,'cambiar_estatus_adulto_uno'));
+    		//$crud->callback_after_delete(array($this,'estatusUno'));
 
 
 			$output = $crud->render();
@@ -111,10 +111,11 @@ class Cierres extends CI_Controller {
     	$this->adultos->estatus_cero($id_adulto);
     }
 
-    function cambiar_estatus_adulto_uno($post_array, $primary_key = null) {
+    function estatusUno($post_array) {
     	
     	$id_adulto = $post_array['id_adulto'];
     	$this->adultos->estatus_uno($id_adulto);
     }
+
 
 }
