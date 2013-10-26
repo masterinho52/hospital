@@ -51,9 +51,9 @@
 	
 	/* Added in version 1.2.1 */
 	$lang['set_relation_title']		= 'Select {field_display_as}';	
-	$lang['list_record']			= 'Record';
-	$lang['form_inactive']			= 'inactive';
-	$lang['form_active']			= 'active';
+	$lang['list_record']			= 'Registro';
+	$lang['form_inactive']			= 'No';
+	$lang['form_active']			= 'Sí';
 	
 	/* Added in version 1.2.2 */
 	$lang['form_save_and_go_back']	= 'Guardar y volver a la lista';
